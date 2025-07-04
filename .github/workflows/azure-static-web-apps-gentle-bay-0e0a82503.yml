@@ -4,7 +4,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - prototype
+      - main
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -35,16 +35,6 @@ jobs:
           pandoc -v
           python -V
 
-      # Set up Node.js for minification
-      # - name: Set up Node.js
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: 18
-
-      # Install html-minifier-terser
-      # - name: Install HTML Minifier
-      #   run: npm install -g html-minifier-terser
-
       - name: Set up Python version
         uses: actions/setup-python@v5
         with:
@@ -73,11 +63,6 @@ jobs:
 
       - name: Copy robots.txt
         run: cp src/robots.txt src/site
-
-      # Step 7: Minify HTML files
-      # - name: Minify HTML
-      #  run: |
-      #    find site -name '*.html' -exec html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true --output {} {} \;
 
       - name: Build And Deploy
         id: builddeploy

@@ -1,0 +1,29 @@
+title: T-2D4-A-8 - LPG large utility machinery
+id: large_utility_machinery_lpg
+sector: industry
+sustainability: red
+class: activity
+name: large_utility_machinery_lpg
+version: 2.0.0
+operation:
+  growthType: false
+  variable: stock_large_utility_machinery_lpg
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_large_utility_machinery_lpg
+  input:
+  - resource: liquefied_petroleum_gas
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_liquefied_petroleum_gas

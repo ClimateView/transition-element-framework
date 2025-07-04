@@ -1,0 +1,53 @@
+id: stock_district_heating_biogas
+title: District heating biogas
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CA
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CH
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Annahme: 0.
+
+    '
+- value: 115.64
+  country: DE
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/public/amazedb1
+- value: 0
+  country: GB
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 101.890393978495
+  country: SE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Per capitavärdet beräknat från SCB och energiföretagen.se
+
+    '
+  reference: https://climateview.slab.com/public/qwledwax

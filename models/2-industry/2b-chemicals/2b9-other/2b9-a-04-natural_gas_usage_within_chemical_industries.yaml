@@ -1,0 +1,34 @@
+title: T-2B9-A-4 - Natural gas usage within chemical industries
+id: natural_gas_usage_within_chemical_industries
+name: natural_gas_usage_within_chemical_industries
+sector: industry
+sustainability: amber
+class: activity
+version: 2.1.0
+operation:
+  growthType: true
+  variable: start_year_activity_natural_gas_usage_within_chemical_industries
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_natural_gas_usage_within_chemical_industries
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: natural_gas
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_natural_gas_kwh_to_co2e

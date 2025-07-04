@@ -1,0 +1,16 @@
+id: stock_green_waste_composting
+title: Stock of composted green waste
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+- PRIO_MEDIUM
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

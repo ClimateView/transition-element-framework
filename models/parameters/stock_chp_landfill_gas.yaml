@@ -1,0 +1,16 @@
+id: stock_chp_landfill_gas
+title: Combined heat and power (CHP) - landfill gas
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_HIGH
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Set to zero.
+
+    '

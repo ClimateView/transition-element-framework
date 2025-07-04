@@ -1,0 +1,75 @@
+---
+title: T-1A1a-A-3 - Gas cars
+id: gas_vehicles
+sector: transport
+class: activity
+sustainability: amber
+version: 2.1.0
+progress: 80
+ipccEmissionSource: 1a3b-road-transportation
+name: gas_vehicles
+operation:
+  growthType: true
+  variable: stock_personal_vehicles_natural_gas
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_personal_vehicles_natural_gas
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/vehicle_km
+    expression: '%[0]'
+    variables:
+    - energy_intensity_personal_vehicles_natural_gas
+  input:
+  - resource: biogas
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_biogas
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_biogas_kwh_to_co2e
+  - resource: natural_gas
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_natural_gas
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_natural_gas_kwh_to_co2e
+---
+# Definition
+This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+{{ activity_sustainability() }}
+
+# Transition Elements
+
+This activity has the following mitigation options modelled as transition elements:
+
+{{ transition_element_list() }}
+
+# Activity Model
+This emission source is modelled with {{ generate_work_link() }} as:
+
+{{ activity_model() }}
+
+## Parameters
+
+{{ generate_parameter_table() }}
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

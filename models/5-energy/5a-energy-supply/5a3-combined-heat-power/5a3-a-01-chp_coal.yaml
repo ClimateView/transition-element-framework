@@ -1,0 +1,47 @@
+title: T-5A3-A-1 - CHP coal production
+id: chp_coal
+sector: energy
+sustainability: red
+class: activity
+version: 2.1.0
+progress: 50
+name: chp_coal
+operation:
+  growthType: false
+  variable: stock_chp_coal
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: 1 / ( %[0] + %[1] )
+    variables:
+    - energy_efficiency_chp_coal_to_district_heat
+    - energy_efficiency_chp_coal_to_electricity
+  input:
+  - resource: coal
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_coal_kwh_to_co2e
+  output:
+  - resource: district_heat
+    primary: true
+    unitOfMeasure: kwh
+    workToResource:
+      unitOfMeasure: kwh/kwh
+      expression: '%[0]'
+      variables:
+      - energy_efficiency_chp_coal_to_district_heat
+  - resource: electricity
+    unitOfMeasure: kwh
+    workToResource:
+      unitOfMeasure: kwh/kwh
+      expression: '%[0]'
+      variables:
+      - energy_efficiency_chp_coal_to_electricity

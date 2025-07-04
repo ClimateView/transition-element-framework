@@ -1,0 +1,15 @@
+id: stock_accounting_unit_waste_treatment_plants_heating_with_solid_biofuels
+title: Stock waste treatment plants heated with district heat
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

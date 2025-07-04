@@ -1,0 +1,29 @@
+title: T-1A1b-TE-2 - Shift to electric motorcycles
+id: shift_to_electric_motorcycles
+sector: transport
+sustainability: green
+progress: 50
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1a-12-electric-technologies
+name: shift_to_electric_motorcycles
+type: shift
+longName: Shift from petrol motorcycles to electric motorcycles.
+shortName: Electric motorcycles
+description: Shift vehicle kilometer from petrol motorcycles to electric motorcycles
+  in vehicle kilometer to fulfill the need of mobility
+unitOfMeasure: vehicle_km
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: petrol_motorcycles
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: electric_motorcycles
+cobenefits:
+- air_quality

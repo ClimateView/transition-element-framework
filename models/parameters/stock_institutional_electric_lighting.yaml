@@ -1,0 +1,15 @@
+id: stock_institutional_electric_lighting
+title: Annual institutional lighting hours
+type: parameter
+parameter_type: OPERATIONS
+unit: h
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

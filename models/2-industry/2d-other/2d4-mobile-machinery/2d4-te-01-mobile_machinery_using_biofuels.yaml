@@ -1,0 +1,30 @@
+title: T-2D4-TE-1 - Shift to biofuel for mobile machinery
+id: mobile_machinery_using_biofuels
+sector: industry
+sustainability: green
+progress: 25
+class: transition
+version: 2.0.1
+name: mobile_machinery_using_biofuels
+type: shift
+longName: Shift from diesel mobile machinery to biofuel mobile machinery.
+shortName: Biofuel machinery
+description: Shift kilowatt-hours from mobile machinery diesel to mobile machinery
+  biofuel in kilowatt-hour to fulfill the need of productivity
+unitOfMeasure: kwh
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: mobile_machinery_diesel
+  - chain: mobile_machinery_petrol
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: mobile_machinery_biofuel
+cobenefits:
+- air_quality
+- increased_longevity_of_stock

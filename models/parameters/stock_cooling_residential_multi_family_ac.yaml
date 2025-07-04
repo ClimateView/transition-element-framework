@@ -1,0 +1,24 @@
+id: stock_cooling_residential_multi_family_ac
+title: Stock multi-family houses cooled with AC
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Estimate based on US data.
+
+    '
+  reference: https://docs.climateview.global/us/stationary-energy/physical-data/ac/
+- value: 0
+  country: US
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Value based on US national statistics.
+
+    '
+  reference: https://docs.climateview.global/us/stationary-energy/physical-data/ac/

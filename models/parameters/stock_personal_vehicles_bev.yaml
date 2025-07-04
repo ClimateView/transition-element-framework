@@ -1,0 +1,87 @@
+id: stock_personal_vehicles_bev
+title: Stock of personal vehicles (BEV) operation
+type: parameter
+parameter_type: OPERATIONS
+unit: vehicle_km
+tags:
+- operations
+- PRIO_HIGH
+values:
+- value: 46.6
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Per capita based on UK national statistics
+
+    '
+  reference: https://climateview.slab.com/public/ranizl8z
+- value: 41.3
+  country: CA
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Canada -  Personal Transportation
+
+    '
+  reference: https://climateview.slab.com/public/ird2eslu
+- value: 77.8
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Quebec - Personal Transport
+
+    '
+  reference: https://climateview.slab.com/public/posts/tdizodsv
+- value: 19.25
+  country: CH
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Schätzung.
+
+    '
+- value: 22.38
+  country: DE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/public/piy3mcng
+- value: 14.9493
+  country: ES
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Calculations based on national Spanish data.
+
+    '
+  reference: https://climateview.slab.com/posts/transporte-por-carretera-road-transport-esqm8w27#h5v39-cars
+- value: 30.6589
+  country: FR
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Valeur basée sur les statistiques nationales
+
+    '
+  reference: https://climateview.slab.com/posts/road-transport-france-eoxjg43o#h28f9-tableau-2-vehicules-personnels
+- value: 46.6
+  country: GB
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Per capita based on UK national statistics
+
+    '
+  reference: https://climateview.slab.com/public/ranizl8z
+- value: 83.7167
+  country: SE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Per invånare, beräknat på TRAFAs statistik för körsträckor 2019
+
+    '
+  reference: https://climateview.slab.com/public/81gb14xu
+- value: 67.1059
+  country: US
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Value based on US national statistics.
+
+    '
+  reference: https://climateview.slab.com/posts/personal-transportation-wtgg2hlu#hu3m2-table-2-distances-travelled-by-cars

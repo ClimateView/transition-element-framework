@@ -1,0 +1,23 @@
+title: T-5A2-TE-6 - Shift to Residual Heat in district heating
+id: shift_to_residual_heat_in_district_heating
+sector: energy
+sustainability: green
+class: transition
+type: shift
+name: shift_to_residual_heat_in_district_heating
+version: 2.0.0
+unitOfMeasure: kwh
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: chp_coal
+  - chain: chp_natural_gas
+  - chain: chp_oil
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: district_heating_residual_heat

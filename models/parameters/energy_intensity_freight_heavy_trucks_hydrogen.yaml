@@ -1,0 +1,17 @@
+id: energy_intensity_freight_heavy_trucks_hydrogen
+title: Energy intensity heavy hydrogen trucks
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_tonne_km
+tags:
+- energy_intensity
+- PRIO_LOW
+values:
+- value: 0.4
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'ClimateView model description - Hydrogen
+
+    '
+  reference: https://climateview.slab.com/public/7z3rwu55

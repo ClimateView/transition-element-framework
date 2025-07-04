@@ -1,0 +1,15 @@
+id: start_year_activity_casting_with_sf_6_cover_gas_for_magnesium_production
+title: Casting with SF6 cover gas for magnesium production
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

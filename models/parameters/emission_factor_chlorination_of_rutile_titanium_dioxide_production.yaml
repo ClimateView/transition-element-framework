@@ -1,0 +1,17 @@
+id: emission_factor_chlorination_of_rutile_titanium_dioxide_production
+title: Emission factor chlorination of rutile for titanium dioxide production
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+- emission_factors
+- PRIO_GLOBAL
+values:
+- value: 1340000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Table 3.9.
+
+    '
+  reference: https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/3_Volume3/19R_V3_Ch03_Chemical_Industry.pdf

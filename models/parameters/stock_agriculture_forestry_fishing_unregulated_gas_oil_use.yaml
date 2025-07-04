@@ -1,0 +1,16 @@
+id: stock_agriculture_forestry_fishing_unregulated_gas_oil_use
+title: Stock other gas oil use in agriculture, forestry and fishing
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '

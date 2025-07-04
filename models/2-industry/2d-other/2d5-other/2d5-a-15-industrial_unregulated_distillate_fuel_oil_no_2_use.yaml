@@ -1,0 +1,29 @@
+title: T-2D5-A-15 - Industrial other distillate fuel oil no 2
+id: industrial_unregulated_distillate_fuel_oil_no_2_use
+sector: industry
+sustainability: red
+class: activity
+name: industrial_unregulated_distillate_fuel_oil_no_2_use
+version: 2.0.0
+operation:
+  growthType: false
+  variable: stock_industrial_unregulated_distillate_fuel_oil_no_2_use
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: distillate_fuel_oil_no_2
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_distillate_fuel_oil_no_2_kwh_to_co2e

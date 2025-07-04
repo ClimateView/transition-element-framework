@@ -1,0 +1,33 @@
+id: energy_intensity_district_heating_residual_heat
+title: Energy intensity district heating residual heat
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_kwh
+tags:
+- energy_intensity
+- PRIO_LOW
+values:
+- value: 1
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView -District heating
+
+    '
+  reference: https://climateview.slab.com/public/yddbmggd
+- value: 1
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Daten aus Deutschland.
+
+    '
+  reference: https://climateview.slab.com/public/amazedb1
+- value: 1
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/public/amazedb1

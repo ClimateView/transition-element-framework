@@ -1,0 +1,18 @@
+id: energy_intensity_freight_heavy_trucks_gas
+title: Energy intensity heavy CNG trucks
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_tonne_km
+tags:
+- energy_intensity
+- PRIO_MEDIUM
+values:
+- value: 0.42
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'UK Greenhouse gas reporting, conversion factors full set, tab SECR kWh
+    pass & delivery vehs
+
+    '
+  reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020

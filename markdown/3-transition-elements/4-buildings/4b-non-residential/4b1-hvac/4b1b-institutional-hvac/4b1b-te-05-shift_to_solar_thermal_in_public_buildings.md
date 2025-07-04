@@ -1,0 +1,72 @@
+---
+title: T-4B1b-TE-5 - Shift to solar thermal in public buildings
+id: shift_to_solar_thermal_in_public_buildings
+sector: buildings
+sustainability: green
+progress: 10
+class: transition
+version: 2.0.3
+name: shift_to_solar_thermal_in_public_buildings
+type: shift
+longName: Shift from fossil fuels and electric heaters to solar thermal in public
+  buildings.
+shortName: Solar thermal in public buildings
+description: Shift square meter from public building heated with oil, gas, direct
+  electric heaters and coal to public building heating with solar thermal in square
+  meter to fulfill the need of comfortable premises
+unitOfMeasure: m2
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: public_building_heating_with_oil
+  - chain: public_building_heating_with_gas
+  - chain: public_building_heating_with_propane
+  - chain: public_building_heating_with_direct_electric_heaters
+  - chain: public_building_heating_with_coal
+  - chain: public_building_heating_with_lpg
+  - chain: public_building_heating_with_gas_oil
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: public_building_heating_with_solar_thermal
+cobenefits:
+- air_quality
+- indoor_climate_and_air_quality
+---
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+Solar thermal public buildings
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

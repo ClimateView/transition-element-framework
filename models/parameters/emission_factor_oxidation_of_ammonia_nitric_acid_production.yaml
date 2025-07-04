@@ -1,0 +1,17 @@
+id: emission_factor_oxidation_of_ammonia_nitric_acid_production
+title: Emission factor oxidation of ammonia for nitric acid production
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+- emission_factors
+- PRIO_GLOBAL
+values:
+- value: 1911000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Table 3.3, Medium pressure combustion plants. AR6 GWP for N20.
+
+    '
+  reference: https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/3_Volume3/V3_3_Ch3_Chemical_Industry.pdf

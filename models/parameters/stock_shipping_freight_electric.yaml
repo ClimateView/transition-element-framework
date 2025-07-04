@@ -1,0 +1,51 @@
+id: stock_shipping_freight_electric
+title: Stock of electric freight shipping operations
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne_km
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CH
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Annahme: 0.
+
+    '
+- value: 0
+  country: DE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Annahme: 0.
+
+    '
+- value: 0
+  country: GB
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: SE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Antas vara 0.
+
+    '
+- value: 0
+  country: US
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

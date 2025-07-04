@@ -1,0 +1,15 @@
+id: energy_intensity_dh_geothermal_heat
+title: Energy intensity geothermal heat in DH
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_kwh
+tags:
+- energy_intensity
+values:
+- value: 1
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2023-01-01
+  comment: 'Assumed efficiency 100%.
+
+    '

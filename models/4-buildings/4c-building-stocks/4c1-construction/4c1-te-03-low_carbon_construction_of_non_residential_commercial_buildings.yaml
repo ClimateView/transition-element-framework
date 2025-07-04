@@ -1,0 +1,28 @@
+title: T-4C1-TE-3 - Low carbon construction of commercial buildings
+id: low_carbon_construction_of_non_residential_commercial_buildings
+sector: buildings
+sustainability: green
+progress: 25
+class: transition
+version: 2.0.0
+name: low_carbon_construction_of_non_residential_commercial_buildings
+type: shift
+longName: Shift from standard construction to low carbon construction in commercial
+  buildings.
+shortName: Low carbon construction commercial
+description: Shift square meter from non residential commercial standard construction
+  to non residential commercial low carbon construction in square meter to fulfill
+  the need of housing
+unitOfMeasure: m2
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: non_residential_commercial_standard_construction
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: non_residential_commercial_low_carbon_construction

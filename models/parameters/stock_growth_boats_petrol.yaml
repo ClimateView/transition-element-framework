@@ -1,0 +1,15 @@
+id: stock_growth_boats_petrol
+title: Growth of petrol boats operations
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: vehicle_km_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '

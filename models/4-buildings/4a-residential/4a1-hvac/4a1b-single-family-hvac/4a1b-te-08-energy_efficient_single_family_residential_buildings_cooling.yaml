@@ -1,0 +1,33 @@
+title: T-4A1b-TE-8 - Energy efficient AC in single-family buildings
+id: energy_efficient_single_family_residential_buildings_cooling
+sector: buildings
+sustainability: amber
+progress: 25
+class: transition
+version: 2.0.0
+name: energy_efficient_single_family_residential_buildings_cooling
+type: update
+longName: Upgrade AC in single-family buildings to reduce electricity use
+shortName: Efficient single-family AC
+description: Reduce the amount of energy required to cool single family buildings
+  with AC through more efficient AC units
+weightInversionExpression:
+  expression: ((1 / ( unknown_x / %[0] )) - 1) / %[1]
+  variables:
+  - energy_intensity_cooling_residential_single_family_buildings_ac
+  - single_family_ac_efficiency_improvement_factor
+unitOfMeasure: m2
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: energy_intensity_cooling_residential_single_family_buildings_ac
+  type: EFFICIENCY_IMPROVEMENT
+  by:
+    expression: '%[0]'
+    variables:
+    - single_family_ac_efficiency_improvement_factor
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: single_family_building_cooling_with_ac

@@ -1,0 +1,66 @@
+title: T-1B1b-TE-8 - Improved load factor for heavy trucks
+id: improved_load_factor_heavy_trucks
+sector: transport
+sustainability: amber
+class: transition
+version: 2.0.2
+ipccMitigationMethod: 1a-08-supply-chain-management
+name: improved_load_factor_heavy_trucks
+type: update
+longName: Improved load factor for heavy trucks.
+shortName: Load factor HGV
+weightInversionExpression:
+  expression: (( 1 / ( unknown_x  / %[0] )) - 1 ) / %[1]
+  variables:
+  - energy_intensity_freight_heavy_trucks_diesel
+  - load_factor_increase_energy_intensity_improvement_heavy_trucks
+description: Reduce the amount of energy required to operate diesel heavy trucks through
+  improved load factor
+unitOfMeasure: tonne_km
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: energy_intensity_freight_heavy_trucks_diesel
+  type: EFFICIENCY_IMPROVEMENT
+  by:
+    expression: '%[0]'
+    variables:
+    - load_factor_increase_energy_intensity_improvement_heavy_trucks
+- update: energy_intensity_freight_heavy_trucks_bev
+  type: EFFICIENCY_IMPROVEMENT
+  by:
+    expression: '%[0]'
+    variables:
+    - load_factor_increase_energy_intensity_improvement_heavy_trucks
+- update: energy_intensity_freight_heavy_trucks_hydrogen
+  type: EFFICIENCY_IMPROVEMENT
+  by:
+    expression: '%[0]'
+    variables:
+    - load_factor_increase_energy_intensity_improvement_heavy_trucks
+- update: energy_intensity_freight_heavy_trucks_gas
+  type: EFFICIENCY_IMPROVEMENT
+  by:
+    expression: '%[0]'
+    variables:
+    - load_factor_increase_energy_intensity_improvement_heavy_trucks
+- update: energy_intensity_freight_heavy_trucks_petrol
+  type: EFFICIENCY_IMPROVEMENT
+  by:
+    expression: '%[0]'
+    variables:
+    - load_factor_increase_energy_intensity_improvement_heavy_trucks
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: diesel_heavy_trucks
+  - chain: battery_electric_heavy_trucks
+  - chain: hydrogen_heavy_trucks
+  - chain: gas_heavy_trucks
+  - chain: petrol_heavy_trucks
+cobenefits:
+- air_quality
+- reduced_noise
+- reduced_accidents
+- less_congestion

@@ -1,0 +1,28 @@
+title: T-1A2-A-5 - Coal passenger rail
+id: coal_passenger_rail
+name: coal_passenger_rail
+class: activity
+sustainability: red
+version: 2.1.0
+operation:
+  growthType: false
+  variable: stock_passenger_coal_rail
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/person_km
+    expression: '%[0]'
+    variables:
+    - energy_intensity_passenger_coal_railway
+  input:
+  - resource: coal
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_coal_kwh_to_co2e

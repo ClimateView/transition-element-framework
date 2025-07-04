@@ -1,0 +1,81 @@
+id: distance_per_car
+title: Average yearly distance driven per car
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: vehicle_km
+tags:
+- atoc
+- PRIO_LOW
+- socioeconomic_parameter
+values:
+- value: 11909
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'National average 2019 UK national statistics
+
+    '
+  reference: https://www.gov.uk/government/statistical-data-sets/nts09-vehicle-mileage-and-occupancy
+- value: 13318
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Canada - Personal Transportation
+
+    '
+  reference: https://climateview.slab.com/public/posts/ird2eslu
+- value: 13318
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Quebec - Personal Transport
+
+    '
+  reference: https://climateview.slab.com/public/posts/tdizodsv
+- value: 13443
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Durchschnitt Schweiz
+
+    '
+  reference: https://www.bfs.admin.ch/bfsstatic/dam/assets/2004970/master
+- value: 13602
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Durchschnitt Deutschland
+
+    '
+  reference: https://www.kba.de/DE/Statistik/Kraftverkehr/VerkehrKilometer/vk_inlaenderfahrleistung/vk_inlaenderfahrleistung_inhalt.html?nn=2351536
+- value: 12223
+  country: FR
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Valeur basée sur les statistiques nationales
+
+    '
+  reference: https://climateview.slab.com/posts/road-transport-france-eoxjg43o#h28f9-tableau-2-vehicules-personnels
+- value: 11909
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'National average 2019 UK national statistics
+
+    '
+  reference: https://www.gov.uk/government/statistical-data-sets/nts09-vehicle-mileage-and-occupancy
+- value: 12000
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Nationellt medel 2018 RUS (11710, 2019)
+
+    '
+  reference: http://extra.lansstyrelsen.se/rus/Sv/statistik-och-data/korstrackor-och-bransleforbrukning/Pages/default.aspx
+- value: 18667
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US national statistics.
+
+    '
+  reference: https://climateview.slab.com/public/posts/wtgg2hlu

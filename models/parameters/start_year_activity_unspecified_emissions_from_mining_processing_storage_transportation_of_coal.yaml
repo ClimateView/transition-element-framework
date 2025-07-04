@@ -1,0 +1,15 @@
+id: start_year_activity_unspecified_emissions_from_mining_processing_storage_transportation_of_coal
+title: Unspecified emission from mining, processing, storage and transport of coal
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

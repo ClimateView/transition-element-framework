@@ -1,0 +1,39 @@
+---
+id: energy_intensity_tram_light_rail
+title: Energy intensity tram and light rail
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_vehicle_km
+tags:
+  - energy_intensity
+  - PRIO_MEDIUM
+values:
+  - value: 4.21
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Based on Swedish numbers from Transport Analysis.
+    reference: https://www.trafa.se/en/rail-traffic/rail-traffic/
+  - value: 4.2067
+    country: SE
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Framräknat baserat på värden från TRAFA.
+    reference: https://climateview.slab.com/public/posts/rz36acpx
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 4.21 | Global | CONSTANT | 2019-01-01 | Based on Swedish numbers from Transport Analysis. | https://www.trafa.se/en/rail-traffic/rail-traffic/ |
+| 4.2067 | SE | CONSTANT | 2019-01-01 | Framräknat baserat på värden från TRAFA. | https://climateview.slab.com/public/posts/rz36acpx |
+
+

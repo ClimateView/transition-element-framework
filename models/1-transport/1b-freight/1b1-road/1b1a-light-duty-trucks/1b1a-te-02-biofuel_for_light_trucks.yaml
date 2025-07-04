@@ -1,0 +1,25 @@
+title: T-1B1a-TE-2 - Biofuel for diesel light trucks
+id: biofuel_for_light_trucks
+sector: transport
+sustainability: amber
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
+name: biofuel_for_light_trucks
+type: resourceShift
+longName: Alter the proportion of HVO biodiesel in diesel for light trucks.
+shortName: Biofuel diesel light trucks
+description: Increase the proportion of HVO biodiesel in diesel
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_diesel_light_trucks
+  to: resource_proportion_biodiesel_light_trucks
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: diesel_light_trucks
+cobenefits:
+- air_quality

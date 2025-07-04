@@ -1,0 +1,16 @@
+id: energy_intensity_accounting_unit_business_travel_by_electric_motorcycles
+title: Energy intensity business travel by petrol motorcycle
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_vehicle_km
+tags:
+- energy_intensity
+values:
+- value: 0.0225
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Largest value for e-bikes.
+
+    '
+  reference: https://enveurope.springeropen.com/articles/10.1186/s12302-020-00307-8

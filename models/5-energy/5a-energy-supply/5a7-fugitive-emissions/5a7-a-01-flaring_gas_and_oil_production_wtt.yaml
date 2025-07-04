@@ -1,0 +1,30 @@
+title: T-5A7-A-1 - Emissions from flaring in oil and gas production (WTT)
+id: flaring_gas_and_oil_production_wtt
+sector: energy
+sustainability: red
+class: activity
+version: 2.1.0
+progress: 50
+name: flaring_gas_and_oil_production_wtt
+operation:
+  growthType: false
+  variable: stock_gas_flared_oil_and_gas_production_wtt
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/tonne
+    expression: '%[0]'
+    variables:
+    - energy_content_kwh_natural_gas_per_tonne_natural_gas
+  input:
+  - resource: natural_gas
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_natural_gas_kwh_to_co2e

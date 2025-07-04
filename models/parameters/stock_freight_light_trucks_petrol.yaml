@@ -1,0 +1,15 @@
+id: stock_freight_light_trucks_petrol
+title: Stock of light truck operation (petrol)
+type: parameter
+parameter_type: OPERATIONS
+unit: vehicle_km
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

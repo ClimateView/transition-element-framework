@@ -1,0 +1,30 @@
+title: T-6B1-A-4 - Anaerobic decomposition in a lagoon
+id: lagoon_anaerobic_decomposition
+sector: waste
+sustainability: red
+class: activity
+name: lagoon_anaerobic_decomposition
+version: 2.0.0
+chains: null
+operation:
+  growthType: false
+  variable: start_year_activity_lagoon_anaerobic_decomposition
+work:
+- name: anaerobic_decomposition
+  unitOfMeasure: kg_BOD
+  operationToWork:
+    unitOfMeasure: kg_BOD/kg_BOD
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_kg_BOD
+  input:
+  - resource: organic_matter
+    unitOfMeasure: kg_BOD
+    resourceToWork:
+      unitOfMeasure: kg_BOD/kg_BOD
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kg_BOD
+      expression: '%[0]'
+      variables:
+      - emission_factor_anaerobic_decomposition_in_lagoon

@@ -1,0 +1,60 @@
+---
+title: T-4A1b-TE-10 - Shift to biogas heating in single-family buildings
+id: shift_to_biogas_heating_of_single_family_residential_buildings
+sector: buildings
+sustainability: green
+class: transition
+type: shift
+longName: 'Shift from natural gas to biogas in single-family buildings.'
+shortName: 'Biogas in single-family buildings'
+name: shift_to_biogas_heating_of_single_family_residential_buildings                
+version: 2.0.0
+description: 'Shift square meter from single family residential building heating with gas tosingle family residential building heating with biogas in square meter to fulfill the need of comfortable premises'
+unitOfMeasure: m2
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: single_family_building_heating_with_gas
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: dummy
+---
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

@@ -1,0 +1,34 @@
+title: T-5B1-A-3 - Biomass usage within petroleum refinement
+id: biomass_usage_within_petroleum_refinement
+name: biomass_usage_within_petroleum_refinement
+sector: energy
+sustainability: amber
+class: activity
+version: 2.1.0
+operation:
+  growthType: true
+  variable: start_year_activity_biomass_usage_within_petroleum_refinement
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_biomass_usage_within_petroleum_refinement
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: biofuel_solid
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_biofuel_kwh_to_co2e

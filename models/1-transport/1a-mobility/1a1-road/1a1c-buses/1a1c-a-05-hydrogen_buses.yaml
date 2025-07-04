@@ -1,0 +1,36 @@
+title: T-1A1c-A-5 - Hydrogen buses
+id: hydrogen_buses
+sector: transport
+class: activity
+version: 2.1.0
+progress: 80
+sustainability: green
+ipccEmissionSource: 1a3b-road-transportation
+name: hydrogen_buses
+operation:
+  growthType: true
+  variable: stock_buses_hydrogen
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_buses_hydrogen
+work:
+- name: hydrogen_oxidation
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/vehicle_km
+    expression: '%[0]'
+    variables:
+    - energy_intensity_buses_hydrogen
+  input:
+  - resource: hydrogen
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_climate_neutral_hydrogen_kwh_to_co2e

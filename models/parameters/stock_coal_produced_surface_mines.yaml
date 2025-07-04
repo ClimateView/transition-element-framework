@@ -1,0 +1,16 @@
+id: stock_coal_produced_surface_mines
+title: Stock coal produced from surface mines
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '

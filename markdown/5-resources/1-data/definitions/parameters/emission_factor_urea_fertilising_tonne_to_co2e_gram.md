@@ -1,0 +1,30 @@
+---
+id: emission_factor_urea_fertilising_tonne_to_co2e_gram
+title: Emission factor urea fertilising
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+  - emission_factors
+values:
+  - value: 733333
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Under Equation 11.13.
+    reference: https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/4_Volume4/19R_V4_Ch11_Soils_N2O_CO2.pdf
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 733333 | Global | CONSTANT | 2019-01-01 | Under Equation 11.13. | https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/4_Volume4/19R_V4_Ch11_Soils_N2O_CO2.pdf |
+
+

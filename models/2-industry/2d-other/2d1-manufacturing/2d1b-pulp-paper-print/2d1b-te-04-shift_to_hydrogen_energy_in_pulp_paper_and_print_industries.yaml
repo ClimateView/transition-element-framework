@@ -1,0 +1,24 @@
+title: T-2D1b-TE-4 - Shift to hydrogen energy in pulp, paper and print industries
+id: shift_to_hydrogen_energy_in_pulp_paper_and_print_industries
+sector: industry
+sustainability: green
+class: transition
+type: shift
+longName: Shift from natural gas combustion to hydrogen combustion for pulp, paper
+  and print industries energy use
+shortName: Hydrogen energy in paper
+name: shift_to_hydrogen_energy_in_pulp_paper_and_print_industries
+version: 2.0.0
+unitOfMeasure: kwh
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: natural_gas_usage_within_pulp_paper_and_print_industries
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: hydrogen_usage_within_pulp_paper_and_print_industries

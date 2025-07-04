@@ -1,0 +1,66 @@
+---
+title: T-1B1b-TE-4 - Shift to hydrogen for heavy trucks
+id: hydrogen_for_heavy_trucks
+sector: transport
+sustainability: green
+class: transition
+version: 2.0.1
+ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
+name: hydrogen_for_heavy_trucks
+type: shift
+longName: 'Shift from Internal Combustion Engine (ICE) heavy trucks to hydrogen heavy trucks.'
+shortName: 'Hydrogen heavy trucks'
+description: 'Shift tonne kilometer from diesel heavy trucks to hydrogen heavy trucks in tonne kilometer to fulfill the need for logistics'
+unitOfMeasure: tonne_km
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: diesel_heavy_trucks
+  - chain: petrol_heavy_trucks
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: hydrogen_heavy_trucks
+cobenefits:
+- air_quality
+- reduced_noise
+
+---
+
+
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+Hydrogen trucks are a type of electric vehicles. They cause no tailpipe emissions, are significantly more energy efficient and produce less noise than fossil-fuelled vehicles. The shift to electric trucks will therefore both reduce greenhouse gas emissions and help create a better urban environment.
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

@@ -1,0 +1,15 @@
+id: resource_proportion_accounting_unit_business_travel_diesel_diesel_buses
+title: Fuel proportion diesel business travel by diesel bus
+type: parameter
+parameter_type: RESOURCE_PROPORTION
+unit: percent
+tags:
+- resource_proportion
+values:
+- value: 100
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to 100%.
+
+    '

@@ -1,0 +1,40 @@
+---
+id: emission_factor_solid_waste_combustion_tonne_to_co2e
+title: Emission from open burning of solid waste
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+  - emission_factors
+  - PRIO_MEDIUM
+  - emission_factor
+values:
+  - value: 487000
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Model description ClimateView -Waste
+    reference: https://climateview.slab.com/public/oqhcpcsi
+  - value: 366065.868
+    country: US
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        EPA GHG Emission Factors Hub
+    reference: https://www.epa.gov/system/files/documents/2025-01/ghg-emission-factors-hub-2025.pdf
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 487000 | Global | CONSTANT | 2019-01-01 | Model description ClimateView -Waste | https://climateview.slab.com/public/oqhcpcsi |
+| 366065.868 | US | CONSTANT | 2019-01-01 | EPA GHG Emission Factors Hub | https://www.epa.gov/system/files/documents/2025-01/ghg-emission-factors-hub-2025.pdf |
+
+

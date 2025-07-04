@@ -1,0 +1,81 @@
+id: stock_growth_freight_heavy_trucks_diesel
+title: Growth of heavy trucks diesel operation
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_km_percapita
+tags:
+- operations_growth
+values:
+- value: 2302.3857
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Per capita lifted goods based on UK national statistics
+
+    '
+  reference: https://climateview.slab.com/public/ranizl8z
+- value: 6481
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Canada -  Freight Transportation
+
+    '
+  reference: https://climateview.slab.com/public/posts/urogur0w
+- value: 5222.02
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Schätzungen, basierend auf deutschen Daten.
+
+    '
+  reference: https://climateview.slab.com/public/5rhnzra3
+- value: 5222.02
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/public/5rhnzra3
+- value: 6281.0241
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Calculations based on national Spanish data.
+
+    '
+  reference: https://climateview.slab.com/posts/transporte-por-carretera-road-transport-esqm8w27#hjt6q-heavy-goods-vehicles-hg-vs
+- value: 4913.84
+  country: FR
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Valeur basée sur les statistiques nationales
+
+    '
+  reference: https://climateview.slab.com/posts/road-transport-france-eoxjg43o#hp6pa-tableau-6-transport-poids-lourds
+- value: 2302.3857
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Per capita lifted goods based on UK national statistics
+
+    '
+  reference: https://climateview.slab.com/public/ranizl8z
+- value: 3920.6256
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Per invånare, beräknat på TRAFA statistik för lastbilar 2019, excelfil,
+    tabell 4D
+
+    '
+  reference: https://climateview.slab.com/public/81gb14xu
+- value: 9089.6295
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US national statistics.
+
+    '
+  reference: https://climateview.slab.com/posts/freight-transportation-on-road-g2og1wff#hukyq-table-2-gross-hauled-goods

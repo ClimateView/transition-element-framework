@@ -1,0 +1,30 @@
+title: T-4B1c-A-3 - Industrial buildings heated with district heating
+id: industrial_building_heating_with_district_heating
+sector: buildings
+sustainability: green
+class: activity
+version: 2.1.0
+progress: 50
+name: industrial_building_heating_with_district_heating
+operation:
+  growthType: false
+  variable: stock_heating_industrial_district_heating
+work:
+- name: unknown
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/m2
+    expression: '%[0]'
+    variables:
+    - energy_intensity_heating_non_residential_industrial_district_heating
+  input:
+  - resource: district_heat
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_district_heating_kwh_to_co2e

@@ -1,0 +1,47 @@
+id: stock_district_heating_electricity
+title: District heating electricity
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CH
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Annahme: 0.
+
+    '
+- value: 0
+  country: DE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/public/amazedb1
+- value: 0
+  country: GB
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Per capita based on UK national statistics
+
+    '
+  reference: https://climateview.slab.com/public/posts/yddbmggd
+- value: 174.2157
+  country: SE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Per capitavärdet beräknat från SCB och energiföretagen.se
+
+    '
+  reference: https://climateview.slab.com/public/qwledwax

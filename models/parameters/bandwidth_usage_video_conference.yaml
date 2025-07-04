@@ -1,0 +1,18 @@
+id: bandwidth_usage_video_conference
+title: Bandwidth usage video conferences
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: gbit_h
+tags:
+- atoc
+- PRIO_LOW
+- socioeconomic_parameter
+values:
+- value: 1
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'ClimateView model description Remote Working
+
+    '
+  reference: https://climateview.slab.com/public/vacos11z

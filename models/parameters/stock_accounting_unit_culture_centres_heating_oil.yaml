@@ -1,0 +1,15 @@
+id: stock_accounting_unit_culture_centres_heating_oil
+title: Stock culture centres heated with oil
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

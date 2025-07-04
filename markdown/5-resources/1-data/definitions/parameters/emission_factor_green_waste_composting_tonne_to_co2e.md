@@ -1,0 +1,32 @@
+---
+id: emission_factor_green_waste_composting_tonne_to_co2e
+title: Emission factor emission factor green waste composting
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+  - emission_factors
+  - PRIO_MEDIUM
+  - emission_factor
+values:
+  - value: 151124.7
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        EPA WARM Model Management Practices
+    reference: https://www.epa.gov/sites/default/files/2020-12/documents/warm_management_practices_v15_10-29-2020.pdf
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 151124.7 | Global | CONSTANT | 2020-01-01 | EPA WARM Model Management Practices | https://www.epa.gov/sites/default/files/2020-12/documents/warm_management_practices_v15_10-29-2020.pdf |
+
+

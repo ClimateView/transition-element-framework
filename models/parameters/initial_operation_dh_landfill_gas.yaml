@@ -1,0 +1,16 @@
+id: initial_operation_dh_landfill_gas
+title: Initial operation landfill gas district heating
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2000-01-01
+  comment: 'Set to 0.
+
+    '

@@ -1,0 +1,57 @@
+---
+title: T-5B4-TE-2 - Biomass in carbon gasification for hydrogen production
+id: biomass_in_carbon_gasification_for_hydrogen_production
+sector: energy
+sustainability: green
+class: transition
+type: resourceShift
+longName: 'Alter the proportion of biomass in carbon gasification for hydrogen production'
+shortName: 'Biomass in hydrogen'
+name: biomass_in_carbon_gasification_for_hydrogen_production                
+version: 2.0.0
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_coal_gasification_for_hydrogen_production
+  to: resource_proportion_biomass_gasification_for_hydrogen_production
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: gasification_of_carbon_for_hydrogen_production
+---
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

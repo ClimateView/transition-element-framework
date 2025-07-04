@@ -1,0 +1,30 @@
+title: T-4B2c-A-2 - Commercial other biomass use
+id: commercial_unregulated_biomass_use
+sector: buildings
+sustainability: green
+class: activity
+version: 2.1.0
+progress: 50
+name: commercial_unregulated_biomass_use
+operation:
+  growthType: false
+  variable: stock_commercial_unregulated_biomass_use
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: biofuel_solid
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_biofuel_kwh_to_co2e

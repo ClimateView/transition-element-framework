@@ -1,0 +1,30 @@
+title: T-4A2d-A-8 - Residential other liquefied petrol gas (LPG) use
+id: residential_unregulated_lpg_use
+sector: buildings
+sustainability: red
+class: activity
+version: 2.1.0
+progress: 50
+name: residential_unregulated_lpg_use
+operation:
+  growthType: false
+  variable: stock_residential_unregulated_lpg_use
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: liquefied_petroleum_gas
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_liquefied_petroleum_gas

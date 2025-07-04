@@ -1,0 +1,17 @@
+id: annual_lighting_hours_per_commercial_light_source
+title: Annual commercial lighting hours per light source
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: h
+tags:
+- socioeconomic_parameter
+values:
+- value: 3888
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Lighting Hours of Operation: Building Type versus Space Use Characteristics
+    for the Commercial Sector. Average of metered values in table 4.
+
+    '
+  reference: https://www.aceee.org/files/proceedings/1994/data/papers/SS94_Panel8_Paper18.pdf

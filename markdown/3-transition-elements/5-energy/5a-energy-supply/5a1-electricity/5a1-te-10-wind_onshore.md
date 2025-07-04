@@ -1,0 +1,61 @@
+---
+title: T-5A1-TE-10 - Electricity from wind onshore
+id: wind_onshore
+sector: energy
+sustainability: green
+progress: 10
+class: transition
+version: 2.1.0
+name: wind_onshore
+type: supplyAlteration
+longName: Alter the amount of electricity produced by onshore wind.
+shortName: Wind onshore
+description: Alter the amount of electricity produced by wind onshore
+unitOfMeasure: kwh
+cohort:
+  expression: '1'
+maximumPotential:
+  expression: '%[0]'
+  variables:
+  - maximum_potential_wind_onshore
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: wind_onshore
+cobenefits:
+- air_quality
+- job_creation
+---
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

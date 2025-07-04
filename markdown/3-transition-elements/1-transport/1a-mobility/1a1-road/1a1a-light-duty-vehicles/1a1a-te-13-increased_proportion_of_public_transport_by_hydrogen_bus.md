@@ -1,0 +1,66 @@
+---
+title: T-1A1a-TE-13 - Shift to travel by hydrogen bus
+id: increased_proportion_of_public_transport_by_hydrogen_bus
+sector: transport
+sustainability: green
+progress: 50
+class: transition
+version: 2.1.1
+ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
+name: increased_proportion_of_public_transport_by_hydrogen_bus
+type: shift
+longName: Shift from Internal Combustion Engine (ICE) car to travel by hydrogen bus.
+shortName: Hydrogen bus
+description: Shift vehicle kilometer from petrol and diesel vehicles to hydrogen buses
+  in vehicle kilometer to fulfill the need of commuting
+unitOfMeasure: commutes
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: 1 / %[0]
+    variables:
+    - load_factor_car_average
+  chains:
+  - chain: petrol_vehicles
+  - chain: diesel_vehicles
+shiftTo:
+  atoc:
+    expression: 1 / %[0]
+    variables:
+    - load_factor_bus_average
+  chains:
+  - chain: hydrogen_buses
+cobenefits:
+- reduced_accidents
+- less_congestion
+---
+#  Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+Public transport generates significantly less emissions per passenger than cars. Shifting from cars to public transport will therefore be an essential part of the long-term transition to a sustainable transport system. Public transport has the capacity to transport large numbers of people efficiently, leading to lower levels of congestion, reduced noise levels and an improved urban environment.
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

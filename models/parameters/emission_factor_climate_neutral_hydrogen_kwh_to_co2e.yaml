@@ -1,0 +1,50 @@
+id: emission_factor_climate_neutral_hydrogen_kwh_to_co2e
+title: Emission factor hydrogen (climate neutral)
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_kwh
+tags:
+- emission_factors
+- PRIO_GLOBAL
+- emission_factor
+values:
+- value: 20
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'ClimateView model description - H2
+
+    '
+  reference: https://climateview.slab.com/public/7z3rwu55
+- value: 50
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Daten aus Deutschland.
+
+    '
+  reference: https://www.dihk.de/resource/blob/24872/fd2c89df9484cf912199041a9587a3d6/dihk-faktenpapier-wasserstoff-data.pdf
+- value: 50
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Deutsche Industrie und Handelskammern
+
+    '
+  reference: https://www.dihk.de/resource/blob/24872/fd2c89df9484cf912199041a9587a3d6/dihk-faktenpapier-wasserstoff-data.pdf
+- value: 20
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'ClimateView model description - H2
+
+    '
+  reference: https://climateview.slab.com/public/7z3rwu55
+- value: 20
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'ClimateView modellbeskrivning  - vätgas
+
+    '
+  reference: https://climateview.slab.com/public/ck83bl0f

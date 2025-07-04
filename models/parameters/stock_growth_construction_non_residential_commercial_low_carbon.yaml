@@ -1,0 +1,51 @@
+id: stock_growth_construction_non_residential_commercial_low_carbon
+title: Growth of low carbon construction of commercial buildings
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: m2_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Annahme: Null im Startjahr.
+
+    '
+- value: 0
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Annahme: Null im Startjahr.
+
+    '
+  reference: https://climateview.slab.com/public/bauwirtschaft-neubau-und-sanierung-gropcyks
+- value: 0
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Antas vara 0.
+
+    '

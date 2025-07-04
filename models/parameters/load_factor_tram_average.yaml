@@ -1,0 +1,17 @@
+id: load_factor_tram_average
+title: Average load factor for light rail
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: persons
+tags:
+- atoc
+- socioeconomic_parameter
+values:
+- value: 42.85
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Calculated based on Swedish traffic data.
+
+    '
+  reference: https://climateview.slab.com/public/posts/rz36acpx

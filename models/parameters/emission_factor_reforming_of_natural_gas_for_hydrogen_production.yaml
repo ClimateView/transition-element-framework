@@ -1,0 +1,17 @@
+id: emission_factor_reforming_of_natural_gas_for_hydrogen_production
+title: Emission factor reforming of natural gas for hydrogen production
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+- emission_factors
+- PRIO_GLOBAL
+values:
+- value: 8620000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Page 2.
+
+    '
+  reference: https://www.epa.gov/sites/default/files/2015-02/documents/subpartp-tsd_hydrogenproduction.pdf

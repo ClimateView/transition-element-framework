@@ -1,0 +1,33 @@
+title: T-6A4-A-3 - Green waste exported for composting
+id: green_waste_exported_for_composting
+sector: waste
+sustainability: green
+class: activity
+name: green_waste_exported_for_composting
+version: 2.0.0
+operation:
+  growthType: true
+  variable: stock_exported_green_waste_composting
+  growthFactor:
+    expression: '%[0]'
+    variables:
+    - stock_growth_exported_green_waste_composting
+work:
+- name: composting
+  unitOfMeasure: tonne
+  operationToWork:
+    unitOfMeasure: tonne/tonne
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_tonne
+  input:
+  - resource: green_waste_composting
+    unitOfMeasure: tonne
+    resourceToWork:
+      unitOfMeasure: tonne/tonne
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/tonne
+      expression: '%[0]'
+      variables:
+      - emission_factor_green_waste_composting_tonne_to_co2e

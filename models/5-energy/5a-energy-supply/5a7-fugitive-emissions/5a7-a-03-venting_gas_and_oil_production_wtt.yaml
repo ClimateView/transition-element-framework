@@ -1,0 +1,30 @@
+title: T-5A7-A-3 - Emissions from venting in oil and gas production (WTT)
+id: venting_gas_and_oil_production_wtt
+sector: energy
+sustainability: red
+class: activity
+version: 2.1.0
+progress: 50
+name: venting_gas_and_oil_production_wtt
+operation:
+  growthType: false
+  variable: stock_gas_vented_wtt
+work:
+- name: fugitive
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/tonne
+    expression: '%[0]'
+    variables:
+    - energy_content_kwh_natural_gas_per_tonne_natural_gas
+  input:
+  - resource: methane
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_atmospheric_methane_kwh_to_co2e

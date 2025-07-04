@@ -1,0 +1,15 @@
+id: stock_accounting_unit_daycares_other_electricity_use
+title: Stock other elctricicty use, daycares
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '

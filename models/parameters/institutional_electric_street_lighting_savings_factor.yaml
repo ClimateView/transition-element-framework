@@ -1,0 +1,17 @@
+id: institutional_electric_street_lighting_savings_factor
+title: Energy efficiency savings factor for street lighting
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: percent
+tags:
+- socioeconomic_parameter
+values:
+- value: 50
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Energy efficient findings and design can reduce street lighting costs
+    by 35-70%.
+
+    '
+  reference: https://pubs.aip.org/aip/acp/article-pdf/doi/10.1063/1.5112267/14183825/020082_1_online.pdf

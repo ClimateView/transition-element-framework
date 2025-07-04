@@ -1,0 +1,16 @@
+id: emission_factor_electrolysis_of_inert_anodes_for_aluminium_production
+title: Emission factor electrolysis of inert anodes for aluminium production
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+- emission_factors
+- PRIO_GLOBAL
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'With inert anodes there are no process emissions.
+
+    '

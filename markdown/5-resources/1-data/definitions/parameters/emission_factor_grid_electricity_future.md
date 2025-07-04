@@ -1,0 +1,64 @@
+---
+id: emission_factor_grid_electricity_future
+title: Emission factor grid electricity (future) *
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_kwh
+tags:
+  - emission_factors
+  - PRIO_HIGH
+  - emission_factor
+values:
+  - value: 45
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        ClimateView model description electricity
+    reference: https://climateview.slab.com/public/pxzy89i5
+  - value: 57
+    country: CH
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Daten aus Deutschland.
+    reference: https://climateview.slab.com/posts/strommix-wh96uzbq
+  - value: 57
+    country: DE
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Durchschnitt 2050 7 Szenarien
+    reference: https://www.oeko.de/oekodoc/2545/2016-072-de.pdf
+  - value: 45
+    country: GB
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        ClimateView model description electricity
+    reference: https://climateview.slab.com/public/pxzy89i5
+  - value: 15
+    country: SE
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        ClimateView modellbeskrivning - Elektricitet
+    reference: https://climateview.slab.com/public/vuar22ah
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 45 | Global | CONSTANT | 2019-01-01 | ClimateView model description electricity | https://climateview.slab.com/public/pxzy89i5 |
+| 57 | CH | CONSTANT | 2019-01-01 | Daten aus Deutschland. | https://climateview.slab.com/posts/strommix-wh96uzbq |
+| 57 | DE | CONSTANT | 2019-01-01 | Durchschnitt 2050 7 Szenarien | https://www.oeko.de/oekodoc/2545/2016-072-de.pdf |
+| 45 | GB | CONSTANT | 2019-01-01 | ClimateView model description electricity | https://climateview.slab.com/public/pxzy89i5 |
+| 15 | SE | CONSTANT | 2019-01-01 | ClimateView modellbeskrivning - Elektricitet | https://climateview.slab.com/public/vuar22ah |
+
+

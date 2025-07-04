@@ -1,0 +1,15 @@
+id: stock_growth_commercial_electric_cooking_stoves
+title: Growth commercial electric cooking stoves per new capita
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: kwh_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

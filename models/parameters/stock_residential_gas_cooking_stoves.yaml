@@ -1,0 +1,16 @@
+id: stock_residential_gas_cooking_stoves
+title: Stock residential gas cooking stoves
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

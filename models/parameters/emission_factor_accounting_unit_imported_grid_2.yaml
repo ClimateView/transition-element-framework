@@ -1,0 +1,16 @@
+id: emission_factor_accounting_unit_imported_grid_2
+title: Emission factor electricity, product 2
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_kwh
+tags:
+- emission_factors
+- emission_factor
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2021-01-01
+  comment: 'Initialized to zero.
+
+    '

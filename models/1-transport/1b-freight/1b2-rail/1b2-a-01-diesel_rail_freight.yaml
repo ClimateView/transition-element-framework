@@ -1,0 +1,47 @@
+title: T-1B2-A-1 - Diesel rail freight
+id: diesel_rail_freight
+sector: transport
+sustainability: red
+class: activity
+version: 2.2.0
+progress: 50
+name: diesel_rail_freight
+operation:
+  growthType: true
+  variable: stock_freight_rail
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_freight_rail
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/tonne_km
+    expression: '%[0]'
+    variables:
+    - energy_intensity_freight_railway
+  input:
+  - resource: diesel
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_diesel_rail_freight
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_diesel_kwh_to_co2e
+  - resource: hvo_biodiesel
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_biodiesel_rail_freight
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_biodiesel_kwh_to_co2e

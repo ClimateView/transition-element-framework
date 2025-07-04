@@ -1,0 +1,32 @@
+---
+id: emission_factor_low_carbon_construction
+title: Emission factor low carbon construction
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_m2
+tags:
+  - emission_factors
+  - PRIO_MEDIUM
+  - emission_factor
+values:
+  - value: 157787
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Model description ClimateView -Low Carbon construction
+    reference: https://climateview.slab.com/public/8lbftmo0
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 157787 | Global | CONSTANT | 2019-01-01 | Model description ClimateView -Low Carbon construction | https://climateview.slab.com/public/8lbftmo0 |
+
+

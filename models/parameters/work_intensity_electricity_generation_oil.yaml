@@ -1,0 +1,26 @@
+id: work_intensity_electricity_generation_oil
+title: Energy intensity electricity generation from oil
+type: parameter
+parameter_type: RESOURCE_COEFFICIENT
+unit: kwh_kwh
+tags:
+- energy_intensity
+- PRIO_GLOBAL
+- resource_coefficient
+values:
+- value: 4.880695
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Based on UK statistics.
+
+    '
+  reference: https://climateview.slab.com/public/posts/l6jt831r
+- value: 4.880695
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Based on national statistics.
+
+    '
+  reference: https://climateview.slab.com/public/posts/l6jt831r

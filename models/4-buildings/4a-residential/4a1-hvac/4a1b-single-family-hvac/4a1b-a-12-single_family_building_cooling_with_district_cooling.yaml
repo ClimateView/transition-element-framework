@@ -1,0 +1,30 @@
+title: T-4A1b-A-12 - Domestic houses cooled with district cooling
+id: single_family_building_cooling_with_district_cooling
+sector: buildings
+sustainability: green
+class: activity
+version: 2.1.0
+progress: 50
+name: single_family_building_cooling_with_district_cooling
+operation:
+  growthType: false
+  variable: stock_cooling_residential_single_family_building_district_cooling
+work:
+- name: unknown
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/m2
+    expression: '%[0]'
+    variables:
+    - energy_intensity_cooling_residential_single_family_buildings_district_cooling
+  input:
+  - resource: district_cold
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_district_cooling_kwh_to_co2e

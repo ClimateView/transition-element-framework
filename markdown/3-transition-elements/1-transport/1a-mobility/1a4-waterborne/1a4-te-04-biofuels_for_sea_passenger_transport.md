@@ -1,0 +1,59 @@
+---
+title: T-1A4-TE-4 - Biofuel for marine passenger transport
+id: biofuels_for_sea_passenger_transport
+sector: transport
+sustainability: amber
+progress: 25
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1c-01-alternative-fuels-shipping
+name: biofuels_for_sea_passenger_transport
+type: resourceShift
+longName: 'Alter the proportion of biomarine diesel in marine diesel for marine passenger transport.'
+shortName: 'Biofuel marine passenger transport'
+description: 'Increase the proportion of marine biodiesel in marine diesel'
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_passenger_shipping_marine_diesel
+  to: resource_proportion_passenger_shipping_marine_biodiesel
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: ship_passenger
+cobenefits:
+- air_quality
+
+---
+
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

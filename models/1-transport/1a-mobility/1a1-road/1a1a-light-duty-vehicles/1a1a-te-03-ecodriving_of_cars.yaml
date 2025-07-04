@@ -1,0 +1,62 @@
+title: T-1A1a-TE-3 - Ecodriving of cars
+id: ecodriving_of_cars
+sector: transport
+sustainability: amber
+progress: 50
+class: transition
+version: 2.0.2
+ipccMitigationMethod: 1a-16-eco-driving
+name: ecodriving_of_cars
+type: update
+longName: Ecodrive cars to reduce fuel use.
+shortName: Ecodriving
+description: Reduce the amount of energy required to drive petrol, diesel, LPG and
+  natural gas vehicles through ecodriving
+unitOfMeasure: vehicle_km
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: energy_intensity_personal_vehicles_petrol
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - personal_vehicle_eco_driving_savings_factor
+- update: energy_intensity_personal_vehicles_diesel
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - personal_vehicle_eco_driving_savings_factor
+- update: energy_intensity_personal_vehicles_lpg
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - personal_vehicle_eco_driving_savings_factor
+- update: energy_intensity_personal_vehicles_natural_gas
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - personal_vehicle_eco_driving_savings_factor
+- update: energy_intensity_personal_vehicles_hydrogen
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - personal_vehicle_eco_driving_savings_factor
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: petrol_vehicles
+  - chain: diesel_vehicles
+  - chain: lpg_vehicles
+  - chain: gas_vehicles
+  - chain: hydrogen_vehicles
+cobenefits:
+- air_quality
+- reduced_noise
+- reduced_accidents
+- increased_longevity_of_stock

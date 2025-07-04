@@ -1,0 +1,15 @@
+id: resource_proportion_diesel_rail_freight
+title: Fuel proportion diesel for freight rail
+type: parameter
+parameter_type: RESOURCE_PROPORTION
+unit: percent
+tags:
+- resource_proportion
+values:
+- value: 100
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to 100%.
+
+    '

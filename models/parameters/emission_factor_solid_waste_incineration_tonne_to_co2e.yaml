@@ -1,0 +1,58 @@
+id: emission_factor_solid_waste_incineration_tonne_to_co2e
+title: Emission factor incineration of solid waste
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+- emission_factors
+- PRIO_MEDIUM
+- emission_factor
+values:
+- value: 487000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView -Waste
+
+    '
+  reference: https://climateview.slab.com/public/oqhcpcsi
+- value: 3666670
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Canada - Waste
+
+    '
+  reference: https://climateview.slab.com/public/urqtndqm
+- value: 455000
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Aus Deutschland: IFEU / öko-Institut, im Auftrag UBA 2006
+
+    '
+  reference: https://climateview.slab.com/public/w94s9azz
+- value: 455000
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'IFEU / öko-Institut, im Auftrag UBA 2006
+
+    '
+  reference: https://climateview.slab.com/public/w94s9azz
+- value: 487000
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView -Waste
+
+    '
+  reference: https://climateview.slab.com/public/oqhcpcsi
+- value: 366065.868
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'EPA GHG Emission Factors Hub
+
+    '
+  reference: https://www.epa.gov/system/files/documents/2025-01/ghg-emission-factors-hub-2025.pdf

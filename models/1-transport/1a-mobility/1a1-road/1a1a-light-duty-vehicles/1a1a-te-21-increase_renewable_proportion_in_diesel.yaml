@@ -1,0 +1,26 @@
+title: T-1A1a-TE-21 - Biofuel for diesel cars
+id: increase_renewable_proportion_in_diesel
+sector: transport
+sustainability: amber
+progress: 50
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
+name: increase_renewable_proportion_in_diesel
+type: resourceShift
+longName: Alter the proportion of HVO biodiesel in diesel for cars.
+shortName: Biofuel diesel cars
+description: Increase the proportion of HVO biodiesel in diesel
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_diesel
+  to: resource_proportion_biodiesel
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: diesel_vehicles
+cobenefits:
+- increased_longevity_of_stock

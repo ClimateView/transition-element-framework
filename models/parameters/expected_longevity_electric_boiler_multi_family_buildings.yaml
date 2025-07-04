@@ -1,0 +1,56 @@
+id: expected_longevity_electric_boiler_multi_family_buildings
+title: Expected lifetime of large scale electric boilers
+type: parameter
+parameter_type: ECONOMIC_PARAMETER
+unit: years
+tags:
+- economic_parameter
+values:
+- value: 20
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Preliminary economic data based on European data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-h37ihmvs
+- value: 20
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Preliminary economic data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-h37ihmvs
+- value: 20
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Preliminary economic data based on European data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-h37ihmvs
+- value: 20
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2023-01-01
+  comment: 'Preliminary economic data based on European data
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-h37ihmvs
+- value: 20
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Preliminary economic data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-z663id55
+- value: 20
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2023-01-01
+  comment: 'Preliminary economic data based on US data
+
+    '
+  reference: https://docs.climateview.global/us/stationary-energy/economic-data/heating/

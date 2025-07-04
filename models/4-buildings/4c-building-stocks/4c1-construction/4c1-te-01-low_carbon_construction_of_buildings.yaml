@@ -1,0 +1,22 @@
+title: T-4C1-TE-1 - Low carbon construction of buildings
+id: low_carbon_construction_of_buildings
+sector: buildings
+sustainability: green
+progress: 25
+class: transition
+version: 2.0.0
+name: low_carbon_construction_of_buildings
+type: shift
+unitOfMeasure: m2
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: non_residential_commercial_standard_construction
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: non_residential_commercial_low_carbon_construction

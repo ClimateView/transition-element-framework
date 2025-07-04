@@ -1,0 +1,24 @@
+title: T-1B2-TE-1 - Biofuel for rail freight transport
+id: biofuel_for_diesel_rail_freight
+sector: transport
+sustainability: amber
+class: transition
+version: 2.0.0
+name: biofuel_for_diesel_rail_freight
+type: resourceShift
+longName: Alter the proportion of HVO biodiesel in diesel for rail freight transport.
+shortName: Biofuel rail freight transport
+description: Increase the proportion of HVO biodiesel in diesel
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_diesel_rail_freight
+  to: resource_proportion_biodiesel_rail_freight
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: diesel_rail_freight
+cobenefits:
+- air_quality

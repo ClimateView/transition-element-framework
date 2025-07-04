@@ -1,0 +1,28 @@
+title: T-4C1-TE-2 - Low carbon construction of multi-family buildings
+id: low_carbon_construction_of_multi_family_residential_housing
+sector: buildings
+sustainability: green
+progress: 25
+class: transition
+version: 2.0.0
+name: low_carbon_construction_of_multi_family_residential_housing
+type: shift
+longName: Shift from standard construction to low carbon construction in multi-family
+  buildings.
+shortName: Low carbon construction multi-family
+description: Shift square meter from residential multi family standard construction
+  to residential multi family low carbon construction in square meter to fulfill the
+  need of housing
+unitOfMeasure: m2
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: residential_multi_family_standard_construction
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: residential_multi_family_low_carbon_construction

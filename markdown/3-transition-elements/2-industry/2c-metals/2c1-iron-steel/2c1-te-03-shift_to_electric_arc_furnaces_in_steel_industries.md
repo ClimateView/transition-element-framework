@@ -1,0 +1,60 @@
+---
+title: T-2C1-TE-3 - Shift to electric arc furnaces in steel industries
+id: shift_to_electric_arc_furnaces_in_steel_industries
+sector: industry
+sustainability: green
+class: transition
+type: shift
+longName: 'Shift from basic oxygen furnaces and open hearth furnaces to electric arc furnaces in steel industries'
+shortName: 'Electric arc furnaces in steel'
+name: shift_to_electric_arc_furnaces_in_steel_industries                
+version: 2.0.0
+unitOfMeasure: tonne
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: open_hearth_furnace_for_steel_production
+  - chain: basic_oxygen_furnace_for_steel_production
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: electric_arc_furnace_for_steel_production
+---
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

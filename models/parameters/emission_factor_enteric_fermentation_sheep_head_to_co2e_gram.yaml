@@ -1,0 +1,16 @@
+id: emission_factor_enteric_fermentation_sheep_head_to_co2e_gram
+title: Emission factor sheep enteric fermentation
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_head
+tags:
+- emission_factors
+values:
+- value: 216000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Table 10.10. Using GWP100 from AR6.
+
+    '
+  reference: https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/4_Volume4/V4_10_Ch10_Livestock.pdf

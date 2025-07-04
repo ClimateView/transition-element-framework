@@ -1,0 +1,62 @@
+id: stock_energy_domestic_rooftop_solar
+title: Stock energy roof top solar (residential)
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CA
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: DE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Annahme: 0.
+
+    '
+  reference: https://climateview.slab.com/public/ecbs06go
+- value: 0
+  country: ES
+  scalingType: PER_CAPITA
+  validFrom: 2021-01-01
+  comment: 'Initialized to zero.
+
+    '
+  reference: https://climateview.slab.com/posts/energy-industries-spain-6dj3biqp
+- value: 0
+  country: FR
+  scalingType: PER_CAPITA
+  validFrom: 2021-01-01
+  comment: 'La plupart des villes n''ont pas de centrales électriques ou chaleur,
+    donc 0. Veuillez vérifier la source pour savoir où trouver des estimations.
+
+    '
+  reference: https://climateview.slab.com/posts/energy-industries-france-jdab43ho#hsf52-production-energetique
+- value: 0
+  country: GB
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: SE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Antas vara 0.
+
+    '

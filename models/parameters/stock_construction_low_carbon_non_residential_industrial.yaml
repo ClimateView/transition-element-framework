@@ -1,0 +1,16 @@
+id: stock_construction_low_carbon_non_residential_industrial
+title: Stock low-carbon construction of industrial buildings
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

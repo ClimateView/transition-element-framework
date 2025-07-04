@@ -1,0 +1,15 @@
+id: start_year_unspecified_emissions_from_investments
+title: Start year unspecified emissions from investments
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

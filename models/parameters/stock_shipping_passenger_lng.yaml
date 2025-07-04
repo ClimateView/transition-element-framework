@@ -1,0 +1,16 @@
+id: stock_shipping_passenger_lng
+title: Stock of LNG passenger shipping operations
+type: parameter
+parameter_type: OPERATIONS
+unit: person_km
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

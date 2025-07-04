@@ -1,0 +1,29 @@
+title: T-4B2a-A-1 - Street lighting
+id: institutional_electric_street_lighting
+name: institutional_electric_street_lighting
+sector: buildings
+sustainability: amber
+class: activity
+version: 2.1.0
+operation:
+  growthType: false
+  variable: stock_institutional_electric_street_lighting
+work:
+- name: electromagnetism
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kw
+    expression: '%[0]'
+    variables:
+    - energy_intensity_institutional_electric_street_lighting
+  input:
+  - resource: electricity
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_electricity_current

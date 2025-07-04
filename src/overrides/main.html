@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block container %}
+{% if page.meta and page.meta.hide %}
+  {% set container_extra = "max-width:50rem; margin-left: auto; margin-right: auto;" if "navigation" in page.meta.hide %}
+{% endif %}
+<div class="md-content" data-md-component="content" style="{{container_extra}}">
+  <article class="md-content__inner md-typeset">
+    {% block content %}
+    {% include "partials/content.html" %}
+    {% endblock %}
+  </article>
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+id: resource_proportion_aviation_biofuel
+title: Fuel proportion aviation biofuel
+type: parameter
+parameter_type: RESOURCE_PROPORTION
+unit: percent
+tags:
+- resource_proportion
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Annahme: 0.
+
+    '
+- value: 0
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Annahme: 0.
+
+    '
+- value: 0
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Antas vara 0%.
+
+    '
+- value: 0
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

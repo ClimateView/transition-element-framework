@@ -1,0 +1,16 @@
+id: resource_proportion_cng_paratransit_buses
+title: Fuel proportion compressed natural gas for paratransit buses
+type: parameter
+parameter_type: RESOURCE_PROPORTION
+unit: percent
+tags:
+- resource_proportion
+- PRIO_LOW
+values:
+- value: 100
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to 100%.
+
+    '

@@ -1,0 +1,30 @@
+---
+id: emission_factor_tablets
+title: Emission factor Tablets
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_unit
+tags:
+  - emission_factors
+values:
+  - value: 120000
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Assuming a weight of 0.5 kg per unit. https://support.apple.com/en-kg/111840?t
+    reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2024
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 120000 | Global | CONSTANT | 2019-01-01 | Assuming a weight of 0.5 kg per unit. https://support.apple.com/en-kg/111840?t | https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2024 |
+
+

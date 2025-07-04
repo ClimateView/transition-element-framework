@@ -1,0 +1,47 @@
+id: stock_growth_m3_domestic_wastewater_treated
+title: Growth of treated waste water operations
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: m3_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2000-01-01
+  comment: 'No estimate, assumed 0.
+
+    '
+- value: 0
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2018-01-01
+  comment: 'For values based on national Spanish data, please see documentation.
+
+    '
+  reference: https://climateview.slab.com/posts/waste-spain-90ujr6vf#hnctn-waste-water-treatment
+- value: 126.1212
+  country: FR
+  scalingType: CONSTANT
+  validFrom: 2015-01-01
+  comment: 'Valeur basée sur les statistiques nationales
+
+    '
+  reference: https://climateview.slab.com/posts/waste-france-pixaibja#hi3cz-traitement-des-eaux-usees
+- value: 0
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'For estimates based on national statistics, see documentation.
+
+    '
+  reference: Based on national statistics.
+- value: 0
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2018-01-01
+  comment: 'For estimates based on national statistics, see documentation.
+
+    '
+  reference: https://climateview.slab.com/posts/waste-wyk6jfas

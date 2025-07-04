@@ -1,0 +1,29 @@
+title: T-3C3-A-4 - Flooded rice organic fertilisation
+id: flooded_rice_organic_fertilisation
+sector: afolu
+sustainability: amber
+class: activity
+name: flooded_rice_organic_fertilisation
+version: 2.0.0
+operation:
+  growthType: false
+  variable: start_year_activity_flooded_rice_organic_fertilisation
+work:
+- name: fertilising
+  unitOfMeasure: tonne_N
+  operationToWork:
+    unitOfMeasure: tonne_N/tonne_N
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_tonne_N
+  input:
+  - resource: organic_fertiliser_nitrogen
+    unitOfMeasure: tonne_N
+    resourceToWork:
+      unitOfMeasure: tonne_N/tonne_N
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/tonne_N
+      expression: '%[0]'
+      variables:
+      - emission_factor_flooded_rice_organic_fertilisation_tonne_to_co2e_gram

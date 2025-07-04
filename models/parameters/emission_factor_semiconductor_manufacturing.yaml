@@ -1,0 +1,16 @@
+id: emission_factor_semiconductor_manufacturing
+title: Emission factor semiconductor manufacturing
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_m2
+tags:
+- emission_factors
+values:
+- value: 9266589.2
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Based on GWP data from IPCC''s Sixth Assessment Report.
+
+    '
+  reference: https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/3_Volume3/19R_V3_Ch06_Electronics.pdf

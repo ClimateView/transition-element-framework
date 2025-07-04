@@ -1,0 +1,30 @@
+title: T-4B1a-A-7 - Commercial buildings heated with hydrogen
+id: commercial_building_heating_with_hydrogen
+sector: buildings
+sustainability: green
+class: activity
+version: 2.1.0
+progress: 50
+name: commercial_building_heating_with_hydrogen
+operation:
+  growthType: false
+  variable: stock_heating_commercial_hydrogen
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/m2
+    expression: '%[0]'
+    variables:
+    - energy_intensity_heating_non_residential_commercial_hydrogen
+  input:
+  - resource: hydrogen
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_climate_neutral_hydrogen_kwh_to_co2e

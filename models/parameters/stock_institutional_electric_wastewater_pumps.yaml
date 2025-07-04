@@ -1,0 +1,15 @@
+id: stock_institutional_electric_wastewater_pumps
+title: Stock electric wastewater pumps
+type: parameter
+parameter_type: OPERATIONS
+unit: m3
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

@@ -1,0 +1,33 @@
+id: energy_intensity_freight_light_trucks_diesel
+title: Average energy intensity light trucks (diesel)
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_vehicle_km
+tags:
+- energy_intensity
+- PRIO_MEDIUM
+values:
+- value: 1.57
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'UK Greenhouse gas reporting: conversion factors 2020
+
+    '
+  reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020
+- value: 1.57
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'UK Greenhouse gas reporting: conversion factors 2020
+
+    '
+  reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020
+- value: 1.4299
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US national statistics.
+
+    '
+  reference: https://climateview.slab.com/posts/on-road-freight-transportation-g2og1wff#hkaov-table-5-energy-intensities-light-duty-vehicles

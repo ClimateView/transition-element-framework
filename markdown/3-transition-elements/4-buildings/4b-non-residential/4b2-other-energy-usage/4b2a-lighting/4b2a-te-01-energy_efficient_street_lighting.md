@@ -1,0 +1,64 @@
+---
+title: T-4B2a-TE-1 - Energy efficient street lighting
+id: energy_efficient_street_lighting
+sector: buildings
+sustainability: green
+class: transition
+type: update
+longName: 'Upgrade street lighting to reduce electricity use'
+shortName: 'Street lighting'
+name: energy_efficient_street_lighting                
+version: 2.0.0
+description: 'Reduce the amount of energy required to operate street lighting'
+unitOfMeasure: light_sources
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: energy_intensity_institutional_electric_street_lighting
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - institutional_electric_street_lighting_savings_factor
+carbonCausalChains:
+  atoc:
+    expression: '%[0]'
+    variables:
+    - annual_lighting_hours_per_light_source
+  chains:
+  - chain: institutional_electric_street_lighting
+---
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

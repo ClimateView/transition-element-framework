@@ -1,0 +1,16 @@
+id: emission_factor_meals_meat
+title: Emission factor Meals with meat
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_kg
+tags:
+- emission_factors
+values:
+- value: 45000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Our World in Data
+
+    '
+  reference: https://ourworldindata.org/grapher/ghg-per-kg-poore

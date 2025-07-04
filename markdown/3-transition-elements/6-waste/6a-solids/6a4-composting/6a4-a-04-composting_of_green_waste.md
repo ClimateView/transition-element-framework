@@ -1,0 +1,61 @@
+---
+title: T-6A4-A-4 - Composting of green waste
+id: composting_of_green_waste
+sector: waste
+sustainability: green
+class: activity
+name: composting_of_green_waste
+version: 2.0.0
+operation:
+  growthType: true
+  variable: stock_green_waste_composting
+  growthFactor:
+    expression: '%[0]'
+    variables:
+    - stock_growth_green_waste_composting
+work:
+- name: composting
+  unitOfMeasure: tonne
+  operationToWork:
+    unitOfMeasure: tonne/tonne
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_tonne
+  input:
+  - resource: green_waste_composting
+    unitOfMeasure: tonne
+    resourceToWork:
+      unitOfMeasure: tonne/tonne
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/tonne
+      expression: '%[0]'
+      variables:
+      - emission_factor_green_waste_composting_tonne_to_co2e
+---
+# Definition
+This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+
+{{ activity_sustainability() }}
+
+# Transition Elements
+
+This activity has the following mitigation options modelled as transition elements:
+
+{{ transition_element_list() }}
+
+# Activity Model
+This emission source is modelled with {{ generate_work_link() }} as:
+
+{{ activity_model() }}
+
+## Parameters
+
+{{ generate_parameter_table() }}
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

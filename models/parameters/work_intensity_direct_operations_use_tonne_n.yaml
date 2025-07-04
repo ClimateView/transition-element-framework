@@ -1,0 +1,16 @@
+id: work_intensity_direct_operations_use_tonne_N
+title: work_intensity_direct_operations_use_tonne_N
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: tonne_N_tonne_N
+tags:
+- energy_intensity
+- PRIO_GLOBAL
+values:
+- value: 1
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Constant value, do not change.
+
+    '

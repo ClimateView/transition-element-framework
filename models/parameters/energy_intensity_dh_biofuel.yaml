@@ -1,0 +1,15 @@
+id: energy_intensity_dh_biofuel
+title: Energy intensity district heating biofuel
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_kwh
+tags:
+- energy_intensity
+values:
+- value: 1
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Assumed efficiency 100%.
+
+    '

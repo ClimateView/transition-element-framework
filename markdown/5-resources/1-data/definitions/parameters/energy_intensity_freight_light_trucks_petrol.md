@@ -1,0 +1,30 @@
+---
+id: energy_intensity_freight_light_trucks_petrol
+title: Average energy intensity light trucks (petrol)
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_vehicle_km
+tags:
+  - energy_intensity
+values:
+  - value: 1.3
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        UK Greenhouse gas reporting: conversion factors 2021
+    reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 1.3 | Global | CONSTANT | 2019-01-01 | UK Greenhouse gas reporting: conversion factors 2021 | https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021 |
+
+

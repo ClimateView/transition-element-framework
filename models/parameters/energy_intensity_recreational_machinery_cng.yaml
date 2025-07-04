@@ -1,0 +1,17 @@
+id: energy_intensity_recreational_machinery_cng
+title: Energy intensity CNG recreational machinery
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_kwh
+tags:
+- energy_intensity
+- PRIO_GLOBAL
+values:
+- value: 2.22
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Mobile Machinery
+
+    '
+  reference: https://climateview.slab.com/public/i3antgzd

@@ -1,0 +1,60 @@
+title: T-4A1a-A-4 - Residential blocks heated with gas
+id: multi_family_building_heating_with_gas
+sector: buildings
+sustainability: amber
+class: activity
+version: 2.1.0
+progress: 50
+name: multi_family_building_heating_with_gas
+operation:
+  growthType: true
+  variable: stock_heating_residential_multi_family_natural_gas
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_heating_residential_multi_family_gas
+  primaryStock:
+    name: gas_boiler_multi_family_buildings
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/m2
+    expression: '%[0]'
+    variables:
+    - energy_intensity_heating_residential_multi_family_buildings_natural_gas
+  input:
+  - resource: natural_gas
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_multi_family_heating_natural_gas
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_natural_gas_kwh_to_co2e
+  - resource: biogas
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_multi_family_heating_bio_gas
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_biogas_kwh_to_co2e
+  - resource: hydrogen
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_multi_family_heating_hydrogen
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_climate_neutral_hydrogen_kwh_to_co2e

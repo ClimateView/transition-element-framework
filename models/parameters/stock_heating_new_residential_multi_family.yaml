@@ -1,0 +1,16 @@
+id: stock_heating_new_residential_multi_family
+title: Stock heating of newly constructed residential blocks
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

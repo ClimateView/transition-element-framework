@@ -1,0 +1,50 @@
+---
+id: stock_growth_tonnes_municipal_solid_waste_open_burned
+title: Growth of open burning of waste operations
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+  - operations_growth
+values:
+  - value: 0
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        Initialized to zero.
+  - value: 0
+    country: ES
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Initialized to zero.
+  - value: 0
+    country: FR
+    scalingType: CONSTANT
+    validFrom: 2018-01-01
+    comment: |
+        Initialized to zero.
+  - value: 0
+    country: US
+    scalingType: CONSTANT
+    validFrom: 2018-01-01
+    comment: |
+        Initialized to zero.
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0 | Global | CONSTANT | 2020-01-01 | Initialized to zero. |  |
+| 0 | ES | CONSTANT | 2019-01-01 | Initialized to zero. |  |
+| 0 | FR | CONSTANT | 2018-01-01 | Initialized to zero. |  |
+| 0 | US | CONSTANT | 2018-01-01 | Initialized to zero. |  |
+
+

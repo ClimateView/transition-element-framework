@@ -1,0 +1,38 @@
+title: T-5A2-A-6 - District heating by landfill gas
+id: district_heating_landfill_gas
+sector: energy
+sustainability: amber
+class: activity
+version: 2.1.0
+progress: 50
+name: district_heating_landfill_gas
+operation:
+  growthType: false
+  variable: initial_operation_dh_landfill_gas
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_dh_landfill_gas
+  input:
+  - resource: landfill_gas
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_landfill_gas_kwh_to_co2e
+  output:
+  - resource: district_heat
+    unitOfMeasure: kwh
+    workToResource:
+      unitOfMeasure: kwh/kwh
+      expression: 1 / %[0]
+      variables:
+      - energy_intensity_dh_landfill_gas

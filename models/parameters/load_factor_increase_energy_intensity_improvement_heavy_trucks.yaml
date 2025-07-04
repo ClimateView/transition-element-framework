@@ -1,0 +1,25 @@
+id: load_factor_increase_energy_intensity_improvement_heavy_trucks
+title: Load factor increase for HGVs
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: percent
+tags:
+- target_stretch
+- PRIO_LOW
+- socioeconomic_parameter
+values:
+- value: 33
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'From todays 60 % used capacity to 80%
+
+    '
+  reference: https://climateview.slab.com/public/ranizl8z
+- value: 33
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'From todays 60 % used capacity to 80%
+
+    '

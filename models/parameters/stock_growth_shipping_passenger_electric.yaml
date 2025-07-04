@@ -1,0 +1,15 @@
+id: stock_growth_shipping_passenger_electric
+title: Growth of passenger shipping electric operations
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: person_km_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to 0%
+
+    '

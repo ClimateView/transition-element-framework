@@ -1,0 +1,30 @@
+---
+id: energy_intensity_buses_petrol
+title: Energy intensity petrol buses
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_vehicle_km
+tags:
+  - energy_intensity
+  - PRIO_MEDIUM
+values:
+  - value: 3.26
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        Report on Diesel-andAlternative-Fuel Bus TrialsReal-world fuel consumption and CO2 emissions of urban public buses in Beijing. Value of largest bus
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 3.26 | Global | CONSTANT | 2020-01-01 | Report on Diesel-andAlternative-Fuel Bus TrialsReal-world fuel consumption and CO2 emissions of urban public buses in Beijing. Value of largest bus |  |
+
+

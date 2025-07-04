@@ -1,0 +1,117 @@
+id: emission_factor_electricity_produced_current_grid_mix
+title: Emission factor consumed electricity average
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_kwh
+tags:
+- emission_factors
+- PRIO_HIGH
+- emission_factor
+values:
+- value: 252
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'ClimateView model description electricity
+
+    '
+  reference: https://climateview.slab.com/public/pxzy89i5
+- value: 124
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Canada - Energy Supply
+
+    '
+  reference: https://climateview.slab.com/public/posts/ewedpkpo
+- value: 22
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Quebec - Energy Supply
+
+    '
+  reference: https://climateview.slab.com/public/posts/qty007bs
+- value: 128
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Umweltbilanz Strommixe Schweiz 2018
+
+    '
+  reference: https://www.bafu.admin.ch/dam/bafu/de/dokumente/klima/fachinfo-daten/Umweltbilanz-Strommix-Schweiz-2018-v2.01.pdf.download.pdf/Umweltbilanz-Strommix-Schweiz-2018-v2.01.pdf
+- value: 366
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/public/ecbs06go
+- value: 232
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2021-01-01
+  comment: 'Value from European Environment Agency
+
+    '
+  reference: https://www.eea.europa.eu/ims/greenhouse-gas-emission-intensity-of-1
+- value: 54
+  country: FR
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'nowtricity.com
+
+    '
+  reference: https://www.nowtricity.com/country/france/
+- value: 207.1
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'UK Data Playbook, Sheet Resources
+
+    '
+  reference: https://docs.google.com/spreadsheets/d/17hr9o90tcxP3xX9T000uWcXSrzm5b5D3UfPwcq7LzgA/edit?gid=1982830832#gid=1982830832
+- value: 30
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'ClimateView modellbeskrivning - Elektricitet
+
+    '
+  reference: https://climateview.slab.com/public/vuar22ah
+- value: 511
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US national statistics.
+
+    '
+  reference: https://climateview.slab.com/public/posts/nsba7uxn
+- value: 286
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US regional statistics.
+
+    '
+  reference: https://climateview.slab.com/public/posts/0p6owq01
+- value: 462
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US regional statistics.
+
+    '
+  reference: https://climateview.slab.com/public/posts/riyr05l0
+- value: 914
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US regional statistics.
+
+    '
+  reference: https://climateview.slab.com/public/posts/mwfkan5n
+- value: 369
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US regional statistics.
+
+    '
+  reference: https://climateview.slab.com/public/posts/riyr05l0

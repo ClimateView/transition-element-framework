@@ -1,0 +1,29 @@
+title: T-5A7-A-8 - Power plant auxiliary electricity use
+id: powerplant_auxiliary_electricity_use
+sector: energy
+sustainability: green
+class: activity
+name: powerplant_auxiliary_electricity_use
+version: 2.0.0
+operation:
+  growthType: false
+  variable: start_year_activity_powerplant_auxiliary_electricity_use
+work:
+- name: electromagnetism
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: electricity
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_electricity_current

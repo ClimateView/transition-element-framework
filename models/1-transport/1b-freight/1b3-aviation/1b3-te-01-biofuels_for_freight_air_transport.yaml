@@ -1,0 +1,25 @@
+title: T-1B3-TE-1 - Biofuel for kerosene air freight transport
+id: biofuels_for_freight_air_transport
+sector: transport
+sustainability: amber
+class: transition
+type: resourceShift
+longName: Alter the proportion of bio-turbine fuel in turbine fuel for air freight
+  transport.
+shortName: Biofuel air freight transport
+name: biofuels_for_freight_air_transport
+version: 2.0.0
+description: Increase the proportion of aviation biofuel in aviation turbine fuel
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_freight_aviation_turbine_fuel
+  to: resource_proportion_freight_aviation_biofuel
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: freight_transportation_by_air
+cobenefits:
+- expand_stock_lifetime

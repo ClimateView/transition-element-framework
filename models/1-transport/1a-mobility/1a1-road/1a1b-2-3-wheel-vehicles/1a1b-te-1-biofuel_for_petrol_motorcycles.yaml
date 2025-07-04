@@ -1,0 +1,26 @@
+title: T-1A1b-TE-1 - Biofuel for petrol motorcycles
+id: biofuel_for_petrol_motorcycles
+sector: transport
+sustainability: amber
+progress: 50
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
+name: biofuel_for_petrol_motorcycles
+type: resourceShift
+longName: Alter the proportion of ethanol in petrol for motorcycles.
+shortName: Biofuel petrol motorcycles
+description: Increase the proportion of ethanol in petrol
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_petrol_motorcycles
+  to: resource_proportion_ethanol_motorcycles
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: petrol_motorcycles
+cobenefits:
+- air_quality

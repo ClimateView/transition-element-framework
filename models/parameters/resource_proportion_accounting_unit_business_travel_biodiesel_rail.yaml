@@ -1,0 +1,15 @@
+id: resource_proportion_accounting_unit_business_travel_biodiesel_rail
+title: Fuel proportion biodiesel business travel by diesel rail
+type: parameter
+parameter_type: RESOURCE_PROPORTION
+unit: percent
+tags:
+- resource_proportion
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to 0%.
+
+    '

@@ -1,0 +1,29 @@
+id: stock_growth_passenger_air_transport_electric
+title: Growth passenger air transport electric per new capita
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: person_km_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: FR
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

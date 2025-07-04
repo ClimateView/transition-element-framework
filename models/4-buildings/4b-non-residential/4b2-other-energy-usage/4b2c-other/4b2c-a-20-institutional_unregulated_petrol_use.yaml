@@ -1,0 +1,30 @@
+title: T-4B2c-A-20 - Institutional other petrol use
+id: institutional_unregulated_petrol_use
+sector: buildings
+sustainability: red
+class: activity
+version: 2.1.0
+progress: 50
+name: institutional_unregulated_petrol_use
+operation:
+  growthType: false
+  variable: stock_institutional_unregulated_petrol_use
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: petrol
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_petrol_kwh_to_co2e

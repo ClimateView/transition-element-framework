@@ -1,0 +1,33 @@
+title: T-1A1c-A-10 - LPG paratransit buses
+id: lpg_paratransit_buses
+name: lpg_paratransit_buses
+class: activity
+version: 2.1.0
+sustainability: red
+operation:
+  growthType: true
+  variable: stock_paratransit_buses_lpg
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_paratransit_buses_lpg
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/vehicle_km
+    expression: '%[0]'
+    variables:
+    - energy_intensity_paratransit_buses_lpg
+  input:
+  - resource: liquefied_petroleum_gas
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_liquefied_petroleum_gas

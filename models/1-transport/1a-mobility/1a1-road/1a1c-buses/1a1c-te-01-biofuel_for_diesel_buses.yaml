@@ -1,0 +1,26 @@
+title: T-1A1c-TE-1 - Biofuel for diesel buses
+id: biofuel_for_diesel_buses
+sector: transport
+sustainability: amber
+progress: 50
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
+name: biofuel_for_diesel_buses
+type: resourceShift
+longName: Alter the proportion of HVO biodiesel in diesel for buses.
+shortName: Biofuel diesel buses
+description: Increase the proportion of biodiesel in diesel
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_diesel_buses
+  to: resource_proportion_biodiesel_buses
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: diesel_buses
+cobenefits:
+- air_quality

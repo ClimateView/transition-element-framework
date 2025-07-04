@@ -1,0 +1,30 @@
+---
+id: energy_intensity_institutional_electric_traffic_lights
+title: Energy intensity traffic lights
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kw
+tags:
+  - energy_intensity
+values:
+  - value: 0.33
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Assuming 3 110W bulbs per traffic light. Page 4.
+    reference: https://www.dvrpc.org/reports/mit020.pdf
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0.33 | Global | CONSTANT | 2019-01-01 | Assuming 3 110W bulbs per traffic light. Page 4. | https://www.dvrpc.org/reports/mit020.pdf |
+
+

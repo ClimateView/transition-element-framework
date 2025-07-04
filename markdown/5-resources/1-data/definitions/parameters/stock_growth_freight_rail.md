@@ -1,0 +1,53 @@
+---
+id: stock_growth_freight_rail
+title: Growth of freight rail operation (diesel)
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_km_percapita
+tags:
+  - operations_growth
+values:
+  - value: 0
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        Assumed 0
+  - value: 0
+    country: DE
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        Für Schätzungen, siehe Dokumentation.
+    reference: https://climateview.slab.com/public/posts/5rhnzra3
+  - value: 81.1948
+    country: ES
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Calculations based on national Spanish data.
+    reference: https://climateview.slab.com/posts/transporte-ferroviario-rail-transport-v6m8lcgr#h88m2-freight-rail-transport
+  - value: 70.1174
+    country: FR
+    scalingType: CONSTANT
+    validFrom: 2016-01-01
+    comment: |
+        Valeur basée sur les statistiques nationales
+    reference: https://climateview.slab.com/posts/rail-transport-france-npr7q7rn#h1cwz-transport-ferroviaire-de-marchandises
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0 | Global | CONSTANT | 2020-01-01 | Assumed 0 |  |
+| 0 | DE | CONSTANT | 2020-01-01 | Für Schätzungen, siehe Dokumentation. | https://climateview.slab.com/public/posts/5rhnzra3 |
+| 81.1948 | ES | CONSTANT | 2019-01-01 | Calculations based on national Spanish data. | https://climateview.slab.com/posts/transporte-ferroviario-rail-transport-v6m8lcgr#h88m2-freight-rail-transport |
+| 70.1174 | FR | CONSTANT | 2016-01-01 | Valeur basée sur les statistiques nationales | https://climateview.slab.com/posts/rail-transport-france-npr7q7rn#h1cwz-transport-ferroviaire-de-marchandises |
+
+

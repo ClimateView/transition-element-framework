@@ -1,0 +1,52 @@
+id: stock_growth_construction_residential_multi_family_low_carbon
+title: Growth of low carbon construction of multi family buildings
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: m2_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Daten aus Deutschland.
+
+    '
+  reference: https://climateview.slab.com/public/bauwirtschaft-neubau-und-sanierung-gropcyks
+- value: 0
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Annahme: 0.
+
+    '
+  reference: https://climateview.slab.com/public/bauwirtschaft-neubau-und-sanierung-gropcyks
+- value: 0
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Antas vara 0.
+
+    '

@@ -1,0 +1,17 @@
+id: average_route_distance_light_trucks
+title: Average route distance LGVs
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: km
+tags:
+- atoc
+- PRIO_LOW
+- socioeconomic_parameter
+values:
+- value: 100
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Length of an example journey
+
+    '

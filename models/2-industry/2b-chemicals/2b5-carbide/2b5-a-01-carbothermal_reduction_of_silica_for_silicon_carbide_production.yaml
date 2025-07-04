@@ -1,0 +1,29 @@
+title: T-2B5-A-1 - Carbothermal reduction of silica for silicon carbide production
+id: carbothermal_reduction_of_silica_for_silicon_carbide_production
+sector: industry
+sustainability: red
+class: activity
+name: carbothermal_reduction_of_silica_for_silicon_carbide_production
+version: 2.0.0
+operation:
+  growthType: false
+  variable: start_year_activity_carbothermal_reduction_of_silica_for_silicon_carbide_production
+work:
+- name: reduction
+  unitOfMeasure: tonne
+  operationToWork:
+    unitOfMeasure: tonne/tonne
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_tonne
+  input:
+  - resource: silica
+    unitOfMeasure: tonne
+    resourceToWork:
+      unitOfMeasure: tonne/tonne
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/tonne
+      expression: '%[0]'
+      variables:
+      - emission_factor_carbothermal_reduction_of_silica_for_silicon_carbide_production

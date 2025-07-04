@@ -1,0 +1,16 @@
+id: expected_longevity_petrol_heavy_truck
+title: Expected longevity of petrol heavy truck
+type: parameter
+parameter_type: ECONOMIC_PARAMETER
+unit: years
+tags:
+- economic_parameter
+values:
+- value: 15
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Based on the  enviroment and energy study institute
+
+    '
+  reference: https://www.eesi.org/papers/view/fact-sheet-the-future-of-the-trucking-industry-electric-semi-trucks-2023

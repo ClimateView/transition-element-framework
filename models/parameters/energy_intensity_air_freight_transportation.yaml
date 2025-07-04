@@ -1,0 +1,17 @@
+id: energy_intensity_air_freight_transportation
+title: Energy intensity air freight transportation
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_tonne_km
+tags:
+- energy_intensity
+- PRIO_MEDIUM
+values:
+- value: 3.27
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Estimated based on Swedish national statistics.
+
+    '
+  reference: https://energimyndigheten.a-w2m.se/FolderContents.mvc/Download?ResourceId=103800

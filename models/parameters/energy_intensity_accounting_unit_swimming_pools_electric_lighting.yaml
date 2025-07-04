@@ -1,0 +1,17 @@
+id: energy_intensity_accounting_unit_swimming_pools_electric_lighting
+title: Energy intensity lighting in wastewater plants
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kw
+tags:
+- energy_intensity
+- PRIO_LOW
+values:
+- value: 0.036
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Power rating of fluorescent lamp.
+
+    '
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC9376082/

@@ -1,0 +1,31 @@
+---
+id: emission_factor_reduction_of_ilmenite_synthetic_rutile_production
+title: Emission factor reduction of ilmenite for synthetic rutile production
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+  - emission_factors
+  - PRIO_GLOBAL
+values:
+  - value: 1430000
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Table 3.9.
+    reference: https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/3_Volume3/19R_V3_Ch03_Chemical_Industry.pdf
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 1430000 | Global | CONSTANT | 2019-01-01 | Table 3.9. | https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/3_Volume3/19R_V3_Ch03_Chemical_Industry.pdf |
+
+

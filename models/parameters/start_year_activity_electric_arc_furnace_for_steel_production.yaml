@@ -1,0 +1,15 @@
+id: start_year_activity_electric_arc_furnace_for_steel_production
+title: Electric arc furnace steel production
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

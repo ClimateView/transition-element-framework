@@ -1,0 +1,47 @@
+title: T-5A3-A-3 - CHP natural gas production
+id: chp_natural_gas
+sector: energy
+sustainability: amber
+class: activity
+version: 2.0.1
+progress: 50
+name: chp_natural_gas
+operation:
+  growthType: false
+  variable: stock_chp_natural_gas
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: 1 / ( %[0] + %[1] )
+    variables:
+    - energy_efficiency_chp_natural_gas_to_district_heat
+    - energy_efficiency_chp_natural_gas_to_electricity
+  input:
+  - resource: natural_gas
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_natural_gas_kwh_to_co2e
+  output:
+  - resource: district_heat
+    primary: true
+    unitOfMeasure: kwh
+    workToResource:
+      unitOfMeasure: kwh/kwh
+      expression: '%[0]'
+      variables:
+      - energy_efficiency_chp_natural_gas_to_district_heat
+  - resource: electricity
+    unitOfMeasure: kwh
+    workToResource:
+      unitOfMeasure: kwh/kwh
+      expression: '%[0]'
+      variables:
+      - energy_efficiency_chp_natural_gas_to_electricity

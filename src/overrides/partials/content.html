@@ -1,0 +1,51 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% if "material/tags" in config.plugins and tags %}
+  {% include "partials/tags.html" %}
+{% endif %}
+{% include "partials/actions.html" %}
+{% if "\x3ch1" not in page.content %}
+  {% if page.meta.sector %}
+<div class="bg-title bg-{{page.meta.sector}}">
+      <h1 class="cv-h3">{{ page.title | d(config.site_name, true)}}</h1>
+      {% if page and page.meta and page.meta.id  %}
+        {% if page.meta.class == "activity" %}
+        {% else %}
+          <img src="/images/icons/{{page.meta.id}}.svg" style="vertical-align: bottom;">
+        {% endif  %}  
+      {% endif %}
+    </div>
+  {% else %}
+      {% if page and page.meta and page.meta.region %}
+      <img src="/images/flags/{{page.meta.region}}.svg" class="cv-floatright cv-flag">
+      {% endif %}
+    <h1>{{ page.title | d(config.site_name, true)}}</h1>
+  {% endif %}    
+{% endif %}
+
+<div class="cv-content">    
+{{ page.content }}
+</div>
+
+{% if page and page.meta and page.meta.progress  %}
+<div class="progress-container">    
+    <progress value="{{page.meta.progress}}" max="100">
+      {{page.meta.progress}}%
+    </progress>
+    {% if page.meta.progress >= 75 %}
+    This page is nearing completion, with final adjustments in progress.
+    {% elif page.meta.progress >= 50 %}
+    This page is roughly halfway complete and is actively being developed.
+    {% elif page.meta.progress >= 25 %}
+    This page is in the early stages of development, with foundational work underway.    
+    {% else %}
+    This page is currently in the planning phase. Please check back soon for updates.
+    {% endif %}
+</div>
+
+{% endif %}
+    
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}

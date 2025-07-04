@@ -1,0 +1,32 @@
+---
+id: machinery_efficiency_improvement_factor
+title: Efficiency improvement factor for other mobile machinery
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: percent
+tags:
+  - target_stretch
+  - PRIO_MEDIUM
+  - socioeconomic_parameter
+values:
+  - value: 10
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Model description ClimateView - Mobile Machinery
+    reference: https://climateview.slab.com/public/i3antgzd
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 10 | Global | CONSTANT | 2019-01-01 | Model description ClimateView - Mobile Machinery | https://climateview.slab.com/public/i3antgzd |
+
+

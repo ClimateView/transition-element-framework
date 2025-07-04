@@ -1,0 +1,64 @@
+---
+title: T-4B2a-TE-2 - Energy efficient commercial lighting
+id: energy_efficient_commercial_lighting
+sector: buildings
+sustainability: green
+class: transition
+type: update
+longName: 'Upgrade commercial lighting to reduce electricity use'
+shortName: 'Commercial lighting'
+description: 'Reduce the amount of energy required to operate commercial lighting'
+name: energy_efficient_commercial_lighting                
+version: 2.0.0
+unitOfMeasure: light_sources
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: energy_intensity_commercial_electric_lighting
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - commercial_electric_lighting_savings_factor
+carbonCausalChains:
+  atoc:
+    expression: '%[0]'
+    variables:
+    - annual_lighting_hours_per_commercial_light_source
+  chains:
+  - chain: commercial_electric_lighting
+---
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

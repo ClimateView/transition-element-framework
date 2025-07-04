@@ -1,0 +1,40 @@
+title: T-3A1-A-3 - Enteric Fermentation from Swine
+id: enteric_fermentation_swine
+sector: afolu
+sustainability: amber
+progress: 80
+ipccEmissionSource: 3a1h-swine
+name: enteric_fermentation_swine
+class: activity
+version: 2.0.0
+operation:
+  growthType: true
+  variable: activity_swine
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - activity_growth_swine
+  primaryStock:
+    name: average_other_livestock_population
+work:
+- name: enteric_fermentation
+  unitOfMeasure: joule
+  operationToWork:
+    unitOfMeasure: kj/kg
+    expression: '%[0]'
+    variables:
+    - enteric_fermentation_efficiency_swine
+  input:
+  - resource: swine_feed
+    unitOfMeasure: kg
+    resourceToWork:
+      unitOfMeasure: kg/kj
+      expression: '%[0]'
+      variables:
+      - kg_feed_per_kj_enteric_fermentation_other_livestock
+    emissionFactor:
+      unitOfMeasure: g_co2e/kg
+      expression: '%[0]'
+      variables:
+      - emission_factor_enteric_fermentation_swine_feed

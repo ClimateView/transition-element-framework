@@ -1,0 +1,63 @@
+id: average_area_heated_oil_boiler_multi_family_buildings
+title: Average area heated per large scale oil boiler
+type: parameter
+parameter_type: ECONOMIC_PARAMETER
+unit: m2
+tags:
+- economic_parameter
+values:
+- value: 200
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Initialized to 200.
+
+    '
+- value: 200
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Preliminary economic data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-h37ihmvs
+- value: 200
+  country: NL
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Based on German data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-h37ihmvs
+- value: 200
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Preliminary economic data based on European data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-h37ihmvs
+- value: 200
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2023-01-01
+  comment: 'Preliminary economic data based on European data
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-h37ihmvs
+- value: 200
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Preliminary economic data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-heating-beta-z663id55
+- value: 186
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2023-01-01
+  comment: 'Preliminary economic data based on US data
+
+    '
+  reference: https://docs.climateview.global/us/stationary-energy/economic-data/heating/

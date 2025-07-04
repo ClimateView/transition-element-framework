@@ -1,0 +1,24 @@
+title: T-2C1-TE-5 - Shift to hydrogen energy in iron and steel industries
+id: shift_to_hydrogen_energy_in_iron_and_steel_industries
+sector: industry
+sustainability: green
+class: transition
+type: shift
+longName: Shift from natural gas combustion to hydrogen combustion for iron and steel
+  industries energy use
+shortName: Hydrogen energy in iron and steel
+name: shift_to_hydrogen_energy_in_iron_and_steel_industries
+version: 2.0.0
+unitOfMeasure: kwh
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: natural_gas_usage_within_iron_and_steel_industries
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: hydrogen_usage_within_iron_and_steel_industries

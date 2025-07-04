@@ -1,0 +1,29 @@
+title: T-4B2c-A-22 - Institutional other gas oil use
+id: institutional_unregulated_gas_oil_use
+name: institutional_unregulated_gas_oil_use
+sector: buildings
+sustainability: red
+class: activity
+version: 2.1.0
+operation:
+  growthType: false
+  variable: stock_institutional_unregulated_gas_oil_use
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: gas_oil
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_gas_oil_kwh_to_co2e

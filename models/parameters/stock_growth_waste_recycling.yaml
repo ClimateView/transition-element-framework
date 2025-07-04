@@ -1,0 +1,79 @@
+id: stock_growth_waste_recycling
+title: Growth of waste recycling operations
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+- operations_growth
+values:
+- value: 0.18
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Per capita value based on average of our customers.
+
+    '
+  reference: https://climateview.slab.com/public/oqhcpcsi
+- value: 0.25
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Canada -  Waste
+
+    '
+  reference: https://climateview.slab.com/public/urqtndqm
+- value: 0.53
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Schätzung.
+
+    '
+- value: 3.5
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2018-01-01
+  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/public/w94s9azz
+- value: 1.0375
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Calculations based on national Spanish data.
+
+    '
+  reference: https://climateview.slab.com/posts/waste-spain-90ujr6vf#hnrmr-solid-waste
+- value: 3.2205
+  country: FR
+  scalingType: CONSTANT
+  validFrom: 2018-01-01
+  comment: 'Valeur basée sur les statistiques nationales
+
+    '
+  reference: https://climateview.slab.com/posts/waste-france-pixaibja#hoqfe-dechets-solides
+- value: 0.18
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Per capita value based on average of our customers.
+
+    '
+  reference: https://climateview.slab.com/public/oqhcpcsi
+- value: 0.2302
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Per capitavärde framräknat från avfallsverige.se
+
+    '
+  reference: https://climateview.slab.com/public/tbf8luyb
+- value: 0.1919
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2018-01-01
+  comment: 'Value based on US national statistics.
+
+    '
+  reference: https://climateview.slab.com/posts/waste-wyk6jfas

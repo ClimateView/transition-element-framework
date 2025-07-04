@@ -1,0 +1,25 @@
+id: retrofitting_savings_factor_residential_multi_family_cooling
+title: Retrofitting savings factor for cooling in residential buildings
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: percent
+tags:
+- target_stretch
+- socioeconomic_parameter
+values:
+- value: 25
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Estimate based on US data.
+
+    '
+  reference: https://docs.climateview.global/us/stationary-energy/physical-data/ac/
+- value: 25
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Value based on US national and international numbers.
+
+    '
+  reference: https://docs.climateview.global/us/stationary-energy/physical-data/ac/

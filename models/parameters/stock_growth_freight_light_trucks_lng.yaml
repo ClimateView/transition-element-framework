@@ -1,0 +1,15 @@
+id: stock_growth_freight_light_trucks_lng
+title: Growth of light truck operation (LNG)
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: vehicle_km_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '

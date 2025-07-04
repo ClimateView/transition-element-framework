@@ -1,0 +1,16 @@
+id: work_intensity_direct_operations_use_head
+title: Work intensity direct operations use head
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: head_head
+tags:
+- energy_intensity
+- PRIO_GLOBAL
+values:
+- value: 1
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Constant value, do not change.
+
+    '

@@ -1,0 +1,44 @@
+---
+id: stock_passenger_air_transport_electric
+title: Stock of passenger electric air transportation operations
+type: parameter
+parameter_type: OPERATIONS
+unit: person_km
+tags:
+  - operations
+  - PRIO_LOW
+values:
+  - value: 0
+    global: True
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Initialized to zero.
+  - value: 0
+    country: FR
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Initialized to zero.
+  - value: 0
+    country: US
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Initialized to zero.
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0 | Global | PER_CAPITA | 2019-01-01 | Initialized to zero. |  |
+| 0 | FR | PER_CAPITA | 2019-01-01 | Initialized to zero. |  |
+| 0 | US | PER_CAPITA | 2019-01-01 | Initialized to zero. |  |
+
+

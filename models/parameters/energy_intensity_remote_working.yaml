@@ -1,0 +1,17 @@
+id: energy_intensity_remote_working
+title: Energy intensity of remote working
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_h
+tags:
+- energy_intensity
+- PRIO_LOW
+values:
+- value: 0.015
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'ClimateView model description Remote Working
+
+    '
+  reference: https://climateview.slab.com/public/vacos11z

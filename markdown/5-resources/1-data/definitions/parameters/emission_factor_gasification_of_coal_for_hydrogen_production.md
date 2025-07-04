@@ -1,0 +1,31 @@
+---
+id: emission_factor_gasification_of_coal_for_hydrogen_production
+title: Emission factor gasification of coal for hydrogen production
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne
+tags:
+  - emission_factors
+  - PRIO_GLOBAL
+values:
+  - value: 30000000
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Given that a 90% capture rate would reduce the emission factor to below 3 kgCO2/kgH2
+    reference: https://www.sustainable-carbon.org/report/hydrogen-production-from-coal-icsc-313/
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 30000000 | Global | CONSTANT | 2019-01-01 | Given that a 90% capture rate would reduce the emission factor to below 3 kgCO2/kgH2 | https://www.sustainable-carbon.org/report/hydrogen-production-from-coal-icsc-313/ |
+
+

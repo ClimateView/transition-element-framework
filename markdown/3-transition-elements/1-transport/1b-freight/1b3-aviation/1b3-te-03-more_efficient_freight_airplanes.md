@@ -1,0 +1,67 @@
+---
+title: T-1B3-TE-3 - More efficient air freight transport
+id: more_efficient_freight_airplanes
+sector: transport
+sustainability: amber
+class: transition
+type: update
+longName: 'Improve efficiency of air freight transport to reduce fuel use.'
+shortName: 'Efficient air freight transport'
+name: more_efficient_freight_airplanes                
+version: 2.0.0
+weightInversionExpression:
+  expression: ((1 / ( unknown_x / %[0] )) - 1) / %[1]
+  variables:
+  - energy_intensity_air_freight_transportation
+  - freight_aviation_shipping_efficiency_improvement_factor
+description: 'Reduce the amount of energy required to operate freight transportation by air through more efficient freight airplanes'
+unitOfMeasure: tonne_km
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: energy_intensity_air_freight_transportation
+  type: EFFICIENCY_IMPROVEMENT
+  by:
+    expression: '%[0]'
+    variables:
+    - freight_aviation_shipping_efficiency_improvement_factor
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: freight_transportation_by_air
+cobenefits:
+- air_quality
+---
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

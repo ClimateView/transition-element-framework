@@ -1,0 +1,88 @@
+site_name: Transition Element Framework
+site_url: https://www.transitionelements.org/
+docs_dir: ../markdown
+watch:
+  - includes
+  - macros
+  - overrides
+  - mkdocs.yml
+theme:
+  name: material
+  logo: images/logo.png
+  font:
+    text: Inter
+  custom_dir: overrides
+  palette:
+    primary: custom
+    accent: custom
+  features:
+    - navigation.instant   # problematic navigation column on scrolling
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    #- navigation.expand
+    - navigation.prune
+    - navigation.path
+    - navigation.top
+    - toc.integrate
+    - content.tooltips    
+not_in_nav: |
+  /partnership.md
+  /5-resources/5-about/work-types.md
+  #/5-resources/1-data/nl.md
+hooks:
+  - hooks.py
+validation:
+  links:
+    absolute_links: relative_to_docs
+    anchors: warn
+    unrecognized_links: warn
+plugins:
+  - search
+  #- section-index
+  #- obsidian-bridge
+  - drawio
+  - macros:
+      module_name: macros
+  - glightbox:
+      manual: true
+  - bibtex: # TODO: remove dependency on this module (speeds up build times by almost 2x)
+      bib_file: "../markdown/5-resources/references.bib"
+      cite_inline: true
+      csl_file: "style.csl"
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - toc:
+      permalink: true
+      baselevel: 2
+      toc_depth: "0-2"
+  - footnotes
+  - tables
+  - admonition
+  - def_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  #- markdown.extensions.extra
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg  
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://viewer.diagrams.net/js/viewer-static.min.js
+extra_css:
+  - stylesheets/extra.css

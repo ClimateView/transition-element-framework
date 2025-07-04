@@ -1,0 +1,29 @@
+title: T-2D2F-A-3 - Unspecified fluorinated emissions
+id: unspecified_fluorinated_emissions
+sector: industry
+sustainability: red
+class: activity
+name: unspecified_fluorinated_emissions
+version: 2.0.0
+operation:
+  growthType: false
+  variable: start_year_activity_unspecified_fluorinated_emissions
+work:
+- name: unknown
+  unitOfMeasure: tonne
+  operationToWork:
+    unitOfMeasure: tonne/tonne
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_tonne
+  input:
+  - resource: carbon_dioxide_equivalents
+    unitOfMeasure: tonne
+    resourceToWork:
+      unitOfMeasure: tonne/tonne
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/tonne
+      expression: '%[0]'
+      variables:
+      - emission_factor_co2e_tonne_to_co2e_gram

@@ -1,0 +1,15 @@
+id: start_year_activity_cement_mineral_industries_electricity_usage
+title: Electricity usage within cement and minerals industries
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

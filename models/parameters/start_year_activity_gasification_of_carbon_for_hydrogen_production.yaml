@@ -1,0 +1,15 @@
+id: start_year_activity_gasification_of_carbon_for_hydrogen_production
+title: Carbon gasification hydrogen production
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

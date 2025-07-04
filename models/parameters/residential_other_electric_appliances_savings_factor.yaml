@@ -1,0 +1,15 @@
+id: residential_other_electric_appliances_savings_factor
+title: Energy efficiency savings factor for residential electric appliances
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: percent
+tags:
+- socioeconomic_parameter
+values:
+- value: 10
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Assumed to be 10%.
+
+    '

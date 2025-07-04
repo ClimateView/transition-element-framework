@@ -1,0 +1,16 @@
+id: stock_small_utility_machinery_cng
+title: Stock CNG small utility machinery
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_MEDIUM
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

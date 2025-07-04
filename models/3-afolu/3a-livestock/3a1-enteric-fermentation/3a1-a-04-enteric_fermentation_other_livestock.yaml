@@ -1,0 +1,40 @@
+title: T-3A1-A-4 - Enteric Fermentation from Other Livestock
+id: enteric_fermentation_other_livestock
+sector: afolu
+sustainability: amber
+progress: 80
+ipccEmissionSource: 3a1j-other
+name: enteric_fermentation_other_livestock
+class: activity
+version: 1.0.0
+operation:
+  growthType: true
+  variable: activity_other_livestock
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - activity_growth_other_livestock
+  primaryStock:
+    name: average_other_livestock_population
+work:
+- name: enteric_fermentation
+  unitOfMeasure: joule
+  operationToWork:
+    unitOfMeasure: kj/kg
+    expression: '%[0]'
+    variables:
+    - enteric_fermentation_efficiency_other_livestock
+  input:
+  - resource: other_livestock_feed
+    unitOfMeasure: kg
+    resourceToWork:
+      unitOfMeasure: kg/kj
+      expression: '%[0]'
+      variables:
+      - kg_feed_per_kj_enteric_fermentation_other_livestock
+    emissionFactor:
+      unitOfMeasure: g_co2e/kg
+      expression: '%[0]'
+      variables:
+      - emission_factor_enteric_fermentation_other_livestock_feed

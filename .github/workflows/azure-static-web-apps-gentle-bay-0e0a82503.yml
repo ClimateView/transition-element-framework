@@ -1,0 +1,93 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - prototype
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build_and_deploy_job:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc
+        uses: pandoc/actions/setup@main
+        with:
+          version: 3.1.13
+
+      - name: Report software versions
+        run: |
+          pandoc -v
+          python -V
+
+      # Set up Node.js for minification
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18
+
+      # Install html-minifier-terser
+      # - name: Install HTML Minifier
+      #   run: npm install -g html-minifier-terser
+
+      - name: Set up Python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Create and start virtual environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+        working-directory: src
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        working-directory: src
+
+      - name: Test markdown with pytest
+        run: pytest 
+        working-directory: src
+
+      - name: Run build task
+        run: mkdocs build
+        working-directory: src
+
+      - name: Copy staticwebapp.config.json
+        run: cp src/staticwebapp.config.json src/site
+
+      - name: Copy robots.txt
+        run: cp src/robots.txt src/site
+
+      # Step 7: Minify HTML files
+      # - name: Minify HTML
+      #  run: |
+      #    find site -name '*.html' -exec html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true --output {} {} \;
+
+      - name: Build And Deploy
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_BAY_0E0A82503 }}        
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          action: "upload"
+          app_location: 'src/site' # App source code path
+          skip_app_build: true
+          output_location: ''
+
+

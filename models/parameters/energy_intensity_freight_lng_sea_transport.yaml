@@ -1,0 +1,17 @@
+id: energy_intensity_freight_lng_sea_transport
+title: Energy intensity LNG freight sea transport
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_tonne_km
+tags:
+- energy_intensity
+- PRIO_LOW
+values:
+- value: 0.02
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Assumed to be same as for fuel oil
+
+    '
+  reference: https://transportgeography.org/contents/chapter4/transportation-and-energy/fuel-consumption-containerships/

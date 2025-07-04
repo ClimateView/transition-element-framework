@@ -1,0 +1,31 @@
+---
+id: energy_loss_kwh_gas_per_tonne_coal_produced_surface
+title: Energy loss from gas per tonne coal produced from surface mines
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_tonne
+tags:
+  - energy_intensity
+  - PRIO_LOW
+values:
+  - value: 12.350042
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        IPCC CH4 EMISSIONS: COAL MINING AND HANDLING Table 3 Average value of range
+    reference: https://www.ipcc-nggip.iges.or.jp/public/gp/bgp/2_7_Coal_Mining_Handling.pdf
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 12.350042 | Global | CONSTANT | 2020-01-01 | IPCC CH4 EMISSIONS: COAL MINING AND HANDLING Table 3 Average value of range | https://www.ipcc-nggip.iges.or.jp/public/gp/bgp/2_7_Coal_Mining_Handling.pdf |
+
+

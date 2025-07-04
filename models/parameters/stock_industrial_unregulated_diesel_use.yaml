@@ -1,0 +1,37 @@
+id: stock_industrial_unregulated_diesel_use
+title: Stock industrial other diesel use
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_MEDIUM
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: ES
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: FR
+  scalingType: PER_CAPITA
+  validFrom: 2021-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: GB
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '

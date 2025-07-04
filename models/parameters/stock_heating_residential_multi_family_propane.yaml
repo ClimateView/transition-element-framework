@@ -1,0 +1,16 @@
+id: stock_heating_residential_multi_family_propane
+title: Stock multi-family buildings heated with propane
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+- operations
+- PRIO_HIGH
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

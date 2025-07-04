@@ -1,0 +1,35 @@
+title: T-1B1c-A-1 - Electric cargo bikes
+id: electric_cargo_bikes
+sector: transport
+sustainability: green
+class: activity
+version: 2.1.0
+progress: 50
+name: electric_cargo_bikes
+operation:
+  growthType: true
+  variable: stock_electric_cargo_bikes
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_electric_cargo_bikes
+work:
+- name: electromagnetism
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/vehicle_km
+    expression: '%[0]'
+    variables:
+    - energy_intensity_electric_cargo_bikes
+  input:
+  - resource: electricity
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_electricity_current

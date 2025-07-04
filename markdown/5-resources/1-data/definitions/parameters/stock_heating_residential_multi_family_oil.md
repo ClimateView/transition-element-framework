@@ -1,0 +1,129 @@
+---
+id: stock_heating_residential_multi_family_oil
+title: Stock multi-family buildings heated with oil
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+  - operations
+  - PRIO_HIGH
+values:
+  - value: 0
+    global: True
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Per capita based on UK national statistics
+    reference: https://climateview.slab.com/public/zy17l63p
+  - value: 4.29
+    country: CA
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Model description ClimateView - Canada -  Heating - Residential
+    reference: https://climateview.slab.com/public/4h572llp
+  - value: 2.2
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Model description ClimateView - Quebec - Heating - Residential
+    reference: https://climateview.slab.com/public/posts/cpb5mavl
+  - value: 3.14
+    country: CH
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        ClimateView Schätzung basierend auf Durchschnittswerten von schweizer Städten
+  - value: 6.3
+    country: DE
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Schätzung basierend auf Durchschnittswerten von deutschen Großstädten
+    reference: https://climateview.slab.com/public/wvziauke
+  - value: 4.4801
+    country: ES
+    scalingType: PER_CAPITA
+    validFrom: 2020-01-01
+    comment: |
+        Calculations based on national Spanish data.
+    reference: https://climateview.slab.com/posts/stationary-energy-residential-5b7n1rw0#hsv7b-space-heating
+  - value: 0.6074
+    country: FR
+    scalingType: PER_CAPITA
+    validFrom: 2016-01-01
+    comment: |
+        Valeur basée sur les statistiques nationales
+    reference: https://climateview.slab.com/posts/stationary-energy-residential-france-bnynu72j#hvdfv-tableau-3-chauffage-des-appartements-5
+  - value: 0
+    country: GB
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Per capita based on UK national statistics
+    reference: https://climateview.slab.com/public/zy17l63p
+  - value: 0
+    country: SE
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Per capitavärde framräknat från statistik från energimyndigheten och SCB.
+    reference: https://climateview.slab.com/public/uui9yijv
+  - value: 0.46
+    country: US
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Value based on US national statistics.
+    reference: https://climateview.slab.com/public/posts/f34d3tuu
+  - value: 0
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Value based on US regional statistics.
+    reference: https://climateview.slab.com/public/posts/8ebqlj1p
+  - value: 0
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Value based on US regional statistics.
+    reference: https://climateview.slab.com/public/posts/saj38uul
+  - value: 0
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Value based on US regional statistics.
+    reference: https://climateview.slab.com/public/posts/c5my1ifd
+  - value: 0
+    scalingType: PER_CAPITA
+    validFrom: 2019-01-01
+    comment: |
+        Value based on US regional statistics.
+    reference: https://climateview.slab.com/public/posts/saj38uul
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0 | Global | PER_CAPITA | 2019-01-01 | Per capita based on UK national statistics | https://climateview.slab.com/public/zy17l63p |
+| 4.29 | CA | PER_CAPITA | 2019-01-01 | Model description ClimateView - Canada -  Heating - Residential | https://climateview.slab.com/public/4h572llp |
+| 2.2 | CA-QC | PER_CAPITA | 2019-01-01 | Model description ClimateView - Quebec - Heating - Residential | https://climateview.slab.com/public/posts/cpb5mavl |
+| 3.14 | CH | PER_CAPITA | 2019-01-01 | ClimateView Schätzung basierend auf Durchschnittswerten von schweizer Städten |  |
+| 6.3 | DE | PER_CAPITA | 2019-01-01 | Schätzung basierend auf Durchschnittswerten von deutschen Großstädten | https://climateview.slab.com/public/wvziauke |
+| 4.4801 | ES | PER_CAPITA | 2020-01-01 | Calculations based on national Spanish data. | https://climateview.slab.com/posts/stationary-energy-residential-5b7n1rw0#hsv7b-space-heating |
+| 0.6074 | FR | PER_CAPITA | 2016-01-01 | Valeur basée sur les statistiques nationales | https://climateview.slab.com/posts/stationary-energy-residential-france-bnynu72j#hvdfv-tableau-3-chauffage-des-appartements-5 |
+| 0 | GB | PER_CAPITA | 2019-01-01 | Per capita based on UK national statistics | https://climateview.slab.com/public/zy17l63p |
+| 0 | SE | PER_CAPITA | 2019-01-01 | Per capitavärde framräknat från statistik från energimyndigheten och SCB. | https://climateview.slab.com/public/uui9yijv |
+| 0.46 | US | PER_CAPITA | 2019-01-01 | Value based on US national statistics. | https://climateview.slab.com/public/posts/f34d3tuu |
+| 0 | US-CA | PER_CAPITA | 2019-01-01 | Value based on US regional statistics. | https://climateview.slab.com/public/posts/8ebqlj1p |
+| 0 | US-FL | PER_CAPITA | 2019-01-01 | Value based on US regional statistics. | https://climateview.slab.com/public/posts/saj38uul |
+| 0 | US-IN | PER_CAPITA | 2019-01-01 | Value based on US regional statistics. | https://climateview.slab.com/public/posts/c5my1ifd |
+| 0 | US-VA | PER_CAPITA | 2019-01-01 | Value based on US regional statistics. | https://climateview.slab.com/public/posts/saj38uul |
+
+

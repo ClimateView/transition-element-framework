@@ -1,0 +1,15 @@
+id: growth_activity_coke_oven_gas_usage_within_iron_and_steel_industries
+title: Growth of coke oven gas usage within iron and steel industries
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: kwh_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

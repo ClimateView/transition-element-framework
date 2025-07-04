@@ -1,0 +1,30 @@
+---
+id: emission_factor_beverages_non_alcoholic
+title: Emission factor Non-alcoholic beverages
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_l
+tags:
+  - emission_factors
+values:
+  - value: 400
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        IPCC Guidelines for National Greenhouse Gas Inventories
+    reference: https://www.ipcc-nggip.iges.or.jp/public/gl/guidelin/ch2wb3.pdf
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 400 | Global | CONSTANT | 2019-01-01 | IPCC Guidelines for National Greenhouse Gas Inventories | https://www.ipcc-nggip.iges.or.jp/public/gl/guidelin/ch2wb3.pdf |
+
+

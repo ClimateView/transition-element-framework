@@ -1,0 +1,30 @@
+title: T-4B1b-A-11 - Public buildings cooled with AC
+id: public_building_cooling_with_ac
+sector: buildings
+sustainability: amber
+class: activity
+version: 2.1.0
+progress: 50
+name: public_building_cooling_with_ac
+operation:
+  growthType: false
+  variable: stock_cooling_public_ac
+work:
+- name: unknown
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/m2
+    expression: '%[0]'
+    variables:
+    - energy_intensity_cooling_non_residential_public_ac
+  input:
+  - resource: electricity
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_electricity_current

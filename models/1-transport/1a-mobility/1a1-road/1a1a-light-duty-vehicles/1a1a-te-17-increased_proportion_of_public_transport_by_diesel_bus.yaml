@@ -1,0 +1,35 @@
+title: T-1A1a-TE-17 - Shift to travel by diesel bus
+id: increased_proportion_of_public_transport_by_diesel_bus
+sector: transport
+sustainability: amber
+progress: 50
+class: transition
+version: 2.1.1
+ipccMitigationMethod: 1a-03-public-transit
+name: increased_proportion_of_public_transport_by_diesel_bus
+type: shift
+longName: Shift from Internal Combustion Engine (ICE) cars to travel by diesel bus.
+shortName: Diesel bus
+description: Shift vehicle kilometer from petrol and diesel vehicles to diesel buses
+  in vehicle kilometer to fulfill the need of commuting
+unitOfMeasure: commutes
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: 1 / %[0]
+    variables:
+    - load_factor_car_average
+  chains:
+  - chain: petrol_vehicles
+  - chain: diesel_vehicles
+shiftTo:
+  atoc:
+    expression: 1 / %[0]
+    variables:
+    - load_factor_bus_average
+  chains:
+  - chain: diesel_buses
+cobenefits:
+- reduced_accidents
+- less_congestion

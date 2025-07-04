@@ -1,0 +1,16 @@
+id: stock_chp_oil
+title: Combined heat and power (CHP) - oil
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_HIGH
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '

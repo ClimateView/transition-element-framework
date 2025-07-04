@@ -1,0 +1,17 @@
+id: emission_factor_pasture_manure_poultry_tonne_to_co2e_gram
+title: Emission factor pasture manure poultry
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_tonne_N
+tags:
+- emission_factors
+- PRIO_GLOBAL
+values:
+- value: 1716000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Table 11.1.
+
+    '
+  reference: https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/4_Volume4/19R_V4_Ch11_Soils_N2O_CO2.pdf

@@ -1,0 +1,5 @@
+---
+title: Partnership
+hide: navigation
+---
+

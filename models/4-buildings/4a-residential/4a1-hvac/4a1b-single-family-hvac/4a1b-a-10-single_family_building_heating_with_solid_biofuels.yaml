@@ -1,0 +1,30 @@
+title: T-4A1b-A-10 - Domestic houses heated with biomass
+id: single_family_building_heating_with_solid_biofuels
+sector: buildings
+sustainability: green
+class: activity
+version: 2.1.0
+progress: 50
+name: single_family_building_heating_with_solid_biofuels
+operation:
+  growthType: false
+  variable: stock_heating_residential_single_family_solid_biofuel
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/m2
+    expression: '%[0]'
+    variables:
+    - energy_intensity_heating_residential_single_family_buildings_biofuel
+  input:
+  - resource: biofuel_solid
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_biofuel_kwh_to_co2e

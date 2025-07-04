@@ -1,0 +1,35 @@
+title: T-1A1a-TE-22 - Improved urban planning
+id: improved_urban_planning
+sector: transport
+sustainability: amber
+class: transition
+type: upshift
+longName: Improved urban planning to reduce distance driven by cars.
+shortName: Urban planning
+name: improved_urban_planning
+version: 2.1.0
+description: Reduce the amount of vehicle kilometer from cars to fulfill the need
+  of mobility through improved urban planning
+unitOfMeasure: urban_car_trips
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: average_urban_car_trip_distance
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - savings_urban_planning
+carbonCausalChains:
+  atoc:
+    expression: '%[0]'
+    variables:
+    - average_urban_car_trip_distance
+  chains:
+  - chain: petrol_vehicles
+  - chain: diesel_vehicles
+  - chain: lpg_vehicles
+  - chain: gas_vehicles
+  - chain: lng_vehicles
+  - chain: hydrogen_vehicles
+  - chain: battery_electric_vehicles

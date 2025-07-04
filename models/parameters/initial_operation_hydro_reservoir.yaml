@@ -1,0 +1,85 @@
+id: initial_operation_hydro_reservoir
+title: Initial Operation Hydro Reservoir
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+  reference: https://climateview.slab.com/posts/electricity-production-and-consumption-uk-kknqra9l
+- value: 0
+  country: CA
+  scalingType: PER_CAPITA
+  validFrom: 2021-01-01
+  comment: 'Initialized to zero.
+
+    '
+  reference: https://climateview.slab.com/posts/energy-supply-ewedpkpo
+- value: 0
+  country: CH
+  scalingType: PER_CAPITA
+  validFrom: 2021-01-01
+  comment: 'Annahme: Kein Strom wird lokal erzeugt. Für gesamtschweizerische Zahlen,
+    siehe Link.
+
+    '
+  reference: https://climateview.slab.com/posts/energy-industries-switzerland-735zvzl6
+- value: 0
+  country: DE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialer Wert auf null gesetzt, Annahme, dass kein Strom lokal erzeugt
+    wird. Siehe Link für Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/posts/stromerzeugung-und-verbrauch-deutschland-electricity-production-and-consumption-germany-cc9sxc50
+- value: 0
+  country: ES
+  scalingType: PER_CAPITA
+  validFrom: 2021-01-01
+  comment: 'Initialized to zero.
+
+    '
+  reference: https://energia.gob.es/balances/Balances/Paginas/Balances.aspx
+- value: 0
+  country: FR
+  scalingType: PER_CAPITA
+  validFrom: 2021-01-01
+  comment: 'Estimation égale à  0. Hypothèse : pas d''électricité produite localement.
+    Voir le lien pour les valeurs nationales.
+
+    '
+  reference: https://climateview.slab.com/posts/energy-industries-france-jdab43ho#h9i3u-english
+- value: 0
+  country: GB
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '
+  reference: https://climateview.slab.com/posts/electricity-production-and-consumption-uk-kknqra9l
+- value: 0
+  country: SE
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Sätts till 0, all elektricitet antas vara importerad. För nationella värden,
+    se länk.
+
+    '
+  reference: https://climateview.slab.com/posts/el-produktion-och-forbrukning-o8or1nvl
+- value: 0
+  country: US
+  scalingType: PER_CAPITA
+  validFrom: 2021-01-01
+  comment: 'Initialized to zero.
+
+    '
+  reference: https://climateview.slab.com/posts/energy-supply-nsba7uxn

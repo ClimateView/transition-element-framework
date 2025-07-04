@@ -1,0 +1,48 @@
+id: expected_longevity_personal_vehicles_bicycle
+title: Expected longevity
+type: parameter
+parameter_type: ECONOMIC_PARAMETER
+unit: years
+tags:
+- economic_parameter
+values:
+- value: 20
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2021-01-01
+  comment: 'Preliminary economic data based on European data.
+
+    '
+  reference: https://climateview.slab.com/posts/economic-parameters-beta-germany-active-travel-kne6xcu5
+- value: 20
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2021-01-01
+  comment: 'Preliminary economic data
+
+    '
+  reference: https://climateview.slab.com/posts/economic-parameters-beta-germany-active-travel-kne6xcu5
+- value: 20
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2021-01-01
+  comment: 'Preliminary economic data based on European data
+
+    '
+  reference: https://climateview.slab.com/posts/economic-parameters-beta-germany-active-travel-kne6xcu5
+- value: 20
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2023-01-01
+  comment: 'Preliminary economic data based on European data
+
+    '
+  reference: https://climateview.slab.com/posts/economic-parameters-beta-germany-active-travel-kne6xcu5
+- value: 8
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2021-01-01
+  comment: 'Preliminary economic data
+
+    '
+  reference: https://climateview.slab.com/posts/economic-data-active-travel-beta-hroswvhq

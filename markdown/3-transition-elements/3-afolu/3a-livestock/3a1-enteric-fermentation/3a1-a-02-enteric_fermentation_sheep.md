@@ -1,0 +1,68 @@
+---
+title: T-3A1-A-2 - Enteric Fermentation from Sheep
+id: enteric_fermentation_sheep
+sector: afolu
+sustainability: red
+progress: 80
+ipccEmissionSource: 3a1c-sheep
+name: enteric_fermentation_sheep
+class: activity
+version: 2.0.0
+operation:
+  growthType: true
+  variable: activity_sheep
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - activity_growth_sheep
+  primaryStock:
+    name: average_other_livestock_population
+work:
+- name: enteric_fermentation
+  unitOfMeasure: joule
+  operationToWork:
+    unitOfMeasure: kj/kg
+    expression: '%[0]'
+    variables:
+    - enteric_fermentation_efficiency_sheep
+  input:
+  - resource: sheep_feed
+    unitOfMeasure: kg
+    resourceToWork:
+      unitOfMeasure: kg/kj
+      expression: '%[0]'
+      variables:
+      - kg_feed_per_kj_enteric_fermentation_other_livestock
+    emissionFactor:
+      unitOfMeasure: g_co2e/kg
+      expression: '%[0]'
+      variables:
+      - emission_factor_enteric_fermentation_sheep_feed
+---
+# Definition
+This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+
+{{ activity_sustainability() }}
+
+# Transition Elements
+
+This activity has the following mitigation options modelled as transition elements:
+
+{{ transition_element_list() }}
+
+# Activity Model
+This emission source is modelled with [Enteric Fermentation](/5-resources/5-about/work-types.md#enteric-fermentation) as:
+
+*TBD*.
+
+## Parameters
+
+{{ generate_parameter_table() }}
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

@@ -1,0 +1,30 @@
+title: T-5D1-A-4 - Electricity use, non-specified sources
+id: electricity_use_non_specified_sources
+sector: energy
+sustainability: green
+class: activity
+version: 2.1.0
+progress: 50
+name: electricity_use_non_specified_sources
+operation:
+  growthType: false
+  variable: stock_electricity_use_unspecified_sources
+work:
+- name: electromagnetism
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: electricity
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_electricity_current

@@ -1,0 +1,38 @@
+id: stock_tonnes_solid_waste_anaerobically_digested
+title: Stock of solid waste anarerobically digested
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+- PRIO_MEDIUM
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0
+  country: ES
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '
+- value: 0.012
+  country: FR
+  scalingType: PER_CAPITA
+  validFrom: 2016-01-01
+  comment: 'Valeur basée sur les statistiques nationales
+
+    '
+  reference: https://climateview.slab.com/posts/waste-france-pixaibja#hoqfe-dechets-solides
+- value: 0
+  country: US
+  scalingType: PER_CAPITA
+  validFrom: 2018-01-01
+  comment: 'Initialized to zero.
+
+    '

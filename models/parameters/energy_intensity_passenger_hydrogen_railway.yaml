@@ -1,0 +1,17 @@
+id: energy_intensity_passenger_hydrogen_railway
+title: Energy intensity of passenger hydrogen railway
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_person_km
+tags:
+- energy_intensity
+- PRIO_MEDIUM
+values:
+- value: 0.145666
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Assumed same intensity as for electrified passenger railway.
+
+    '
+  reference: https://climateview.slab.com/public/qpohg68o

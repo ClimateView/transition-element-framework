@@ -1,0 +1,61 @@
+---
+title: T-6A1-TE-2 - Shift to composting of organic waste
+id: shift_to_composting_of_organic_waste
+sector: waste
+sustainability: green
+class: transition
+type: shift
+longName: 'Shift from landfilling organic waste to composting of organic waste'
+shortName: 'Composting of organic waste'
+description: 'Shift tonne from solid waste disposal in landfills to composting of organic waste in tonne to fulfill the need of waste handling'
+name: shift_to_composting_of_organic_waste                
+version: 2.0.0
+shift: shift_to_composting_of_organic_waste
+unitOfMeasure: tonne
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: solid_waste_disposal_in_landfills_and_open_dumps_etc
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: composting_of_organic_waste
+---
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

@@ -1,0 +1,51 @@
+title: T-1A1a-TE-5 - Increase journey sharing
+id: more_efficient_commuting_by_car
+sector: transport
+sustainability: amber
+progress: 50
+class: transition
+version: 2.0.1
+ipccMitigationMethod: 1a-05-shared-mobility
+name: more_efficient_commuting_by_car
+type: upshift
+longName: Increase efficiency of car use through journey sharing.
+shortName: Journey sharing
+weightInversionExpression:
+  expression: ((( %[0] / unknown_x ) / %[1] ) - 1 ) / %[2]
+  variables:
+  - average_commute_length_to_work
+  - load_factor_car_commute
+  - load_factor_increase_car
+description: Reduce the number of vehicle kilometers from petrol, diesel, lpg and
+  natural gas vehicles to fulfill the need of commuting through more efficient commuting
+  by car
+unitOfMeasure: commutes
+cohort:
+  expression: '%[0]'
+  variables:
+  - proportion_of_personal_vehicles_operation_commuting
+variablesToUpdate:
+- update: load_factor_car_commute
+  type: INCREASE
+  by:
+    expression: '%[0]'
+    variables:
+    - load_factor_increase_car
+carbonCausalChains:
+  atoc:
+    expression: '%[0] / %[1]'
+    variables:
+    - average_commute_length_to_work
+    - load_factor_car_commute
+  chains:
+  - chain: petrol_vehicles
+  - chain: diesel_vehicles
+  - chain: lpg_vehicles
+  - chain: gas_vehicles
+  - chain: battery_electric_vehicles
+  - chain: hydrogen_vehicles
+cobenefits:
+- air_quality
+- reduced_noise
+- reduced_accidents
+- less_congestion

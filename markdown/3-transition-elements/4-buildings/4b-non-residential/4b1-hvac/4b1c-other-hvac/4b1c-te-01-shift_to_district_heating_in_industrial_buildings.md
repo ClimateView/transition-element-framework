@@ -1,0 +1,70 @@
+---
+title: T-4B1c-TE-1 - Shift to district heating in industrial buildings
+id: shift_to_district_heating_in_industrial_buildings
+sector: buildings
+sustainability: green
+progress: 25
+class: transition
+version: 2.0.1
+name: shift_to_district_heating_in_industrial_buildings
+type: shift
+longName: Shift from fossil fuels and electric heaters to district heating in industrial
+  buildings.
+shortName: District heating in industrial buildings
+description: Shift square meter from industrial building heated with gas, oil and
+  direct electric heaters to industrial building heating with district heating in
+  square meter to fulfill the need of comfortable premises
+unitOfMeasure: m2
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: industrial_building_heating_with_gas
+  - chain: industrial_building_heating_with_oil
+  - chain: industrial_building_heating_with_direct_electric_heaters
+  - chain: industrial_building_heating_with_lpg
+  - chain: industrial_building_heating_with_coal
+  - chain: industrial_building_heating_with_gas_oil
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: industrial_building_heating_with_district_heating
+cobenefits:
+- indoor_climate_and_air_quality
+---
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+District heating is an efficient way of generating and distributing heat, allowing for a broad range of energy sources while utilising its large scale.
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

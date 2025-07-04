@@ -1,0 +1,15 @@
+id: stock_heating_public_buildings_solar_thermal
+title: Stock public buildings heated with solar thermal
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2000-01-01
+  comment: 'Initialized to zero.
+
+    '

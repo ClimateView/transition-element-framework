@@ -1,0 +1,49 @@
+id: energy_intensity_personal_vehicles_diesel
+title: Energy intensity diesel ICE
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_vehicle_km
+tags:
+- energy_intensity
+- PRIO_HIGH
+values:
+- value: 0.6607
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Energy used to move a vehicle 1 km (average diesel car)
+
+    '
+  reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020
+- value: 0.767
+  country: CA
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - Canada -  Personal Transportation
+
+    '
+  reference: https://climateview.slab.com/public/posts/ird2eslu
+- value: 0.6718
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2021-01-01
+  comment: 'Calculations based on European data.
+
+    '
+  reference: https://climateview.slab.com/posts/road-transport-esqm8w27#hg9yu-table-7-personal-vehicles
+- value: 0.6607
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Energy used to move a vehicle 1 km ( average petrol car)
+
+    '
+  reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020
+- value: 0.7636
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on US national statistics.
+
+    '
+  reference: https://climateview.slab.com/posts/personal-transportation-wtgg2hlu#hzp8v-table-6-energy-intensities-personal-transport

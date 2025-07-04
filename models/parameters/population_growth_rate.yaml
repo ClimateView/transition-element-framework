@@ -1,0 +1,17 @@
+id: population_growth_rate
+title: Population growth
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: percent
+tags:
+- baseline_settings
+- PRIO_LOW
+- socioeconomic_parameter
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2023-01-01
+  comment: 'No estimate for population growth.
+
+    '

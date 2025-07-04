@@ -1,0 +1,44 @@
+title: T-1B1a-TE-9 - Improved load factor for light trucks
+id: improved_load_factor_light_trucks
+sector: transport
+sustainability: amber
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1a-08-supply-chain-management
+name: improved_load_factor_light_trucks
+type: upshift
+longName: Improved load factor for light trucks.
+shortName: Load factor LGV
+weightInversionExpression:
+  expression: ((( 1 / unknown_x ) / %[0] ) - 1 ) / %[1]
+  variables:
+  - load_factor_light_trucks
+  - load_factor_increase_light_trucks
+description: Reduce the amount of vehicle kilometer from diesel light trucks to fulfill
+  the need of logistics through improving the load factor
+unitOfMeasure: ideal_vehicle_km
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: load_factor_light_trucks
+  type: INCREASE
+  by:
+    expression: '%[0]'
+    variables:
+    - load_factor_increase_light_trucks
+carbonCausalChains:
+  atoc:
+    expression: 1 / %[0]
+    variables:
+    - load_factor_light_trucks
+  chains:
+  - chain: diesel_light_trucks
+  - chain: hydrogen_light_trucks
+  - chain: battery_electric_light_trucks
+  - chain: petrol_light_trucks
+  - chain: gas_light_trucks
+cobenefits:
+- air_quality
+- reduced_noise
+- reduced_accidents
+- less_congestion

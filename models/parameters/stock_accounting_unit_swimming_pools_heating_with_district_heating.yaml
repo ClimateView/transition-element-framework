@@ -1,0 +1,15 @@
+id: stock_accounting_unit_swimming_pools_heating_with_district_heating
+title: Stock wastewater plants heated with biomass
+type: parameter
+parameter_type: OPERATIONS
+unit: m2
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

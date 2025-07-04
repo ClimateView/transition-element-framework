@@ -1,0 +1,48 @@
+id: stock_growth_air_transport
+title: Growth air transport per new capita
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: person_km_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Estimates for global air travel
+
+    '
+  reference: https://climateview.slab.com/public/posts/h6wke7kr
+- value: 739.6148
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Calculations based on national Spanish data.
+
+    '
+  reference: https://climateview.slab.com/posts/transporte-aereo-air-transport-1nhvy53b#hsdsf-passenger-air-travel
+- value: 428.5008
+  country: FR
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Valeur basée sur les statistiques nationales
+
+    '
+  reference: https://climateview.slab.com/posts/air-transport-france-dt93wban
+- value: 0
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'För värden baserade på nationell statistik, se dokumentation.
+
+    '
+  reference: https://research.chalmers.se/publication/508693/file/508693_Fulltext.pdf
+- value: 0
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'For estimates based on national statistics, see documentation.
+
+    '
+  reference: https://climateview.slab.com/posts/air-transportation-y7ajcmm0#hoyo0-table-2-domestic-air-travel

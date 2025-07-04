@@ -1,0 +1,16 @@
+id: energy_intensity_accounting_unit_employee_commutes_lpg_vehicles
+title: Energy intenstity employees' commutes by lpg cars
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_vehicle_km
+tags:
+- energy_intensity
+values:
+- value: 0.85781
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2022-01-01
+  comment: 'Based on UK data
+
+    '
+  reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2022

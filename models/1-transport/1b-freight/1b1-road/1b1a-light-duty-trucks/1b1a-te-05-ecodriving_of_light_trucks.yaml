@@ -1,0 +1,61 @@
+title: T-1B1a-TE-5 - Ecodriving of light trucks
+id: ecodriving_of_light_trucks
+sector: transport
+sustainability: amber
+class: transition
+version: 2.0.1
+name: ecodriving_of_light_trucks
+ipccMitigationMethod: 1a-08-supply-chain-management
+type: update
+longName: Ecodrive light trucks to reduce fuel use.
+shortName: Ecodriving LGV
+description: Reduce the amount of energy required to drive diesel, hydrogen and battery
+  electric light trucks through ecodriving
+unitOfMeasure: vehicle_km
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: energy_intensity_freight_light_trucks_diesel
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - light_truck_eco_driving_savings_factor
+- update: energy_intensity_freight_light_trucks_bev
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - light_truck_eco_driving_savings_factor
+- update: energy_intensity_freight_light_trucks_hydrogen
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - light_truck_eco_driving_savings_factor
+- update: energy_intensity_freight_light_trucks_gas
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - light_truck_eco_driving_savings_factor
+- update: energy_intensity_freight_light_trucks_petrol
+  type: SAVINGS
+  by:
+    expression: '%[0]'
+    variables:
+    - light_truck_eco_driving_savings_factor
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: diesel_light_trucks
+  - chain: battery_electric_light_trucks
+  - chain: hydrogen_light_trucks
+  - chain: gas_light_trucks
+  - chain: petrol_light_trucks
+cobenefits:
+- air_quality
+- reduced_noise
+- reduced_accidents
+- increased_longevity_of_stock

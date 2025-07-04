@@ -1,0 +1,48 @@
+id: resource_proportion_ethanol
+title: Fuel proportion ethanol
+type: parameter
+parameter_type: RESOURCE_PROPORTION
+unit: percent
+tags:
+- resource_proportion
+- PRIO_MEDIUM
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to 0%.
+
+    '
+- value: 4.1
+  country: CH
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Daten aus Deutschland.
+
+    '
+  reference: https://climateview.slab.com/public/dkkdj0hw
+- value: 4.1
+  country: DE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+
+    '
+  reference: https://climateview.slab.com/public/dkkdj0hw
+- value: 3.2
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Model description ClimateView - fuels
+
+    '
+  reference: https://climateview.slab.com/public/tsku2vip
+- value: 4.4
+  country: SE
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Modellbeskrivning ClimateView drivmedel
+
+    '
+  reference: https://climateview.slab.com/public/78b9qifq

@@ -1,0 +1,68 @@
+---
+title: T-4B1b-TE-4 - Shift to biofuel in public buildings
+id: heating_non_residential_public_buildings_with_renewable_solid_biofuels
+sector: buildings
+sustainability: green
+progress: 25
+class: transition
+version: 2.0.4
+name: heating_non_residential_public_buildings_with_renewable_solid_biofuels
+type: shift
+longName: Shift from fossil fuels and electric heaters to biofuel in public buildings.
+shortName: Biomass in public buildings
+description: Shift square meter from public buildings heated with oil, gas, direct
+  electric heaters, coal and LPG to public buildings heated with solid biofuels in
+  square meter to fulfill the need for comfortable premises
+unitOfMeasure: m2
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: public_building_heating_with_oil
+  - chain: public_building_heating_with_gas
+  - chain: public_building_heating_with_propane
+  - chain: public_building_heating_with_direct_electric_heaters
+  - chain: public_building_heating_with_coal
+  - chain: public_building_heating_with_lpg
+  - chain: public_building_heating_with_gas_oil
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: public_building_heating_with_solid_biofuels
+---
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+Oil boilers are being replaced by biofuel boilers that are fuelled by, for example, wood or wood pellets.
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

@@ -1,0 +1,15 @@
+id: energy_intensity_dh_solar_thermal
+title: Energy intensity district heating solar thermal
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_kwh
+tags:
+- energy_intensity
+values:
+- value: 0.66
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2023-01-01
+  comment: 'Assumed efficiency 150%.
+
+    '

@@ -1,0 +1,46 @@
+id: stock_growth_buses_diesel
+title: Growth of diesel bus operations
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: vehicle_km_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'For estimates, please refer to documantation.
+
+    '
+- value: 0
+  country: ES
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'For values based on national Spanish data, please see documentation.
+
+    '
+  reference: https://climateview.slab.com/posts/transporte-por-carretera-road-transport-esqm8w27#h9fvg-buses
+- value: 44.7087
+  country: FR
+  scalingType: CONSTANT
+  validFrom: 2021-01-01
+  comment: 'Valeur basée sur les statistiques nationales
+
+    '
+  reference: https://climateview.slab.com/posts/road-transport-france-eoxjg43o#hjygq-tableau-4-bus-et-cars
+- value: 0
+  country: GB
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'For estimates based on national statistics, see documentation.
+
+    '
+- value: 0
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'For estimates based on national statistics, see documentation.
+
+    '
+  reference: https://climateview.slab.com/posts/personal-transportation-wtgg2hlu#hjgxc-table-4-distances-travelled-by-buses

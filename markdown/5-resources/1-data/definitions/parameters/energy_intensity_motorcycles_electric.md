@@ -1,0 +1,31 @@
+---
+id: energy_intensity_motorcycles_electric
+title: Energy intensity electric motorcycles
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_vehicle_km
+tags:
+  - energy_intensity
+  - PRIO_LOW
+values:
+  - value: 0.0225
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        Largest value for e-bikes.
+    reference: https://enveurope.springeropen.com/articles/10.1186/s12302-020-00307-8
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0.0225 | Global | CONSTANT | 2020-01-01 | Largest value for e-bikes. | https://enveurope.springeropen.com/articles/10.1186/s12302-020-00307-8 |
+
+

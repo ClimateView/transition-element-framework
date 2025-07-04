@@ -1,0 +1,18 @@
+id: emission_factor_wind_offshore_production
+title: Emission Factor wind offshore production
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_kw_year
+tags:
+- emission_factors
+- PRIO_LOW
+- emission_factor
+values:
+- value: 24000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Value based on German national statistics.
+
+    '
+  reference: https://climateview.slab.com/posts/erneuerbare-energien-deutschland-renewable-energy-germany-jencznun#hzami-wind-power

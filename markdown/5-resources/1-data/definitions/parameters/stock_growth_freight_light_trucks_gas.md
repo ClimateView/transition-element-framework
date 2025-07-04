@@ -1,0 +1,45 @@
+---
+id: stock_growth_freight_light_trucks_gas
+title: Growth of light truck operation (CNG)
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: vehicle_km_percapita
+tags:
+  - operations_growth
+values:
+  - value: 0
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Initialized to zero.
+  - value: 5.2129
+    country: ES
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        Calculations based on national Spanish data.
+    reference: https://climateview.slab.com/posts/transporte-por-carretera-road-transport-esqm8w27#hfvae-light-goods-vehicles-lg-vs
+  - value: 3.4531
+    country: FR
+    scalingType: CONSTANT
+    validFrom: 2021-01-01
+    comment: |
+        Valeur basée sur les statistiques nationales
+    reference: https://climateview.slab.com/posts/road-transport-france-eoxjg43o#hmetp-tableau-5-vehicules-utilitaires-legers-vu-ls
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0 | Global | CONSTANT | 2019-01-01 | Initialized to zero. |  |
+| 5.2129 | ES | CONSTANT | 2020-01-01 | Calculations based on national Spanish data. | https://climateview.slab.com/posts/transporte-por-carretera-road-transport-esqm8w27#hfvae-light-goods-vehicles-lg-vs |
+| 3.4531 | FR | CONSTANT | 2021-01-01 | Valeur basée sur les statistiques nationales | https://climateview.slab.com/posts/road-transport-france-eoxjg43o#hmetp-tableau-5-vehicules-utilitaires-legers-vu-ls |
+
+

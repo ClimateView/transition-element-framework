@@ -1,0 +1,16 @@
+id: emission_factor_desktop_printers
+title: Emission factor Desktop printer
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_unit
+tags:
+- emission_factors
+values:
+- value: 250000
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Based on HP OfficeJet Pro 9025 weight (9.2 kg/unit).
+
+    '
+  reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2024

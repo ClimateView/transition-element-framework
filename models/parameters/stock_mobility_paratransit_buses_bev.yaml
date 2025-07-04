@@ -1,0 +1,16 @@
+id: stock_mobility_paratransit_buses_bev
+title: Stock of electric paratransit bus operations
+type: parameter
+parameter_type: OPERATIONS
+unit: vehicle_km
+tags:
+- operations
+- PRIO_LOW
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

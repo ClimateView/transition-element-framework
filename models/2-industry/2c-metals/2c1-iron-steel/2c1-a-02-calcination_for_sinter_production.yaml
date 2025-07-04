@@ -1,0 +1,34 @@
+title: T-2C1-A-2 - Calcination for sinter production
+id: calcination_for_sinter_production
+name: calcination_for_sinter_production
+sector: industry
+sustainability: red
+class: activity
+version: 2.1.0
+operation:
+  growthType: true
+  variable: start_year_activity_calcination_for_sinter_production
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_calcination_for_sinter_production
+work:
+- name: calcination
+  unitOfMeasure: tonne
+  operationToWork:
+    unitOfMeasure: tonne/tonne
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_tonne
+  input:
+  - resource: sinter_base_mix
+    unitOfMeasure: tonne
+    resourceToWork:
+      unitOfMeasure: tonne/tonne
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/tonne
+      expression: '%[0]'
+      variables:
+      - emission_factor_calcination_for_sinter_production

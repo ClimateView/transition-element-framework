@@ -1,0 +1,15 @@
+id: nox_emissions_diesel_heavy_truck
+title: NOx emissions (combustion)
+type: parameter
+parameter_type: ECONOMIC_PARAMETER
+unit: g_tkm
+tags:
+- economic_parameter
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'No global estimates for economic data.
+
+    '

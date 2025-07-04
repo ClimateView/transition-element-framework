@@ -1,0 +1,15 @@
+id: start_year_unspecified_emissions_from_end_of_life_treatment_of_sold_products
+title: Start year unspecified emissions from end of life treatment of sold products
+type: parameter
+parameter_type: OPERATIONS
+unit: tonne
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

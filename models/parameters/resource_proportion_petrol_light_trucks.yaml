@@ -1,0 +1,15 @@
+id: resource_proportion_petrol_light_trucks
+title: Fuel proportion petrol for light trucks
+type: parameter
+parameter_type: RESOURCE_PROPORTION
+unit: percent
+tags:
+- resource_proportion
+values:
+- value: 100
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to 100%.
+
+    '

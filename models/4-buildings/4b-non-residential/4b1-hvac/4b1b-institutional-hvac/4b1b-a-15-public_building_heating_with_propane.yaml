@@ -1,0 +1,34 @@
+title: T-4B1B-A-15 - Public buildings heated with propane
+id: public_building_heating_with_propane
+sector: buildings
+sustainability: red
+class: activity
+name: public_building_heating_with_propane
+version: 2.0.0
+operation:
+  growthType: true
+  variable: stock_heating_public_propane
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_heating_public_propane
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/m2
+    expression: '%[0]'
+    variables:
+    - energy_intensity_heating_non_residential_public_propane
+  input:
+  - resource: propane
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_propane_kwh_to_co2e

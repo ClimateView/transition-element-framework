@@ -1,0 +1,15 @@
+id: stock_commercial_unregulated_butane_use
+title: Stock commercial other butane use
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

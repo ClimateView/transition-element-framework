@@ -1,0 +1,38 @@
+title: T-5A1-A-11 - Waste fired power plant
+id: waste_fired_power_plants
+sector: energy
+sustainability: amber
+class: activity
+version: 2.1.0
+progress: 50
+name: waste_fired_power_plants
+operation:
+  growthType: false
+  variable: initial_operation_waste_fired_power_plants
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_pp_waste
+  input:
+  - resource: solid_waste
+    unitOfMeasure: tonne
+    resourceToWork:
+      unitOfMeasure: tonne/kwh
+      expression: '%[0]'
+      variables:
+      - tonne_solid_waste_per_kWh_incineration
+    emissionFactor:
+      unitOfMeasure: g_co2e/tonne
+      expression: '%[0]'
+      variables:
+      - emission_factor_solid_waste_incineration_tonne_to_co2e
+  output:
+  - resource: electricity
+    unitOfMeasure: kwh
+    workToResource:
+      unitOfMeasure: kwh/kwh
+      expression: '1'

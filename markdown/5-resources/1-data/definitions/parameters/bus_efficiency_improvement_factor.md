@@ -1,0 +1,31 @@
+---
+id: bus_efficiency_improvement_factor
+title: Engine efficiency improvement factor for buses
+type: parameter
+parameter_type: SOCIOECONOMIC_PARAMETER
+unit: percent
+tags:
+  - target_stretch
+  - socioeconomic_parameter
+values:
+  - value: 60
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        'From the Swedish Transport Administration. Based on the average improvement of of city buses and highway bus to the year 2045'
+    reference: https://bransch.trafikverket.se/for-dig-i-branschen/miljo---for-dig-i-branschen/minskad-klimatpaverkan/emissionsberakningsmodellen-hbefa/
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 60 | Global | CONSTANT | 2019-01-01 | 'From the Swedish Transport Administration. Based on the average improvement of of city buses and highway bus to the year 2045' | https://bransch.trafikverket.se/for-dig-i-branschen/miljo---for-dig-i-branschen/minskad-klimatpaverkan/emissionsberakningsmodellen-hbefa/ |
+
+

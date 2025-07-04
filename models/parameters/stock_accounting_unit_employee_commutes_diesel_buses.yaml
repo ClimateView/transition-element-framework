@@ -1,0 +1,15 @@
+id: stock_accounting_unit_employee_commutes_diesel_buses
+title: Stock employees' commutes by diesel buses
+type: parameter
+parameter_type: OPERATIONS
+unit: vehicle_km
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

@@ -1,0 +1,16 @@
+id: emission_factor_beverages_alcoholic
+title: Emission factor Alcoholic beverages
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_l
+tags:
+- emission_factors
+values:
+- value: 1500
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'UK Government, Greenhouse Gas Reporting: Conversion Factors 2024
+
+    '
+  reference: https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2024

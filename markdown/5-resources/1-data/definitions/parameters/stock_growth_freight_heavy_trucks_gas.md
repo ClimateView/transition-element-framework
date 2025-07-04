@@ -1,0 +1,45 @@
+---
+id: stock_growth_freight_heavy_trucks_gas
+title: Growth of heavy truck operation (CNG)
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_km_percapita
+tags:
+  - operations_growth
+values:
+  - value: 0
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Initialized to zero.
+  - value: 48.1062
+    country: ES
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Calculations based on national Spanish data.
+    reference: https://climateview.slab.com/posts/transporte-por-carretera-road-transport-esqm8w27#hjt6q-heavy-goods-vehicles-hg-vs
+  - value: 54.7204
+    country: FR
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Valeur basée sur les statistiques nationales
+    reference: https://climateview.slab.com/posts/road-transport-france-eoxjg43o#hp6pa-tableau-6-transport-poids-lourds
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0 | Global | CONSTANT | 2019-01-01 | Initialized to zero. |  |
+| 48.1062 | ES | CONSTANT | 2019-01-01 | Calculations based on national Spanish data. | https://climateview.slab.com/posts/transporte-por-carretera-road-transport-esqm8w27#hjt6q-heavy-goods-vehicles-hg-vs |
+| 54.7204 | FR | CONSTANT | 2019-01-01 | Valeur basée sur les statistiques nationales | https://climateview.slab.com/posts/road-transport-france-eoxjg43o#hp6pa-tableau-6-transport-poids-lourds |
+
+

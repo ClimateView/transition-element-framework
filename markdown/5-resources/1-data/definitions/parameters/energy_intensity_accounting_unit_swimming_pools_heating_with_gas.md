@@ -1,0 +1,38 @@
+---
+id: energy_intensity_accounting_unit_swimming_pools_heating_with_gas
+title: Energy intensity wastewater plants heated with oil
+type: parameter
+parameter_type: ENERGY_INTENSITY
+unit: kwh_m2
+tags:
+  - energy_intensity
+values:
+  - value: 165
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Assuming same as for residential buildings
+    reference: https://climateview.slab.com/public/zy17l63p
+  - value: 305.2
+    country: DE
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Durchschnitt Deutschland
+    reference: https://climateview.slab.com/public/wvziauke
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 165 | Global | CONSTANT | 2019-01-01 | Assuming same as for residential buildings | https://climateview.slab.com/public/zy17l63p |
+| 305.2 | DE | CONSTANT | 2019-01-01 | Durchschnitt Deutschland | https://climateview.slab.com/public/wvziauke |
+
+

@@ -1,0 +1,27 @@
+title: T-1A3-TE-1 - Biofuel for air passenger transport
+id: biofuels_for_air_transport
+sector: transport
+sustainability: amber
+progress: 25
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1b-02-alternative-fuels-aircraft
+name: biofuels_for_air_transport
+type: resourceShift
+longName: Alter the proportion of bio-turbine fuel in turbine fuel for air passenger
+  transport.
+shortName: Biofuel air transport
+description: Increase the proportion of aviation biofuel in aviation turbine fuel
+unitOfMeasure: percent
+cohort:
+  expression: '1'
+resourcesToUpdate:
+  from: resource_proportion_aviation_turbine_fuel
+  to: resource_proportion_aviation_biofuel
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: passenger_transportation_by_air
+cobenefits:
+- expand_stock_lifetime

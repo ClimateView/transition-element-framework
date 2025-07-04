@@ -1,0 +1,29 @@
+title: T-3B5-A-2 - Settlements
+id: settlements
+sector: afolu
+sustainability: red
+class: activity
+name: settlements
+version: 2.0.0
+operation:
+  growthType: false
+  variable: start_year_settlements
+work:
+- name: unknown
+  unitOfMeasure: ha
+  operationToWork:
+    unitOfMeasure: ha/ha
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_hectare
+  input:
+  - resource: settlements
+    unitOfMeasure: ha
+    resourceToWork:
+      unitOfMeasure: ha/ha
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/ha
+      expression: '%[0]'
+      variables:
+      - emission_factor_settlements_ha_to_co2e_gram

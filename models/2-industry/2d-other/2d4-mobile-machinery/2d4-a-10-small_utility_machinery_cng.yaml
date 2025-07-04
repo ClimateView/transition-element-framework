@@ -1,0 +1,41 @@
+title: T-2D4-A-10 - CNG small utility machinery
+id: small_utility_machinery_cng
+sector: industry
+sustainability: amber
+class: activity
+name: small_utility_machinery_cng
+version: 2.0.0
+operation:
+  growthType: false
+  variable: stock_small_utility_machinery_cng
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_small_utility_machinery_cng
+  input:
+  - resource: natural_gas
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_cng_small_utility_machinery
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_natural_gas_kwh_to_co2e
+  - resource: biogas
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_cbg_small_utility_machinery
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_biogas_kwh_to_co2e

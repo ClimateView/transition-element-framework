@@ -1,0 +1,31 @@
+title: T-3C6-A-3 - Agriculture, forestry and fishing unregulated liquefied petrol
+  gas (LPG) use
+id: agriculture_forestry_fishing_unregulated_lpg_use
+sector: afolu
+sustainability: red
+class: activity
+version: 2.1.0
+progress: 50
+name: agriculture_forestry_fishing_unregulated_lpg_use
+operation:
+  growthType: false
+  variable: stock_agriculture_forestry_fishing_unregulated_lpg_use
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: liquefied_petroleum_gas
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_liquefied_petroleum_gas

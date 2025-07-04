@@ -1,0 +1,60 @@
+---
+title: T-5B4-TE-6 - Shift to electrolysis of water for hydrogen production
+id: shift_to_electrolysis_of_water_for_hydrogen_production
+sector: energy
+sustainability: green
+class: transition
+type: shift
+longName: 'Shift from reforming of methane and gasification of carbon to electrolysis of water for hydrogen production'
+shortName: 'Electrolysis for hydrogen'
+name: shift_to_electrolysis_of_water_for_hydrogen_production                
+version: 2.0.0
+unitOfMeasure: tonne
+cohort:
+  expression: '1'
+shiftFrom:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: reforming_of_methane_for_hydrogen_production
+  - chain: gasification_of_carbon_for_hydrogen_production
+shiftTo:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: electrolysis_of_water_for_hydrogen_production
+---
+
+# Background
+
+IPCC WG3 definition: {{ ipcc_mitigation_link() }}.
+
+TBD
+
+
+
+
+{{ te_sustainability() }}
+
+# Transition Element
+
+{{ get_te_description_table() }}
+
+
+
+
+# Activities
+
+{{ get_te_activities() }}
+
+
+# Parameters
+
+{{ generate_parameter_table() }}
+
+
+# YAML Specification
+
+```yaml
+{{ json_to_yaml() }}
+```

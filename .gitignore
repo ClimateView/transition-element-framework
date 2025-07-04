@@ -1,0 +1,32 @@
+.DS_Store
+__pycache__/
+dst/
+docs/
+site/
+test/
+scripts/playbook/.scraiper
+scripts/playbook/__pycache__
+scripts/playbook/datasets.json
+scripts/playbook/tables.xml
+scripts/playbook/tables2.xml
+scripts/playbook/scraiper
+scripts/playbook/prismatic-cider-442310-s5-3ff3df54b36a.json
+markdown/new
+
+# uv
+.venv/
+uv.lock
+
+# Devenv (legacy)
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+.aider*
+
+**/.claude/settings.local.json
+/scripts/teatlas.json

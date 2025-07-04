@@ -1,0 +1,45 @@
+title: T-1A1c-A-8 - Diesel paratransit buses
+id: diesel_paratransit_buses
+name: diesel_paratransit_buses
+class: activity
+version: 2.1.0
+sustainability: red
+operation:
+  growthType: true
+  variable: stock_paratransit_buses_diesel
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_paratransit_buses_diesel
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/vehicle_km
+    expression: '%[0]'
+    variables:
+    - energy_intensity_paratransit_buses_diesel
+  input:
+  - resource: diesel
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_diesel_paratransit_buses
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_diesel_kwh_to_co2e
+  - resource: hvo_biodiesel
+    unitOfMeasure: kwh
+    resourceProportion: resource_proportion_biodiesel_paratransit_buses
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_biodiesel_kwh_to_co2e

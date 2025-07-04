@@ -1,0 +1,36 @@
+title: T-1A3-TE-2 - More efficient passenger airplanes
+id: more_efficient_passenger_airplanes
+sector: transport
+sustainability: amber
+progress: 25
+class: transition
+version: 2.0.0
+ipccMitigationMethod: 1b-01-increased-aircraft-efficiency
+name: more_efficient_passenger_airplanes
+type: update
+longName: Improve efficiency of passenger airplanes to reduce fuel use.
+shortName: Efficient air transport
+weightInversionExpression:
+  expression: ((1 / ( unknown_x / %[0] )) - 1) / %[1]
+  variables:
+  - energy_intensity_air_transportation
+  - aviation_shipping_efficiency_improvement_factor
+description: Reduce the amount of energy required to operate passenger transportation
+  by air through more efficient passenger airplanes
+unitOfMeasure: person_km
+cohort:
+  expression: '1'
+variablesToUpdate:
+- update: energy_intensity_air_transportation
+  type: EFFICIENCY_IMPROVEMENT
+  by:
+    expression: '%[0]'
+    variables:
+    - aviation_shipping_efficiency_improvement_factor
+carbonCausalChains:
+  atoc:
+    expression: '1'
+  chains:
+  - chain: passenger_transportation_by_air
+cobenefits:
+- air_quality

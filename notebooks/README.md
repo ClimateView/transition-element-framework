@@ -27,9 +27,7 @@ This interactive notebook provides an educational interface for understanding ho
 
 - **📋 Model Browser**: Explore activity models organized by sector
 - **🔧 Parameter Explorer**: View parameter definitions and their values across countries
-- **🌍 Global Comparison**: Compare parameter values between different countries
 - **🧮 Emission Calculator**: Calculate emissions step-by-step using real model data
-- **📊 Visualizations**: Interactive charts showing parameter variations
 
 ### Educational Flow
 

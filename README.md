@@ -23,11 +23,18 @@ Contains YAML model files that define the core framework:
 - **Parameters**: Emission factors, energy intensities, and other quantitative data used in calculations
 - **Hierarchical structure**: Organized to match IPCC categorization standards
 
+
 ### 📝 `markdown/`
 Contains the documentation content that generates the website:
 - **Generated from models**: Content is automatically derived from the YAML model files
 - **Website structure**: Organized to match the final website navigation
 - **Markdown format**: Standard markdown files with some extensions for enhanced functionality
+
+
+### 🛠️ `notebooks/`
+Contains all Marimo notebook code examples:
+- **Activity Model Explorer**: Demonstrates how to parse a YAML model file and calculate emissions
+
 
 ### 🛠️ `src/`
 Contains all Python code and build tools:

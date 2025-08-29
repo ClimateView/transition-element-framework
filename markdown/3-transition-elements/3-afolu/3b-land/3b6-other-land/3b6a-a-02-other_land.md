@@ -1,5 +1,5 @@
 ---
-title: T-3B6-A-2 - Other land
+title: T-3B6a-A-2 - Other land
 id: other_land
 sector: afolu
 sustainability: amber

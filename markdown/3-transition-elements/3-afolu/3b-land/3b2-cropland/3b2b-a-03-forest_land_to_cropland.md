@@ -2,6 +2,7 @@
 title: T-3B2b-A-3 - Forest land converted to cropland
 id: forest_land_to_cropland
 sector: afolu
+sustainability: red
 class: activity
 name: forest_land_to_cropland
 version: 2.0.0
@@ -32,6 +33,8 @@ work:
 
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+{{ activity_sustainability() }}
 
 # Transition Elements
 

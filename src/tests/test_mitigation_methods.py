@@ -7,7 +7,7 @@ from setup import YAML_LANGUAGE, get_parsed
 class TestMitigationMethods:
 
     @pytest.mark.parametrize('src',
-                             pathlib.Path("./markdown/2-ipcc-mitigation-options").glob("**/*.md"), ids=str)
+                             pathlib.Path("../markdown/2-ipcc-mitigation-options").glob("**/*.md"), ids=str)
     def test_mitigation_nodes(self, src):
         (md_parse_tree, md_content, yaml_parse_tree, content) = get_parsed(src)
         if "ipcc-2019-emissions" not in src.parts:

@@ -1,33 +1,33 @@
 ---
-title: T-3B5-A-1 - Unspecified emissions from settlements
-id: unspecified_emissions_from_settlements
-name: unspecified_emissions_from_settlements
+title: T-3B2a-A-2 - Cropland
+id: cropland
 sector: afolu
 sustainability: amber
 class: activity
-version: 2.1.0
+name: cropland
+version: 2.0.0
 operation:
   growthType: false
-  variable: start_year_unspecified_emissions_from_settlements
+  variable: start_year_cropland
 work:
 - name: unknown
-  unitOfMeasure: tonne
+  unitOfMeasure: ha
   operationToWork:
-    unitOfMeasure: tonne/tonne
+    unitOfMeasure: ha/ha
     expression: '%[0]'
     variables:
-    - work_intensity_direct_operations_use_tonne
+    - work_intensity_direct_operations_use_hectare
   input:
-  - resource: carbon_dioxide_equivalents
-    unitOfMeasure: tonne
+  - resource: cropland
+    unitOfMeasure: ha
     resourceToWork:
-      unitOfMeasure: tonne/tonne
+      unitOfMeasure: ha/ha
       expression: '1'
     emissionFactor:
-      unitOfMeasure: g_co2e/tonne
+      unitOfMeasure: g_co2e/ha
       expression: '%[0]'
       variables:
-      - emission_factor_co2e_tonne_to_co2e_gram
+      - emission_factor_cropland_ha_to_co2e_gram
 ---
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.

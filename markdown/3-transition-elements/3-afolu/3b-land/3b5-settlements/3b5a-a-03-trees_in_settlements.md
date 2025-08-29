@@ -1,37 +1,38 @@
 ---
-title: T-3B2-A-1 - Unspecified emissions from cropland
-id: unspecified_emissions_from_cropland
-name: unspecified_emissions_from_cropland
+title: T-3B5a-A-3 - Trees in settlements
+id: trees_in_settlements
 sector: afolu
-sustainability: amber
+sustainability: green
 class: activity
-version: 2.1.0
+name: trees_in_settlements
+version: 2.0.0
 operation:
   growthType: false
-  variable: start_year_unspecified_emissions_from_cropland
+  variable: start_year_activity_trees_in_settlements
 work:
 - name: unknown
-  unitOfMeasure: tonne
+  unitOfMeasure: ha
   operationToWork:
-    unitOfMeasure: tonne/tonne
+    unitOfMeasure: ha/ha
     expression: '%[0]'
     variables:
-    - work_intensity_direct_operations_use_tonne
+    - work_intensity_direct_operations_use_hectare
   input:
-  - resource: carbon_dioxide_equivalents
-    unitOfMeasure: tonne
+  - resource: trees_in_settlements
+    unitOfMeasure: ha
     resourceToWork:
-      unitOfMeasure: tonne/tonne
+      unitOfMeasure: ha/ha
       expression: '1'
     emissionFactor:
-      unitOfMeasure: g_co2e/tonne
+      unitOfMeasure: g_co2e/ha
       expression: '%[0]'
       variables:
-      - emission_factor_co2e_tonne_to_co2e_gram
+      - emission_factor_trees_in_settlements_ha_to_co2e_gram
 ---
+
+
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
-
 
 {{ activity_sustainability() }}
 
@@ -55,3 +56,4 @@ This emission source is modelled with {{ generate_work_link() }} as:
 ```yaml
 {{ json_to_yaml() }}
 ```
+

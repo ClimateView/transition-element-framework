@@ -1,33 +1,33 @@
 ---
-title: T-3B3-A-1 - Unspecified emissions from grassland
-id: unspecified_emissions_from_grassland
-name: unspecified_emissions_from_grassland
+title: T-3B3a-A-2 - Grassland
+id: grassland
 sector: afolu
 sustainability: amber
 class: activity
-version: 2.1.0
+name: grassland
+version: 2.0.0
 operation:
   growthType: false
-  variable: start_year_unspecified_emissions_from_grassland
+  variable: start_year_grassland
 work:
 - name: unknown
-  unitOfMeasure: tonne
+  unitOfMeasure: ha
   operationToWork:
-    unitOfMeasure: tonne/tonne
+    unitOfMeasure: ha/ha
     expression: '%[0]'
     variables:
-    - work_intensity_direct_operations_use_tonne
+    - work_intensity_direct_operations_use_hectare
   input:
-  - resource: carbon_dioxide_equivalents
-    unitOfMeasure: tonne
+  - resource: grassland
+    unitOfMeasure: ha
     resourceToWork:
-      unitOfMeasure: tonne/tonne
+      unitOfMeasure: ha/ha
       expression: '1'
     emissionFactor:
-      unitOfMeasure: g_co2e/tonne
+      unitOfMeasure: g_co2e/ha
       expression: '%[0]'
       variables:
-      - emission_factor_co2e_tonne_to_co2e_gram
+      - emission_factor_grassland_ha_to_co2e_gram
 ---
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.

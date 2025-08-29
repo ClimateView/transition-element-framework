@@ -1,33 +1,33 @@
 ---
-title: T-3B4-A-2 - Wetlands
-id: wetlands
+title: T-3B3a-A-1 - Unspecified emissions from grassland
+id: unspecified_emissions_from_grassland
+name: unspecified_emissions_from_grassland
 sector: afolu
-sustainability: green
+sustainability: amber
 class: activity
-name: wetlands
-version: 2.0.0
+version: 2.1.0
 operation:
   growthType: false
-  variable: start_year_wetlands
+  variable: start_year_unspecified_emissions_from_grassland
 work:
 - name: unknown
-  unitOfMeasure: ha
+  unitOfMeasure: tonne
   operationToWork:
-    unitOfMeasure: ha/ha
+    unitOfMeasure: tonne/tonne
     expression: '%[0]'
     variables:
-    - work_intensity_direct_operations_use_hectare
+    - work_intensity_direct_operations_use_tonne
   input:
-  - resource: wetlands
-    unitOfMeasure: ha
+  - resource: carbon_dioxide_equivalents
+    unitOfMeasure: tonne
     resourceToWork:
-      unitOfMeasure: ha/ha
+      unitOfMeasure: tonne/tonne
       expression: '1'
     emissionFactor:
-      unitOfMeasure: g_co2e/ha
+      unitOfMeasure: g_co2e/tonne
       expression: '%[0]'
       variables:
-      - emission_factor_wetlands_ha_to_co2e_gram
+      - emission_factor_co2e_tonne_to_co2e_gram
 ---
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.

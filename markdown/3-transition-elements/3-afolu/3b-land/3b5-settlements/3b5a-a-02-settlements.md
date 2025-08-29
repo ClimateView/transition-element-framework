@@ -1,13 +1,14 @@
 ---
-title: T-3B5a-A-1 - Trees in settlements
-id: trees_in_settlements
+title: T-3B5a-A-2 - Settlements
+id: settlements
 sector: afolu
+sustainability: red
 class: activity
-name: trees_in_settlements
+name: settlements
 version: 2.0.0
 operation:
   growthType: false
-  variable: start_year_activity_trees_in_settlements
+  variable: start_year_settlements
 work:
 - name: unknown
   unitOfMeasure: ha
@@ -17,7 +18,7 @@ work:
     variables:
     - work_intensity_direct_operations_use_hectare
   input:
-  - resource: trees_in_settlements
+  - resource: settlements
     unitOfMeasure: ha
     resourceToWork:
       unitOfMeasure: ha/ha
@@ -26,12 +27,13 @@ work:
       unitOfMeasure: g_co2e/ha
       expression: '%[0]'
       variables:
-      - emission_factor_trees_in_settlements_ha_to_co2e_gram
+      - emission_factor_settlements_ha_to_co2e_gram
 ---
-
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+
+{{ activity_sustainability() }}
 
 # Transition Elements
 
@@ -53,4 +55,3 @@ This emission source is modelled with {{ generate_work_link() }} as:
 ```yaml
 {{ json_to_yaml() }}
 ```
-

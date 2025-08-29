@@ -2,6 +2,7 @@
 title: T-3B4b-A-3 - Cropland converted to wetlands
 id: cropland_to_wetlands
 sector: afolu
+sustainability: green
 class: activity
 name: cropland_to_wetlands
 version: 2.0.0
@@ -32,6 +33,8 @@ work:
 
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+{{ activity_sustainability() }}
 
 # Transition Elements
 

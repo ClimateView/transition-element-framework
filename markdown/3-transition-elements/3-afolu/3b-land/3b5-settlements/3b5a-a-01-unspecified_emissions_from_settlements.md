@@ -1,14 +1,14 @@
 ---
-title: T-3B6-A-1 - Unspecified emissions from other land
-id: unspecified_emissions_from_land
-name: unspecified_emissions_from_land
+title: T-3B5a-A-1 - Unspecified emissions from settlements
+id: unspecified_emissions_from_settlements
+name: unspecified_emissions_from_settlements
 sector: afolu
 sustainability: amber
 class: activity
 version: 2.1.0
 operation:
   growthType: false
-  variable: start_year_unspecified_emissions_from_land
+  variable: start_year_unspecified_emissions_from_settlements
 work:
 - name: unknown
   unitOfMeasure: tonne

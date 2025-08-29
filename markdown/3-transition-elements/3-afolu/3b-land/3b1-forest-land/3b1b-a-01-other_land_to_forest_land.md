@@ -2,6 +2,7 @@
 title: T-3B1b-A-1 - Other land converted to forest land
 id: other_land_to_forest_land
 sector: afolu
+sustainability: green
 class: activity
 name: other_land_to_forest_land
 version: 2.0.0
@@ -29,9 +30,10 @@ work:
       - emission_factor_other_land_to_forest_land_ha_to_co2e_gram
 ---
 
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+{{ activity_sustainability() }}
 
 # Transition Elements
 

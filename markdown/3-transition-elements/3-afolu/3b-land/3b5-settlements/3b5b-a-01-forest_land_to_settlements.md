@@ -2,6 +2,7 @@
 title: T-3B5b-A-1 - Forest land converted to settlements
 id: forest_land_to_settlements
 sector: afolu
+sustainability: green
 class: activity
 name: forest_land_to_settlements
 version: 2.0.0
@@ -29,9 +30,10 @@ work:
       - emission_factor_forest_land_to_settlements_ha_to_co2e_gram
 ---
 
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+{{ activity_sustainability() }}
 
 # Transition Elements
 

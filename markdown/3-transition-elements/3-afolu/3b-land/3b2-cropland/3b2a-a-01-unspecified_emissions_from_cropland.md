@@ -1,14 +1,14 @@
 ---
-title: T-3B1-A-1 - Unspecified emissions from forest land
-id: unspecified_emissions_from_forest_land
-name: unspecified_emissions_from_forest_land
+title: T-3B2a-A-1 - Unspecified emissions from cropland
+id: unspecified_emissions_from_cropland
+name: unspecified_emissions_from_cropland
 sector: afolu
 sustainability: amber
 class: activity
 version: 2.1.0
 operation:
   growthType: false
-  variable: start_year_unspecified_emissions_from_forest_land
+  variable: start_year_unspecified_emissions_from_cropland
 work:
 - name: unknown
   unitOfMeasure: tonne

@@ -2,6 +2,7 @@
 title: T-3B3b-A-2 - Cropland converted to grassland
 id: cropland_to_grassland
 sector: afolu
+sustainability: green
 class: activity
 name: cropland_to_grassland
 version: 2.0.0
@@ -32,6 +33,8 @@ work:
 
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
+
+{{ activity_sustainability() }}
 
 # Transition Elements
 

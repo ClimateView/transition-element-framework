@@ -6,7 +6,7 @@ from setup import YAML_LANGUAGE, get_parsed
 
 class TestMarkdown:
 
-    @pytest.mark.parametrize('src', pathlib.Path("./markdown").glob("**/*.md"), ids=str)
+    @pytest.mark.parametrize('src', pathlib.Path("../markdown").glob("**/*.md"), ids=str)
     def test_correct_markdown(self, src):
         """ TEF01: Markdown file should not be empty """
         (md_parse_tree, md_content, yaml_parse_tree, content) = get_parsed(src)

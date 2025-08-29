@@ -1,14 +1,14 @@
 ---
-title: T-3B2-A-2 - Cropland
-id: cropland
+title: T-3B1a-A-2 - Forest land
+id: forest_land
 sector: afolu
-sustainability: amber
+sustainability: green
 class: activity
-name: cropland
+name: forest_land
 version: 2.0.0
 operation:
   growthType: false
-  variable: start_year_cropland
+  variable: start_year_forest_land
 work:
 - name: unknown
   unitOfMeasure: ha
@@ -18,7 +18,7 @@ work:
     variables:
     - work_intensity_direct_operations_use_hectare
   input:
-  - resource: cropland
+  - resource: forest_land
     unitOfMeasure: ha
     resourceToWork:
       unitOfMeasure: ha/ha
@@ -27,7 +27,7 @@ work:
       unitOfMeasure: g_co2e/ha
       expression: '%[0]'
       variables:
-      - emission_factor_cropland_ha_to_co2e_gram
+      - emission_factor_forest_land_ha_to_co2e_gram
 ---
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.

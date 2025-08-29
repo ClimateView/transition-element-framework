@@ -1,0 +1,15 @@
+id: growth_activity_oil_usage_within_lead_industries
+title: Growth of oil usage within lead industries
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: kwh_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

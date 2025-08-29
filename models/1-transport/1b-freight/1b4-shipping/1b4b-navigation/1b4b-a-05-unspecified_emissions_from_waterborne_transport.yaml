@@ -4,10 +4,15 @@ name: unspecified_emissions_from_waterborne_transport
 class: activity
 sector: transport
 sustainability: amber
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_unspecified_emissions_from_waterborne_transport
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_unspecified_emissions_from_waterborne_transport
 work:
 - name: unknown
   unitOfMeasure: tonne

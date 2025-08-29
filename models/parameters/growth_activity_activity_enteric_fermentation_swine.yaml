@@ -1,0 +1,15 @@
+id: growth_activity_activity_enteric_fermentation_swine
+title: Growth of enteric fermentation in swine
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: head_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

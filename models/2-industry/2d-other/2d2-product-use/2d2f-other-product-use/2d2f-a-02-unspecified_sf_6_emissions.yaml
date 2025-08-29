@@ -1,13 +1,18 @@
-title: T-2D2F-A-2 - Unspecified SF6 emissions
+title: T-2D2f-A-2 - Unspecified SF6 emissions
 id: unspecified_sf_6_emissions
 sector: industry
 sustainability: red
 class: activity
 name: unspecified_sf_6_emissions
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_unspecified_sf_6_emissions
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_unspecified_sf_6_emissions
 work:
 - name: unknown
   unitOfMeasure: tonne

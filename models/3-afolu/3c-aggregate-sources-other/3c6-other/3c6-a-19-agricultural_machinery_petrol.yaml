@@ -4,11 +4,16 @@ sector: afolu
 sustainability: red
 class: activity
 name: agricultural_machinery_petrol
-version: 2.0.0
+version: 2.1.0
 chains: null
 operation:
-  growthType: false
+  growthType: true
   variable: stock_agricultural_machinery_petrol
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_agricultural_machinery_petrol
 work:
 - name: combustion
   unitOfMeasure: kwh

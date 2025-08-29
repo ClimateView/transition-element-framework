@@ -3,12 +3,17 @@ id: flaring_gas_and_oil_production_wtt
 sector: energy
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: flaring_gas_and_oil_production_wtt
 operation:
-  growthType: false
+  growthType: true
   variable: stock_gas_flared_oil_and_gas_production_wtt
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_gas_flared_oil_and_gas_production_wtt
 work:
 - name: combustion
   unitOfMeasure: kwh

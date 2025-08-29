@@ -2,7 +2,7 @@ id: pm2_5_wear_tear_bus_electric
 title: PM 2.5 Particles emitted from wear and tear (electric buses)
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_vkm
+unit: g_vehicle_km
 tags:
 - economic_parameter
 values:

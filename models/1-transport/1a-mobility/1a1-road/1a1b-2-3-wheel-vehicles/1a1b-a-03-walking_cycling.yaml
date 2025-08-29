@@ -27,7 +27,7 @@ work:
     - energy_intensity_walking_biking
   input:
   - resource: metabolic_energy
-    unitOfMeasure: joule
+    unitOfMeasure: kwh
     resourceToWork:
       unitOfMeasure: kwh/kwh
       expression: '1'

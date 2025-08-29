@@ -1,0 +1,15 @@
+id: growth_activity_unspecified_emissions_from_leather_goods_production
+title: Growth of unspecified emissions from leather goods production
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

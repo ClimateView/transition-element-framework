@@ -1,0 +1,15 @@
+id: stock_growth_institutional_electric_wastewater_pumps
+title: Growth of institutional electric wastewater pump operations
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: m3_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

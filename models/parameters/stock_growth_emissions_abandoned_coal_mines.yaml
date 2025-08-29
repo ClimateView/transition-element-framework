@@ -1,0 +1,15 @@
+id: stock_growth_emissions_abandoned_coal_mines
+title: Growth of emissions from abandoned coal mines
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

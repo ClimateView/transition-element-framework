@@ -1,0 +1,15 @@
+id: stock_growth_heating_new_residential_multi_family_buildings
+title: Growth heating new residential multi-family, per capita
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: m2_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

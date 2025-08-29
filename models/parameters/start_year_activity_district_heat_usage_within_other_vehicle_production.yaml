@@ -1,0 +1,15 @@
+id: start_year_activity_district_heat_usage_within_other_vehicle_production
+title: District heat usage within other vehicle production
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

@@ -3,7 +3,7 @@ id: gas_heavy_trucks
 sector: transport
 sustainability: amber
 class: transition
-version: 2.1.0
+version: 2.0.1
 ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
 name: gas_heavy_trucks
 type: shift

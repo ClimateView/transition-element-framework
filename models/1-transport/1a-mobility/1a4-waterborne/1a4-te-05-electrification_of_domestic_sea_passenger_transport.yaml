@@ -4,7 +4,7 @@ sector: transport
 sustainability: green
 progress: 25
 class: transition
-version: 2.0.0
+version: 2.0.1
 ipccMitigationMethod: 1c-02-electric-technologies-shipping
 name: electrification_of_domestic_sea_passenger_transport
 type: shift
@@ -20,6 +20,7 @@ shiftFrom:
     expression: '1'
   chains:
   - chain: ship_passenger
+  - chain: gas_oil_shipping_passenger
 shiftTo:
   atoc:
     expression: '1'

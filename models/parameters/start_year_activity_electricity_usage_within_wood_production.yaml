@@ -1,0 +1,15 @@
+id: start_year_activity_electricity_usage_within_wood_production
+title: Electricity usage within wood production
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

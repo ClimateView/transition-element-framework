@@ -1,0 +1,15 @@
+id: growth_activity_manure_storage_slurry_swine
+title: Growth of slurry manure storage for swine
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

@@ -1,0 +1,15 @@
+id: stock_growth_small_utility_machinery_lpg
+title: Growth of small utility machinery operations (LPG)
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: kwh_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

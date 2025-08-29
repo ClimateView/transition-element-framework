@@ -7,14 +7,13 @@ tags:
 - resource_proportion
 - PRIO_MEDIUM
 values:
-- value: 5
+- value: 0
   global: true
   scalingType: CONSTANT
   validFrom: 2019-01-01
-  comment: 'ClimateView Model description - Biofuels
+  comment: 'Initialized to 0%.
 
     '
-  reference: https://climateview.slab.com/public/tsku2vip
 - value: 5
   country: CH
   scalingType: CONSTANT

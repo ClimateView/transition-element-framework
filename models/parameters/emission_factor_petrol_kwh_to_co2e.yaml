@@ -50,3 +50,11 @@ values:
 
     '
   reference: https://climateview.slab.com/public/78b9qifq
+- value: 240.436
+  country: US
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'EPA GHG Emission Factors Hub
+
+    '
+  reference: https://www.epa.gov/system/files/documents/2025-01/ghg-emission-factors-hub-2025.pdf

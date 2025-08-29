@@ -1,0 +1,33 @@
+title: T-2D1i-A-3 - Electricity usage within rubber production
+id: electricity_usage_within_rubber_production
+sector: industry
+class: activity
+name: electricity_usage_within_rubber_production
+version: 2.0.0
+operation:
+  growthType: true
+  variable: start_year_activity_electricity_usage_within_rubber_production
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_electricity_usage_within_rubber_production
+work:
+- name: electromagnetism
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: electricity
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_electricity_current

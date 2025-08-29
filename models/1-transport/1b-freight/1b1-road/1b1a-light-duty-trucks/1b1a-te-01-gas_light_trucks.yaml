@@ -3,15 +3,15 @@ id: gas_light_trucks
 sector: transport
 sustainability: amber
 class: transition
-version: 2.1.0
+version: 2.0.1
 ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
 name: gas_light_trucks
 type: shift
 longName: Shift from Internal Combustion Engine (ICE) light trucks to compressed natural
   gas (CNG) light trucks.
 shortName: CNG light trucks
-description: Shift vehicle kilometer from diesel light trucks to gas light trucks
-  in vehicle kilometer to fulfill the need of logistics
+description: Shift vehicle kilometer from diesel light trucks to gas light trucks  in
+  vehicle kilometer to fulfill the need of logistics
 unitOfMeasure: vehicle_km
 cohort:
   expression: '1'

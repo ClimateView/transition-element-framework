@@ -1,0 +1,15 @@
+id: stock_growth_cooling_public_district_cooling
+title: Growth cooling public district cooling, per capita
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: m2_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

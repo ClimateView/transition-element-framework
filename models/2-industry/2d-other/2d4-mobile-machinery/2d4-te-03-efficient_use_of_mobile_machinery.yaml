@@ -4,7 +4,7 @@ sector: industry
 sustainability: amber
 progress: 25
 class: transition
-version: 2.0.3
+version: 2.0.4
 name: efficient_use_of_mobile_machinery
 type: update
 longName: Efficient use of mobile machinery to reduce fuel use.
@@ -53,3 +53,4 @@ carbonCausalChains:
   - chain: mobile_machinery_diesel
   - chain: mobile_machinery_petrol
   - chain: mobile_machinery_lpg
+  - chain: mobile_machinery_cng

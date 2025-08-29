@@ -1,13 +1,18 @@
-title: T-4B2B-A-4 - Traffic lights
+title: T-4B2b-A-4 - Traffic lights
 id: institutional_electric_traffic_lights
 sector: buildings
 sustainability: green
 class: activity
 name: institutional_electric_traffic_lights
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_institutional_electric_traffic_lights
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_institutional_electric_traffic_lights
 work:
 - name: electromagnetism
   unitOfMeasure: kwh

@@ -1,0 +1,15 @@
+id: growth_activity_casting_with_sf_6_cover_gas_for_magnesium_production
+title: Growth of casting with SF₆ cover gas for magnesium production
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

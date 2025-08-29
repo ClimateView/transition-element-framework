@@ -4,7 +4,7 @@ sector: transport
 sustainability: amber
 progress: 25
 class: transition
-version: 2.0.0
+version: 2.0.1
 ipccMitigationMethod: 1c-01-alternative-fuels-shipping
 name: biofuels_for_sea_passenger_transport
 type: resourceShift

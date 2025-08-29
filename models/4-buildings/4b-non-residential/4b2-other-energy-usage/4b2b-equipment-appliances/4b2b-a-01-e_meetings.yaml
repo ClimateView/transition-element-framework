@@ -3,12 +3,17 @@ id: e_meetings
 sector: buildings
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.1
 progress: 50
 name: e_meetings
 operation:
-  growthType: false
+  growthType: true
   variable: stock_e_meetings
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_e_meetings
 work:
 - name: unknown
   unitOfMeasure: kwh

@@ -5,13 +5,13 @@ sector: transport
 sustainability: green
 progress: 25
 class: transition
-version: 2.0.0
+version: 2.0.1
 ipccMitigationMethod: 1c-02-electric-technologies-shipping
 name: electrification_of_domestic_sea_passenger_transport
 type: shift
-longName: 'Shift from conventional fueled to electric marine passenger transport.'
-shortName: 'Electric marine passenger transport'
-description: 'Shift person kilometer from ship passenger to electric shipping passenger in person kilometer to fulfill the need of mobility'
+longName: Shift from conventional fueled to electric marine passenger transport.
+shortName: Electric marine passenger transport
+description: Shift person kilometer from ship passenger to electric shipping passenger in person kilometer to fulfill the need of mobility
 unitOfMeasure: person_km
 cohort:
   expression: '1'
@@ -20,6 +20,7 @@ shiftFrom:
     expression: '1'
   chains:
   - chain: ship_passenger
+  - chain: gas_oil_shipping_passenger
 shiftTo:
   atoc:
     expression: '1'
@@ -28,9 +29,7 @@ shiftTo:
 cobenefits:
 - air_quality
 - reduced_noise
-
 ---
-
 TBD
 
 {{ te_sustainability() }}

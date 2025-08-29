@@ -3,7 +3,7 @@ id: nox_emissions_petrol_heavy_truck
 title: NOx emissions (combustion)
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_tkm
+unit: g_tonne_km
 tags:
   - economic_parameter
 values:

@@ -23,7 +23,7 @@ work:
     variables:
     - work_intensity_direct_operations_use_tonne
   input:
-  - resource: waste_composting
+  - resource: biowaste_composting
     unitOfMeasure: tonne
     resourceToWork:
       unitOfMeasure: tonne/tonne

@@ -4,12 +4,17 @@ id: diesel_use_non_specified_sources
 sector: energy
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: diesel_use_non_specified_sources
 operation:
-  growthType: false
+  growthType: true
   variable: stock_diesel_use_unspecified_sources
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_diesel_use_unspecified_sources
 work:
 - name: combustion
   unitOfMeasure: kwh

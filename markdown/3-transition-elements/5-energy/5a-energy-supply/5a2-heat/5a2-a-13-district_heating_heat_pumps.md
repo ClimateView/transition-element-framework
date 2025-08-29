@@ -4,7 +4,7 @@ id: district_heating_heat_pumps
 sector: energy
 sustainability: green
 class: activity
-version: 2.0.1
+version: 2.1.0
 progress: 50
 name: district_heating_heat_pumps
 operation:
@@ -37,9 +37,7 @@ work:
       expression: 1 / %[0]
       variables:
       - energy_intensity_district_heating_heatpumps
-
 ---
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
 

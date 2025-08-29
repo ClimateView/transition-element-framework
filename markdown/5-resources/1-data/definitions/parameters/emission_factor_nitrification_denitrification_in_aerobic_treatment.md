@@ -9,7 +9,7 @@ tags:
   - PRIO_GLOBAL
   - emission_factor
 values:
-  - value: 4368
+  - value: 6864
     global: True
     scalingType: CONSTANT
     validFrom: 2020-01-01
@@ -27,6 +27,6 @@ Unit of measure: `{{unit}}`
 
 | Value | Region | Scaling | Period | Comment | Reference |
 |-------|--------|---------|--------|---------|-----------|
-| 4368 | Global | CONSTANT | 2020-01-01 | TABLE 6.8A. AR6 GWP values for N20. | https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/5_Volume5/19R_V5_6_Ch06_Wastewater.pdf |
+| 6864 | Global | CONSTANT | 2020-01-01 | TABLE 6.8A. AR6 GWP values for N20. | https://www.ipcc-nggip.iges.or.jp/public/2019rf/pdf/5_Volume5/19R_V5_6_Ch06_Wastewater.pdf |
 
 

@@ -5,7 +5,7 @@ sector: industry
 sustainability: green
 progress: 25
 class: transition
-version: 2.0.2
+version: 2.0.3
 name: electrification_of_mobile_machinery
 type: shift
 unitOfMeasure: kwh
@@ -18,6 +18,7 @@ shiftFrom:
   - chain: mobile_machinery_diesel
   - chain: mobile_machinery_petrol
   - chain: mobile_machinery_lpg
+  - chain: mobile_machinery_cng
 shiftTo:
   atoc:
     expression: '1'

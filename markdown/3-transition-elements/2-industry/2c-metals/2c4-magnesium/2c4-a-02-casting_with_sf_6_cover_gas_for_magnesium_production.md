@@ -5,10 +5,15 @@ sector: industry
 sustainability: red
 class: activity
 name: casting_with_sf_6_cover_gas_for_magnesium_production
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_casting_with_sf_6_cover_gas_for_magnesium_production
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_casting_with_sf_6_cover_gas_for_magnesium_production
 work:
 - name: casting
   unitOfMeasure: tonne

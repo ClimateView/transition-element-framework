@@ -3,7 +3,7 @@ id: pm10_wear_tear_personal_vehicles_petrol
 title: PM 10 Particles emitted from wear and tear (petrol vehicles)
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_vkm
+unit: g_vehicle_km
 tags:
   - economic_parameter
 values:

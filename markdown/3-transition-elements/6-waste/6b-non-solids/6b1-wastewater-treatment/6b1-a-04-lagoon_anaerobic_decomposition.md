@@ -5,11 +5,16 @@ sector: waste
 sustainability: red
 class: activity
 name: lagoon_anaerobic_decomposition
-version: 2.0.0
+version: 2.1.0
 chains: null
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_lagoon_anaerobic_decomposition
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_lagoon_anaerobic_decomposition
 work:
 - name: anaerobic_decomposition
   unitOfMeasure: kg_BOD

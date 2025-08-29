@@ -4,12 +4,17 @@ id: multi_family_building_heating_with_lpg
 sector: buildings
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: multi_family_building_heating_with_lpg
 operation:
-  growthType: false
+  growthType: true
   variable: stock_heating_residential_multi_family_lpg
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_heating_residential_multi_family_lpg
 work:
 - name: combustion
   unitOfMeasure: kwh

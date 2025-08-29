@@ -4,7 +4,7 @@ id: coal_fired_power_plants
 sector: energy
 sustainability: red
 class: activity
-version: 2.0.0
+version: 2.1.0
 progress: 50
 name: coal_fired_power_plants
 operation:
@@ -37,9 +37,7 @@ work:
     workToResource:
       unitOfMeasure: kwh/kwh
       expression: '1'
-
 ---
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
 
@@ -66,4 +64,3 @@ This emission source is modelled with {{ generate_work_link() }} as:
 ```yaml
 {{ json_to_yaml() }}
 ```
-

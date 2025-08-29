@@ -1,6 +1,6 @@
 ---
 id: energy_efficiency_chp_biogas_to_electricity
-title: Energy efficiency of CHP biogas to district heat
+title: Energy efficiency of CHP biogas to electricity
 type: parameter
 parameter_type: ENERGY_EFFICIENCY
 unit: percent

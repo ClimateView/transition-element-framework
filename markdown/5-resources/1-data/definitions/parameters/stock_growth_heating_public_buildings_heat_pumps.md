@@ -1,0 +1,37 @@
+---
+id: stock_growth_heating_public_buildings_heat_pumps
+title: Growth heating by heat pumps (public buildings), per capita
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: m2_percapita
+tags:
+  - operations_growth
+values:
+  - value: 0
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Initialized to zero.
+  - value: 0.03
+    country: DE
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Schätzung basierend auf Durchschnittswerten von deutschen Großstädten
+    reference: https://climateview.slab.com/public/wvziauke
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 0 | Global | CONSTANT | 2019-01-01 | Initialized to zero. |  |
+| 0.03 | DE | CONSTANT | 2019-01-01 | Schätzung basierend auf Durchschnittswerten von deutschen Großstädten | https://climateview.slab.com/public/wvziauke |
+
+

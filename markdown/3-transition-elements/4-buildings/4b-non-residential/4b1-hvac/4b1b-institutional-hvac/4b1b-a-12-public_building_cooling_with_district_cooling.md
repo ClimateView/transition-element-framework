@@ -4,12 +4,17 @@ id: public_building_cooling_with_district_cooling
 sector: buildings
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: public_building_cooling_with_district_cooling
 operation:
-  growthType: false
+  growthType: true
   variable: stock_cooling_public_district_cooling
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_cooling_public_district_cooling
 work:
 - name: unknown
   unitOfMeasure: kwh

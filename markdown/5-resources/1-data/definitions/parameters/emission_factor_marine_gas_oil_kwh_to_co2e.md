@@ -1,0 +1,31 @@
+---
+id: emission_factor_marine_gas_oil_kwh_to_co2e
+title: Emission factor marine gas oil
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_kwh
+tags:
+  - emission_factors
+  - PRIO_GLOBAL
+values:
+  - value: 272.87
+    global: True
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        UK Data Playbook, Sheet Resources. Assumed to be the same as gas oil.
+    reference: https://docs.google.com/spreadsheets/d/17hr9o90tcxP3xX9T000uWcXSrzm5b5D3UfPwcq7LzgA/edit?gid=1982830832#gid=1982830832
+---
+
+
+Unit of measure: `{{unit}}`
+
+
+# Values
+
+
+| Value | Region | Scaling | Period | Comment | Reference |
+|-------|--------|---------|--------|---------|-----------|
+| 272.87 | Global | CONSTANT | 2019-01-01 | UK Data Playbook, Sheet Resources. Assumed to be the same as gas oil. | https://docs.google.com/spreadsheets/d/17hr9o90tcxP3xX9T000uWcXSrzm5b5D3UfPwcq7LzgA/edit?gid=1982830832#gid=1982830832 |
+
+

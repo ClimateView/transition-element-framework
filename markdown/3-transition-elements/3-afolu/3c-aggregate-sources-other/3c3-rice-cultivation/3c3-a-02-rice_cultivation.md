@@ -5,10 +5,15 @@ sector: afolu
 sustainability: amber
 class: activity
 name: rice_cultivation
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_rice_cultivation
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_rice_cultivation
 work:
 - name: unknown
   unitOfMeasure: ha

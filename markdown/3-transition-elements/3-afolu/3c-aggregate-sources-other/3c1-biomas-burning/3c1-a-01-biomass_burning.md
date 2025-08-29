@@ -5,10 +5,15 @@ sector: afolu
 sustainability: red
 class: activity
 name: biomass_burning
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_biomass_burning
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_biomass_burning
 work:
 - name: combustion
   unitOfMeasure: tonne

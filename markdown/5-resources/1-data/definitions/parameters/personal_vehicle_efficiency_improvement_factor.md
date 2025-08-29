@@ -16,6 +16,12 @@ values:
     comment: |
         Report from the Swedish Transport Administration, p. 25
     reference: https://trafikverket.ineko.se/se/scenarier-f%C3%B6r-att-n%C3%A5-klimatm%C3%A5let-f%C3%B6r-inrikes-transporter-ett-regeringsuppdrag
+  - value: 48
+    country: US
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Assumption.
 ---
 
 
@@ -28,5 +34,6 @@ Unit of measure: `{{unit}}`
 | Value | Region | Scaling | Period | Comment | Reference |
 |-------|--------|---------|--------|---------|-----------|
 | 12 | Global | CONSTANT | 2019-01-01 | Report from the Swedish Transport Administration, p. 25 | https://trafikverket.ineko.se/se/scenarier-f%C3%B6r-att-n%C3%A5-klimatm%C3%A5let-f%C3%B6r-inrikes-transporter-ett-regeringsuppdrag |
+| 48 | US | CONSTANT | 2019-01-01 | Assumption. |  |
 
 

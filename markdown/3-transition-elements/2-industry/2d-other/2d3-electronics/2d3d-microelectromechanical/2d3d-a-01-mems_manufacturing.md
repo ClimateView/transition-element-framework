@@ -1,14 +1,19 @@
 ---
-title: T-2D3D-A-1 - MEMS manufacturing
+title: T-2D3d-A-1 - MEMS manufacturing
 id: mems_manufacturing
 sector: industry
 sustainability: amber
 class: activity
 name: mems_manufacturing
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_mems_manufacturing
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_mems_manufacturing
 work:
 - name: fugitive
   unitOfMeasure: m2

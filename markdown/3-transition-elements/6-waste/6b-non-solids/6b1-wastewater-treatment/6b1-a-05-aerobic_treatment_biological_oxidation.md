@@ -5,11 +5,16 @@ sector: waste
 sustainability: amber
 class: activity
 name: aerobic_treatment_biological_oxidation
-version: 2.0.0
+version: 2.1.0
 chains: null
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_aerobic_treatment_biological_oxidation
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_aerobic_treatment_biological_oxidation
 work:
 - name: biological_oxidation
   unitOfMeasure: kg_BOD

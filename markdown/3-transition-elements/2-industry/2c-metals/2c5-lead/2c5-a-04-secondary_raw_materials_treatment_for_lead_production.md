@@ -5,10 +5,15 @@ sector: industry
 sustainability: red
 class: activity
 name: secondary_raw_materials_treatment_for_lead_production
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_secondary_raw_materials_treatment_for_lead_production
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_secondary_raw_materials_treatment_for_lead_production
 work:
 - name: smelting
   unitOfMeasure: tonne

@@ -5,10 +5,15 @@ sector: industry
 sustainability: amber
 class: activity
 name: industrial_unregulated_district_cooling_use
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_industrial_unregulated_district_cooling_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_industrial_unregulated_district_cooling_use
 work:
 - name: unknown
   unitOfMeasure: kwh

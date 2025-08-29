@@ -5,10 +5,15 @@ sector: afolu
 sustainability: amber
 class: activity
 name: manure_storage_solid_storage_goat
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_manure_storage_solid_storage_goat
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_manure_storage_solid_storage_goat
 work:
 - name: unknown
   unitOfMeasure: tonne

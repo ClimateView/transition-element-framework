@@ -5,10 +5,15 @@ sector: afolu
 sustainability: amber
 class: activity
 name: unspecified_emissions_from_pasture_manure
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_unspecified_emissions_from_pasture_manure
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_unspecified_emissions_from_pasture_manure
 work:
 - name: unknown
   unitOfMeasure: tonne

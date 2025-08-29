@@ -3,7 +3,7 @@ id: pm2_5_wear_tear_personal_vehicles_bev
 title: PM 2.5 Particles emitted from wear and tear (bev vehicles)
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_vkm
+unit: g_vehicle_km
 tags:
   - economic_parameter
 values:

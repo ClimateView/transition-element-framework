@@ -5,10 +5,15 @@ sector: industry
 sustainability: amber
 class: activity
 name: calcination_of_trona_for_soda_ash_production
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_calcination_of_trona_for_soda_ash_production
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_calcination_of_trona_for_soda_ash_production
 work:
 - name: calcination
   unitOfMeasure: tonne

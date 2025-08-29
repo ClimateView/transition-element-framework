@@ -5,10 +5,15 @@ name: district_heat_use_non_specified_sources
 sector: energy
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_district_heat_use_unspecified_sources
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_district_heat_use_unspecified_sources
 work:
 - name: unknown
   unitOfMeasure: kwh

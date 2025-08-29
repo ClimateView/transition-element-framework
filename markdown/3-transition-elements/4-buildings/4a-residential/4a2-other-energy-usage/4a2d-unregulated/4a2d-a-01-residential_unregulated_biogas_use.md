@@ -4,12 +4,17 @@ id: residential_unregulated_biogas_use
 sector: buildings
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: residential_unregulated_biogas_use
 operation:
-  growthType: false
+  growthType: true
   variable: stock_residential_unregulated_biogas_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_residential_unregulated_biogas_use
 work:
 - name: combustion
   unitOfMeasure: kwh

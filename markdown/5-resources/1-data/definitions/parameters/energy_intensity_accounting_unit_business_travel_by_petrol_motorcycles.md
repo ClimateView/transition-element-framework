@@ -1,6 +1,6 @@
 ---
 id: energy_intensity_accounting_unit_business_travel_by_petrol_motorcycles
-title: Energy intensity business travel by electric motorcycle
+title: Energy intensity business travel by petrol motorcycle
 type: parameter
 parameter_type: ENERGY_INTENSITY
 unit: kwh_vehicle_km

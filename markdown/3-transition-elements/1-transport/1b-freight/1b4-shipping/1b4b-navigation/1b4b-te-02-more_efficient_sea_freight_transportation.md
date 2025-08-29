@@ -4,17 +4,17 @@ id: more_efficient_sea_freight_transportation
 sector: transport
 sustainability: amber
 class: transition
-version: 2.0.0
+version: 2.0.1
 name: more_efficient_sea_freight_transportation
 type: update
-longName: 'Improve efficiency of marine freight transport to reduce fuel use.'
-shortName: 'Efficient marine freight transport'
+longName: Improve efficiency of marine freight transport to reduce fuel use.
+shortName: Efficient marine freight transport
 weightInversionExpression:
   expression: ((1 / ( unknown_x / %[0] )) - 1) / %[1]
   variables:
   - energy_intensity_freight_sea_transport
   - shipping_efficiency_improvement_factor
-description: 'Reduce the amount of energy required to operate diesel and electric freight shipping through more efficient sea freight transportation'
+description: Reduce the amount of energy required to operate diesel and electric freight shipping through more efficient sea freight transportation
 unitOfMeasure: tonne_km
 cohort:
   expression: '1'
@@ -36,13 +36,13 @@ carbonCausalChains:
     expression: '1'
   chains:
   - chain: ship_freight
+  - chain: gas_oil_shipping_freight
+  - chain: lng_shipping_freight
   - chain: electric_shipping_freight
 cobenefits:
 - air_quality
 - reduced_noise
-
 ---
-
 TBD
 
 # Background

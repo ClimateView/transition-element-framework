@@ -5,10 +5,15 @@ name: unspecified_emissions_from_product_use
 sector: industry
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_unspecified_emissions_from_product_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_unspecified_emissions_from_product_use
 work:
 - name: unknown
   unitOfMeasure: tonne

@@ -4,7 +4,7 @@ id: gas_fired_power_plants
 sector: energy
 sustainability: amber
 class: activity
-version: 2.0.1
+version: 2.1.0
 progress: 50
 name: gas_fired_power_plants
 operation:
@@ -64,9 +64,7 @@ work:
     workToResource:
       unitOfMeasure: kwh/kwh
       expression: '1'
-
 ---
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
 

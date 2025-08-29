@@ -4,12 +4,17 @@ id: heating_of_new_residential_multi_family_buildings
 sector: buildings
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: heating_of_new_residential_multi_family_buildings
 operation:
-  growthType: false
+  growthType: true
   variable: stock_heating_new_residential_multi_family
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_heating_new_residential_multi_family_buildings
 work:
 - name: unknown
   unitOfMeasure: kwh

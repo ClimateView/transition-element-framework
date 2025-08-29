@@ -1,15 +1,20 @@
 ---
-title: T-2D1D-A-4 - Unspecified emission from mining, processing, storage and transport
+title: T-2D1d-A-4 - Unspecified emission from mining, processing, storage and transport
   of coal
 id: unspecified_emissions_from_mining_processing_storage_transportation_of_coal
 sector: industry
 sustainability: red
 class: activity
 name: unspecified_emissions_from_mining_processing_storage_transportation_of_coal
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_unspecified_emissions_from_mining_processing_storage_transportation_of_coal
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_unspecified_emissions_from_mining_processing_storage_transportation_of_coal
 work:
 - name: unknown
   unitOfMeasure: tonne

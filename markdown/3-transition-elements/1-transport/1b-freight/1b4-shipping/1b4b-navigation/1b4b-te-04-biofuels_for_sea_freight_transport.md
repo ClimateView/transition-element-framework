@@ -4,12 +4,12 @@ id: biofuels_for_sea_freight_transport
 sector: transport
 sustainability: amber
 class: transition
-version: 2.0.0
+version: 2.0.1
 name: biofuels_for_sea_freight_transport
 type: resourceShift
-longName: 'Alter the proportion of biomarine diesel in marine diesel for marine freight transport.'
-shortName: 'Biofuel marine freight transport'
-description: 'Increase the proportion of marine biodiesel in marine diesel'
+longName: Alter the proportion of biomarine diesel in marine diesel for marine freight transport.
+shortName: Biofuel marine freight transport
+description: Increase the proportion of marine biodiesel in marine diesel
 unitOfMeasure: percent
 cohort:
   expression: '1'
@@ -23,9 +23,7 @@ carbonCausalChains:
   - chain: ship_freight
 cobenefits:
 - air_quality
-
 ---
-
 TBD
 
 # Background

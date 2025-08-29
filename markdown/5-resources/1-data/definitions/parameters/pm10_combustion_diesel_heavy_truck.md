@@ -3,7 +3,7 @@ id: pm10_combustion_diesel_heavy_truck
 title: PM 10 Particles emitted from diesel combustion
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_tkm
+unit: g_tonne_km
 tags:
   - economic_parameter
 values:

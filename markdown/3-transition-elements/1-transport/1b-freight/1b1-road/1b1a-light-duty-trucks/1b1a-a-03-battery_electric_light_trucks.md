@@ -4,7 +4,7 @@ id: battery_electric_light_trucks
 sector: transport
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: battery_electric_light_trucks
 operation:

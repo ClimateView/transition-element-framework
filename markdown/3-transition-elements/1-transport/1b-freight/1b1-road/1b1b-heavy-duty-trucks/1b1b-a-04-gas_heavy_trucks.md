@@ -4,7 +4,7 @@ id: gas_heavy_trucks
 sector: transport
 sustainability: amber
 class: activity
-version: 2.0.0
+version: 2.1.0
 progress: 50
 name: gas_heavy_trucks
 operation:
@@ -46,9 +46,7 @@ work:
       expression: '%[0]'
       variables:
       - emission_factor_natural_gas_kwh_to_co2e
-
 ---
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
 

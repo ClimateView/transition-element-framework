@@ -5,13 +5,13 @@ sector: transport
 sustainability: amber
 progress: 25
 class: transition
-version: 2.0.0
+version: 2.0.1
 ipccMitigationMethod: 1c-01-alternative-fuels-shipping
 name: biofuels_for_sea_passenger_transport
 type: resourceShift
-longName: 'Alter the proportion of biomarine diesel in marine diesel for marine passenger transport.'
-shortName: 'Biofuel marine passenger transport'
-description: 'Increase the proportion of marine biodiesel in marine diesel'
+longName: Alter the proportion of biomarine diesel in marine diesel for marine passenger transport.
+shortName: Biofuel marine passenger transport
+description: Increase the proportion of marine biodiesel in marine diesel
 unitOfMeasure: percent
 cohort:
   expression: '1'
@@ -25,10 +25,7 @@ carbonCausalChains:
   - chain: ship_passenger
 cobenefits:
 - air_quality
-
 ---
-
-
 # Background
 
 IPCC WG3 definition: {{ ipcc_mitigation_link() }}.

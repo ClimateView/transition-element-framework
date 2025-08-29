@@ -5,10 +5,15 @@ sector: industry
 sustainability: red
 class: activity
 name: industrial_unregulated_distillate_fuel_oil_no_2_use
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_industrial_unregulated_distillate_fuel_oil_no_2_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_industrial_unregulated_distillate_fuel_oil_no_2_use
 work:
 - name: combustion
   unitOfMeasure: kwh

@@ -5,10 +5,15 @@ name: agriculture_forestry_fishing_unregulated_gas_oil_use
 sector: afolu
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_agriculture_forestry_fishing_unregulated_gas_oil_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_agriculture_forestry_fishing_unregulated_gas_oil_use
 work:
 - name: combustion
   unitOfMeasure: kwh

@@ -4,12 +4,17 @@ id: venting_gas_and_oil_production_wtt
 sector: energy
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: venting_gas_and_oil_production_wtt
 operation:
-  growthType: false
+  growthType: true
   variable: stock_gas_vented_wtt
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_gas_vented_wtt
 work:
 - name: fugitive
   unitOfMeasure: kwh

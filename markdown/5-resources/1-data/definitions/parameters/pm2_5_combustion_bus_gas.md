@@ -3,7 +3,7 @@ id: pm2_5_combustion_bus_gas
 title: PM 2.5 Particles emitted from gas combustion
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_vkm
+unit: g_vehicle_km
 tags:
   - economic_parameter
 values:

@@ -5,10 +5,15 @@ name: fugitive_emissions_gas_distribution
 sector: energy
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_gas_distributed
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_gas_distributed
 work:
 - name: fugitive
   unitOfMeasure: kwh

@@ -5,10 +5,15 @@ sector: buildings
 sustainability: red
 class: activity
 name: institutional_unregulated_kerosene_use
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_institutional_unregulated_kerosene_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_institutional_unregulated_kerosene_use
 work:
 - name: combustion
   unitOfMeasure: kwh

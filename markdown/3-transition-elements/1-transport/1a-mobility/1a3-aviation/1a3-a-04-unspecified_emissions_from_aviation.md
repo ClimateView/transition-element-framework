@@ -4,10 +4,15 @@ id: unspecified_emissions_from_aviation
 name: unspecified_emissions_from_aviation
 class: activity
 sustainability: red
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_unspecified_emissions_from_aviation
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_unspecified_emissions_from_aviation
 work:
 - name: unknown
   unitOfMeasure: tonne

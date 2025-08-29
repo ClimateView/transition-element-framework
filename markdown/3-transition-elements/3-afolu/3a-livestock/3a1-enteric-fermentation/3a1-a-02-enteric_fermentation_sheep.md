@@ -7,38 +7,34 @@ progress: 80
 ipccEmissionSource: 3a1c-sheep
 name: enteric_fermentation_sheep
 class: activity
-version: 2.0.0
+version: 2.1.0
 operation:
   growthType: true
-  variable: activity_sheep
+  variable: start_year_activity_enteric_fermentation_sheep
   growthFactor:
     unitOfMeasure: per_capita
     expression: '%[0]'
     variables:
-    - activity_growth_sheep
-  primaryStock:
-    name: average_other_livestock_population
+    - growth_activity_enteric_fermentation_sheep
 work:
 - name: enteric_fermentation
-  unitOfMeasure: joule
+  unitOfMeasure: head
   operationToWork:
-    unitOfMeasure: kj/kg
+    unitOfMeasure: head/head
     expression: '%[0]'
     variables:
-    - enteric_fermentation_efficiency_sheep
+    - work_intensity_direct_operations_use_head
   input:
-  - resource: sheep_feed
-    unitOfMeasure: kg
+  - resource: sheep
+    unitOfMeasure: head
     resourceToWork:
-      unitOfMeasure: kg/kj
-      expression: '%[0]'
-      variables:
-      - kg_feed_per_kj_enteric_fermentation_other_livestock
+      unitOfMeasure: head/head
+      expression: '1'
     emissionFactor:
-      unitOfMeasure: g_co2e/kg
+      unitOfMeasure: g_co2e/head
       expression: '%[0]'
       variables:
-      - emission_factor_enteric_fermentation_sheep_feed
+      - emission_factor_enteric_fermentation_sheep_head_to_co2e_gram
 ---
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.

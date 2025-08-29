@@ -3,7 +3,7 @@ id: pm2_5_wear_tear_electric_heavy_truck
 title: PM 2.5 Particles emitted from wear and tear (electric heavy truck)
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_tkm
+unit: g_tonne_km
 tags:
   - economic_parameter
 values:

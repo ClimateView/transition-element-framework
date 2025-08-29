@@ -44,6 +44,13 @@ values:
     comment: |
         ClimateView modellbeskrivning - Drivmedel
     reference: https://climateview.slab.com/public/78b9qifq
+  - value: 253.261
+    country: US
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        EPA GHG Emission Factors Hub
+    reference: https://www.epa.gov/system/files/documents/2025-01/ghg-emission-factors-hub-2025.pdf
 ---
 
 
@@ -60,5 +67,6 @@ Unit of measure: `{{unit}}`
 | 331 | DE | CONSTANT | 2021-01-01 | BISKO Bilanzierungs-Systematik Kommunal 2024, Kapitel 5, Tabelle 10: Diesel, THG-Emissionsfaktoren (Well-to-Wheel) nach Kraftstoffen im Verkehr unter Berücksichtigung der Beimischung von Biokraftstoffen | https://repository.difu.de/items/a7d15dbd-7d09-461a-a7a5-0be9f526facb |
 | 268.08 | GB | CONSTANT | 2019-01-01 | UK Data Playbook, Sheet Resources | https://docs.google.com/spreadsheets/d/17hr9o90tcxP3xX9T000uWcXSrzm5b5D3UfPwcq7LzgA/edit?gid=1982830832#gid=1982830832 |
 | 342 | SE | CONSTANT | 2019-01-01 | ClimateView modellbeskrivning - Drivmedel | https://climateview.slab.com/public/78b9qifq |
+| 253.261 | US | CONSTANT | 2019-01-01 | EPA GHG Emission Factors Hub | https://www.epa.gov/system/files/documents/2025-01/ghg-emission-factors-hub-2025.pdf |
 
 

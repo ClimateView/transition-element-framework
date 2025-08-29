@@ -5,11 +5,11 @@ sector: waste
 sustainability: green
 class: transition
 type: shift
-longName: 'Shift from landfilling organic waste to composting of organic waste'
-shortName: 'Composting of organic waste'
-description: 'Shift tonne from solid waste disposal in landfills to composting of organic waste in tonne to fulfill the need of waste handling'
-name: shift_to_composting_of_organic_waste                
-version: 2.0.0
+longName: Shift from landfilling organic waste to composting of organic waste
+shortName: Composting of organic waste
+description: Shift tonne from solid waste disposal in landfills to composting of organic waste in tonne to fulfill the need of waste handling
+name: shift_to_composting_of_organic_waste
+version: 2.1.0
 shift: shift_to_composting_of_organic_waste
 unitOfMeasure: tonne
 cohort:
@@ -19,13 +19,15 @@ shiftFrom:
     expression: '1'
   chains:
   - chain: solid_waste_disposal_in_landfills_and_open_dumps_etc
+  - chain: incineration_and_open_burning_of_waste
+  - chain: open_burning_of_waste
+  - chain: solid_waste_disposal_landfill_with_gas_recovery
 shiftTo:
   atoc:
     expression: '1'
   chains:
   - chain: composting_of_organic_waste
 ---
-
 # Background
 
 IPCC WG3 definition: {{ ipcc_mitigation_link() }}.

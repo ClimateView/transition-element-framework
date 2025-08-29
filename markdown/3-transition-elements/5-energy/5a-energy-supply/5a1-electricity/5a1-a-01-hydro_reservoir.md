@@ -4,7 +4,7 @@ id: hydro_reservoir
 sector: energy
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.0.4
 progress: 50
 name: hydro_reservoir
 operation:

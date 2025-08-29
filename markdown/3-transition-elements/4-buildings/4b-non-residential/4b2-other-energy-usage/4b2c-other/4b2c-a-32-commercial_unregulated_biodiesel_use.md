@@ -5,10 +5,15 @@ sector: buildings
 sustainability: amber
 class: activity
 name: commercial_unregulated_biodiesel_use
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_commercial_unregulated_biodiesel_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_commercial_unregulated_biodiesel_use
 work:
 - name: combustion
   unitOfMeasure: kwh

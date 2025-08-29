@@ -4,12 +4,17 @@ id: hydrogen_rail_freight
 sector: transport
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: hydrogen_rail_freight
 operation:
-  growthType: false
+  growthType: true
   variable: stock_freight_hydrogen_rail
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_freight_hydrogen_rail
 work:
 - name: hydrogen_oxidation
   unitOfMeasure: kwh

@@ -4,12 +4,12 @@ id: shift_to_lng_fuel_for_sea_freight_transportation
 sector: transport
 sustainability: amber
 class: transition
-version: 2.0.0
+version: 2.0.1
 name: shift_to_lng_fuel_for_sea_freight_transportation
 type: shift
-longName: 'Shift from diesel marine freight transport to LNG marine freight.'
-shortName: 'LNG marine freight transportion'
-description: 'Shift tonne kilometer from ship freight to LNG shipping freight in tonne kilometer to fulfill the need of logistics'
+longName: Shift from diesel marine freight transport to LNG marine freight.
+shortName: LNG marine freight transportion
+description: Shift tonne kilometer from ship freight to LNG shipping freight in tonne kilometer to fulfill the need of logistics
 unitOfMeasure: tonne_km
 cohort:
   expression: '1'
@@ -18,6 +18,7 @@ shiftFrom:
     expression: '1'
   chains:
   - chain: ship_freight
+  - chain: gas_oil_shipping_freight
 shiftTo:
   atoc:
     expression: '1'
@@ -25,9 +26,7 @@ shiftTo:
   - chain: lng_shipping_freight
 cobenefits:
 - air_quality
-
 ---
-
 TBD
 
 # Background

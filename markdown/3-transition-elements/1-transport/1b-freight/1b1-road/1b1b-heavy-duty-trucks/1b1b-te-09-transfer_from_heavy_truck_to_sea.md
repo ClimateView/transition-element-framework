@@ -4,12 +4,12 @@ id: transfer_from_heavy_truck_to_sea
 sector: transport
 sustainability: amber
 class: transition
-version: 2.0.1
+version: 2.0.2
 name: transfer_from_heavy_truck_to_sea
 type: shift
-longName: 'Shift from Internal Combustion Engine (ICE) heavy trucks to diesel marine freight transport.'
-shortName: 'Heavy truck to diesel marine'
-description: 'Shift tonne kilometer from diesel heavy trucks to ship freight in tonne kilometer to fulfill the need of logistics'
+longName: Shift from Internal Combustion Engine (ICE) heavy trucks to diesel marine freight transport.
+shortName: Heavy truck to diesel marine
+description: Shift tonne kilometer from diesel heavy trucks to ship freight in tonne kilometer to fulfill the need of logistics
 unitOfMeasure: tonne_km
 cohort:
   expression: '1'
@@ -29,11 +29,7 @@ cobenefits:
 - reduced_noise
 - reduced_accidents
 - less_congestion
-
 ---
-
-
-
 # Background
 
 IPCC WG3 definition: {{ ipcc_mitigation_link() }}.

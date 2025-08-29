@@ -4,7 +4,7 @@ id: grid_current
 sector: energy
 sustainability: amber
 class: activity
-version: 2.0.0
+version: 2.0.1
 progress: 50
 name: grid_current
 operation:
@@ -29,9 +29,7 @@ work:
       expression: '%[0]'
       variables:
       - emission_factor_electricity_produced_current_grid_mix
-
 ---
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
 

@@ -7,12 +7,19 @@ unit: g_co2e_km
 tags:
   - emission_factors
 values:
-  - value: 1
+  - value: 132000
     global: True
     scalingType: CONSTANT
     validFrom: 2019-01-01
     comment: |
-        Initialized to one.
+        Example for Germany.
+  - value: 132000
+    country: DE
+    scalingType: CONSTANT
+    validFrom: 2020-01-01
+    comment: |
+        Beispielberechnung für Deutschland.
+    reference: https://docs.google.com/spreadsheets/d/18jxx9ldtzRAS_3kLElHw4i08ZezHkrpsTGmeWVnsnEQ/edit?gid=1559945526#gid=1559945526
 ---
 
 
@@ -24,6 +31,7 @@ Unit of measure: `{{unit}}`
 
 | Value | Region | Scaling | Period | Comment | Reference |
 |-------|--------|---------|--------|---------|-----------|
-| 1 | Global | CONSTANT | 2019-01-01 | Initialized to one. |  |
+| 132000 | Global | CONSTANT | 2019-01-01 | Example for Germany. |  |
+| 132000 | DE | CONSTANT | 2020-01-01 | Beispielberechnung für Deutschland. | https://docs.google.com/spreadsheets/d/18jxx9ldtzRAS_3kLElHw4i08ZezHkrpsTGmeWVnsnEQ/edit?gid=1559945526#gid=1559945526 |
 
 

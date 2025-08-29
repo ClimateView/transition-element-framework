@@ -4,12 +4,17 @@ id: institutional_unregulated_lpg_use
 sector: buildings
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: institutional_unregulated_lpg_use
 operation:
-  growthType: false
+  growthType: true
   variable: stock_institutional_unregulated_lpg_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_institutional_unregulated_lpg_use
 work:
 - name: combustion
   unitOfMeasure: kwh

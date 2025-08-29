@@ -4,12 +4,12 @@ id: electrification_of_domestic_sea_freight_transport
 sector: transport
 sustainability: green
 class: transition
-version: 2.0.0
+version: 2.0.1
 name: electrification_of_domestic_sea_freight_transport
 type: shift
-longName: 'Shift from diesel marine freight transportation to electric marine freight.'
-shortName: 'Electric marine freight transportion'
-description: 'Shift tonne kilometer from ship freight to electric shipping freight in tonne kilometer to fulfill the need of logistics'
+longName: Shift from diesel marine freight transportation to electric marine freight.
+shortName: Electric marine freight transportion
+description: Shift tonne kilometer from ship freight to electric shipping freight in tonne kilometer to fulfill the need of logistics
 unitOfMeasure: tonne_km
 cohort:
   expression: '1'
@@ -18,6 +18,7 @@ shiftFrom:
     expression: '1'
   chains:
   - chain: ship_freight
+  - chain: gas_oil_shipping_freight
 shiftTo:
   atoc:
     expression: '1'
@@ -26,9 +27,7 @@ shiftTo:
 cobenefits:
 - air_quality
 - reduced_noise
-
 ---
-
 TBD
 
 # Background

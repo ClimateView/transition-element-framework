@@ -4,15 +4,13 @@ id: gas_heavy_trucks
 sector: transport
 sustainability: amber
 class: transition
-version: 2.1.0
+version: 2.0.1
 ipccMitigationMethod: 1a-11-alternative-fuels-vehicles
 name: gas_heavy_trucks
 type: shift
-longName: Shift from Internal Combustion Engine (ICE) heavy trucks to compressed natural
-  gas (CNG) heavy trucks.
+longName: Shift from Internal Combustion Engine (ICE) heavy trucks to compressed natural gas (CNG) heavy trucks.
 shortName: CNG heavy trucks
-description: Shift tonne kilometer from diesel heavy trucks to gas heavy trucks in
-  tonne kilometer to fulfill the need of logistics
+description: Shift tonne kilometer from diesel heavy trucks to gas heavy trucks in tonne kilometer to fulfill the need of logistics
 unitOfMeasure: tonne_km
 cohort:
   expression: '1'

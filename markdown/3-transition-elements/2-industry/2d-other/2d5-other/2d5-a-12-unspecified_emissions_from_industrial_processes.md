@@ -5,10 +5,15 @@ name: unspecified_emissions_from_industrial_processes
 sector: industry
 sustainability: amber
 class: activity
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_unspecified_emissions_from_industrial_processes
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_unspecified_emissions_from_industrial_processes
 work:
 - name: unknown
   unitOfMeasure: tonne

@@ -16,20 +16,34 @@ values:
     comment: |
         ClimateView model description - H2
     reference: https://climateview.slab.com/public/7z3rwu55
-  - value: 50
+  - value: 31.5
+    country: AT
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Umweltbundesamt Deutschland - Welche Treibhausgasemissionen verursacht die Wasserstoffproduktion?
+    reference: https://www.umweltbundesamt.de/sites/default/files/medien/479/dokumente/uba_welche_treibhausgasemissionen_verursacht_die_wasserstoffproduktion.pdf
+  - value: 31.5
     country: CH
     scalingType: CONSTANT
     validFrom: 2019-01-01
     comment: |
-        Daten aus Deutschland.
-    reference: https://www.dihk.de/resource/blob/24872/fd2c89df9484cf912199041a9587a3d6/dihk-faktenpapier-wasserstoff-data.pdf
-  - value: 50
+        Umweltbundesamt Deutschland - Welche Treibhausgasemissionen verursacht die Wasserstoffproduktion?
+    reference: https://www.umweltbundesamt.de/sites/default/files/medien/479/dokumente/uba_welche_treibhausgasemissionen_verursacht_die_wasserstoffproduktion.pdf
+  - value: 31.5
     country: DE
     scalingType: CONSTANT
     validFrom: 2019-01-01
     comment: |
-        Deutsche Industrie und Handelskammern
-    reference: https://www.dihk.de/resource/blob/24872/fd2c89df9484cf912199041a9587a3d6/dihk-faktenpapier-wasserstoff-data.pdf
+        Umweltbundesamt - Welche Treibhausgasemissionen verursacht die Wasserstoffproduktion?
+    reference: https://www.umweltbundesamt.de/sites/default/files/medien/479/dokumente/uba_welche_treibhausgasemissionen_verursacht_die_wasserstoffproduktion.pdf
+  - value: 31.5
+    country: DE-RU
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        Umweltbundesamt - Welche Treibhausgasemissionen verursacht die Wasserstoffproduktion?
+    reference: https://www.umweltbundesamt.de/sites/default/files/medien/479/dokumente/uba_welche_treibhausgasemissionen_verursacht_die_wasserstoffproduktion.pdf
   - value: 20
     country: GB
     scalingType: CONSTANT
@@ -56,8 +70,10 @@ Unit of measure: `{{unit}}`
 | Value | Region | Scaling | Period | Comment | Reference |
 |-------|--------|---------|--------|---------|-----------|
 | 20 | Global | CONSTANT | 2019-01-01 | ClimateView model description - H2 | https://climateview.slab.com/public/7z3rwu55 |
-| 50 | CH | CONSTANT | 2019-01-01 | Daten aus Deutschland. | https://www.dihk.de/resource/blob/24872/fd2c89df9484cf912199041a9587a3d6/dihk-faktenpapier-wasserstoff-data.pdf |
-| 50 | DE | CONSTANT | 2019-01-01 | Deutsche Industrie und Handelskammern | https://www.dihk.de/resource/blob/24872/fd2c89df9484cf912199041a9587a3d6/dihk-faktenpapier-wasserstoff-data.pdf |
+| 31.5 | AT | CONSTANT | 2019-01-01 | Umweltbundesamt Deutschland - Welche Treibhausgasemissionen verursacht die Wasserstoffproduktion? | https://www.umweltbundesamt.de/sites/default/files/medien/479/dokumente/uba_welche_treibhausgasemissionen_verursacht_die_wasserstoffproduktion.pdf |
+| 31.5 | CH | CONSTANT | 2019-01-01 | Umweltbundesamt Deutschland - Welche Treibhausgasemissionen verursacht die Wasserstoffproduktion? | https://www.umweltbundesamt.de/sites/default/files/medien/479/dokumente/uba_welche_treibhausgasemissionen_verursacht_die_wasserstoffproduktion.pdf |
+| 31.5 | DE | CONSTANT | 2019-01-01 | Umweltbundesamt - Welche Treibhausgasemissionen verursacht die Wasserstoffproduktion? | https://www.umweltbundesamt.de/sites/default/files/medien/479/dokumente/uba_welche_treibhausgasemissionen_verursacht_die_wasserstoffproduktion.pdf |
+| 31.5 | DE-RU | CONSTANT | 2019-01-01 | Umweltbundesamt - Welche Treibhausgasemissionen verursacht die Wasserstoffproduktion? | https://www.umweltbundesamt.de/sites/default/files/medien/479/dokumente/uba_welche_treibhausgasemissionen_verursacht_die_wasserstoffproduktion.pdf |
 | 20 | GB | CONSTANT | 2019-01-01 | ClimateView model description - H2 | https://climateview.slab.com/public/7z3rwu55 |
 | 20 | SE | CONSTANT | 2019-01-01 | ClimateView modellbeskrivning  - vätgas | https://climateview.slab.com/public/ck83bl0f |
 

@@ -36,13 +36,13 @@ values:
     comment: |
         https://climateview.slab.com/posts/strommix-wh96uzbq
     reference: https://www.bafu.admin.ch/dam/bafu/de/dokumente/klima/fachinfo-daten/Umweltbilanz%20Strommix%20Schweiz%202014%20.pdf.download.pdf/589-Umweltbilanz-Strommix-Schweiz-2014-v3_0.pdf
-  - value: 468
+  - value: 505
     country: DE
     scalingType: CONSTANT
     validFrom: 2019-01-01
     comment: |
-        Schätzungen auf Grundlage von bundesdeutscher Statistik.
-    reference: https://climateview.slab.com/public/ecbs06go
+        Wert für 2022, Bisko Methodenpapier. Für ältere Werte, siehe Bisko Methodenpapier, für Schätzungen späterer Jahre, siehe UBA https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/13_2025_cc.pdf.
+    reference: https://www.klimaschutz.de/sites/default/files/mediathek/dokumente/Agentur_Methodenpapier_BISKO_Juli-24.pdf
   - value: 54
     country: FR
     scalingType: CONSTANT
@@ -104,7 +104,7 @@ Unit of measure: `{{unit}}`
 | 124 | CA | CONSTANT | 2019-01-01 | Model description ClimateView - Canada - Energy Supply | https://climateview.slab.com/public/posts/ewedpkpo |
 | 22 | CA-QC | CONSTANT | 2019-01-01 | Model description ClimateView - Quebec - Energy Supply | https://climateview.slab.com/public/posts/qty007bs |
 | 149.4 | CH | CONSTANT | 2019-01-01 | https://climateview.slab.com/posts/strommix-wh96uzbq | https://www.bafu.admin.ch/dam/bafu/de/dokumente/klima/fachinfo-daten/Umweltbilanz%20Strommix%20Schweiz%202014%20.pdf.download.pdf/589-Umweltbilanz-Strommix-Schweiz-2014-v3_0.pdf |
-| 468 | DE | CONSTANT | 2019-01-01 | Schätzungen auf Grundlage von bundesdeutscher Statistik. | https://climateview.slab.com/public/ecbs06go |
+| 505 | DE | CONSTANT | 2019-01-01 | Wert für 2022, Bisko Methodenpapier. Für ältere Werte, siehe Bisko Methodenpapier, für Schätzungen späterer Jahre, siehe UBA https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/13_2025_cc.pdf. | https://www.klimaschutz.de/sites/default/files/mediathek/dokumente/Agentur_Methodenpapier_BISKO_Juli-24.pdf |
 | 54 | FR | CONSTANT | 2019-01-01 | nowtricity.com | https://www.nowtricity.com/country/france/ |
 | 253.19 | GB | CONSTANT | 2019-01-01 | UK Greenhouse gas reporting: conversion factors 2020 | https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2020 |
 | 30 | SE | CONSTANT | 2019-01-01 | ClimateView modellbeskrivning - Elektricitet | https://climateview.slab.com/public/vuar22ah |

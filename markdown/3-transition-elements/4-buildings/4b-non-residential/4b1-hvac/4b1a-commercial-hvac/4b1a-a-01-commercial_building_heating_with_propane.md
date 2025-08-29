@@ -1,5 +1,5 @@
 ---
-title: T-4B1A-A-1 - Commercial buildings heated with propane
+title: T-4B1a-A-1 - Commercial buildings heated with propane
 id: commercial_building_heating_with_propane
 sector: buildings
 sustainability: red

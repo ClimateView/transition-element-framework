@@ -4,10 +4,15 @@ id: coal_passenger_rail
 name: coal_passenger_rail
 class: activity
 sustainability: red
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_passenger_coal_rail
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_passenger_coal_rail
 work:
 - name: combustion
   unitOfMeasure: kwh

@@ -5,10 +5,15 @@ sector: industry
 sustainability: red
 class: activity
 name: oil_usage_within_lead_industries
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_oil_usage_within_lead_industries
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_oil_usage_within_lead_industries
 work:
 - name: combustion
   unitOfMeasure: kwh

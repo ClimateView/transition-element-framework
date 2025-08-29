@@ -4,12 +4,17 @@ id: public_building_heating_with_heatpump
 sector: buildings
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: public_building_heating_with_heatpump
 operation:
-  growthType: false
+  growthType: true
   variable: stock_heating_public_buildings_heat_pumps
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_heating_public_buildings_heat_pumps
 work:
 - name: unknown
   unitOfMeasure: kwh

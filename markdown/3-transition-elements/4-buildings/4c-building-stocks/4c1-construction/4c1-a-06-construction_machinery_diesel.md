@@ -5,10 +5,15 @@ sector: buildings
 sustainability: red
 class: activity
 name: construction_machinery_diesel
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_construction_machinery_diesel
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_construction_machinery_diesel
 work:
 - name: combustion
   unitOfMeasure: kwh

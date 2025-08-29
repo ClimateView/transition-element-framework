@@ -5,10 +5,15 @@ name: fugitive_emissions_coal_production_under_ground
 sector: industry
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_coal_produced_underground_mines
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_coal_produced_underground_mines
 work:
 - name: fugitive
   unitOfMeasure: kwh

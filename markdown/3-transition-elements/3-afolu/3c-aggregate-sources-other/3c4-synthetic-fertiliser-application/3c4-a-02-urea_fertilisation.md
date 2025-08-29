@@ -5,10 +5,15 @@ sector: afolu
 sustainability: red
 class: activity
 name: urea_fertilisation
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_urea_fertilisation
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_urea_fertilisation
 work:
 - name: fertilising
   unitOfMeasure: tonne

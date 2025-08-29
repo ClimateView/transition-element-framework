@@ -5,18 +5,18 @@ sector: transport
 sustainability: amber
 progress: 25
 class: transition
-version: 2.0.0
+version: 2.0.1
 ipccMitigationMethod: 1c-03-improved-energy-efficiency-shipping
 name: more_efficient_sea_passenger_transportation
 type: update
-longName: 'Improve efficiency of marine passenger transport to reduce fuel use.'
-shortName: 'Efficient marine passenger transport'
+longName: Improve efficiency of marine passenger transport to reduce fuel use.
+shortName: Efficient marine passenger transport
 weightInversionExpression:
   expression: ((1 / ( unknown_x / %[0] )) - 1) / %[1]
   variables:
   - energy_intensity_passenger_sea_transport
   - shipping_passenger_efficiency_improvement_factor
-description: 'Reduce the amount of energy required to operate diesel, LNG passenger shipping  through more more efficient sea passenger transportation'
+description: Reduce the amount of energy required to operate diesel, LNG passenger shipping through more more efficient sea passenger transportation
 unitOfMeasure: person_km
 cohort:
   expression: '1'
@@ -44,14 +44,13 @@ carbonCausalChains:
     expression: '1'
   chains:
   - chain: ship_passenger
+  - chain: gas_oil_shipping_passenger
   - chain: electric_shipping_passenger
   - chain: lng_shipping_passenger
 cobenefits:
 - air_quality
 - reduced_noise
-
 ---
-
 
 # Background
 

@@ -1,14 +1,19 @@
 ---
-title: T-2D3B-A-1 - Display manufacturing
+title: T-2D3b-A-1 - Display manufacturing
 id: display_manufacturing
 sector: industry
 sustainability: amber
 class: activity
 name: display_manufacturing
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_display_manufacturing
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_display_manufacturing
 work:
 - name: fugitive
   unitOfMeasure: m2

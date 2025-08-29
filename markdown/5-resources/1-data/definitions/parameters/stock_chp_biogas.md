@@ -4,6 +4,8 @@ title: Combined heat and power (CHP) - biogas
 type: parameter
 parameter_type: OPERATIONS
 unit: kwh
+tags:
+  - operations
 values:
   - value: 0
     global: True

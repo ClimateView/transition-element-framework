@@ -4,12 +4,17 @@ id: industrial_unregulated_electricity_use
 sector: buildings
 sustainability: green
 class: activity
-version: 2.2.0
+version: 2.3.0
 progress: 50
 name: industrial_unregulated_electricity_use
 operation:
-  growthType: false
+  growthType: true
   variable: stock_industrial_unregulated_electricity_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_industrial_unregulated_electricity_use
 work:
 - name: electromagnetism
   unitOfMeasure: kwh
@@ -17,7 +22,7 @@ work:
     unitOfMeasure: kwh/kwh
     expression: '%[0]'
     variables:
-    - energy_intensity_direct_resource_use_kwh
+    - energy_intensity_industrial_unregulated_electricity_use
   input:
   - resource: electricity
     unitOfMeasure: kwh

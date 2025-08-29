@@ -1,14 +1,19 @@
 ---
-title: T-2D3C-A-1 - Photovoltaic cell manufacturing
+title: T-2D3c-A-1 - Photovoltaic cell manufacturing
 id: photovoltaic_cell_manufacturing
 sector: industry
 sustainability: green
 class: activity
 name: photovoltaic_cell_manufacturing
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_photovoltaic_cell_manufacturing
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_photovoltaic_cell_manufacturing
 work:
 - name: fugitive
   unitOfMeasure: m2

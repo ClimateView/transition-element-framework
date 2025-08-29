@@ -5,11 +5,16 @@ sector: waste
 sustainability: amber
 class: activity
 name: flaring_of_biogas_in_wastewater_treatment
-version: 2.0.0
+version: 2.1.0
 chains: null
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_flaring_of_biogas_in_wastewater_treatment
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_flaring_of_biogas_in_wastewater_treatment
 work:
 - name: combustion
   unitOfMeasure: kwh

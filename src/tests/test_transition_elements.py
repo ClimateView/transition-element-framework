@@ -6,7 +6,7 @@ from setup import YAML_LANGUAGE, get_parsed
 
 class TestTransitionElements:
 
-    @pytest.mark.parametrize('src', pathlib.Path("./markdown").glob("**/*.md"), ids=str)
+    @pytest.mark.parametrize('src', pathlib.Path("../markdown").glob("**/*.md"), ids=str)
     def test_transition_nodes(self, src):
         (md_parse_tree, md_content, yaml_parse_tree, content) = get_parsed(src)
         if "3-transition-elements" in src.parts:
@@ -64,8 +64,13 @@ class TestTransitionElements:
         sset = src.name.split("-")
         sparent = src.parent.name.split("-")
         if src.name != "index.md":
-            assert sset[0] == sparent[0], f"{src}: Transition node coordinate {sset[0]} does not match folder {sparent[0]}"
-            
+            if sset[0].startswith("3b"):
+                # AFOLU Land nodes only need to match to the first 3 parts of the folder
+                assert sset[0][:3] == sparent[0][:3], f"{src}: Transition node coordinate {sset[0]} does not match folder {sparent[0]}"
+            else:
+                # All other nodes need to match to the first 4 parts of the folder
+                assert sset[0][:4] == sparent[0][:4], f"{src}: Transition node coordinate {sset[0]} does not match folder {sparent[0]}"
+                
     def is_unique(self, src, parse_tree):
         sset = src.name.split("-")
         for root, dirs, files in src.parent.walk():

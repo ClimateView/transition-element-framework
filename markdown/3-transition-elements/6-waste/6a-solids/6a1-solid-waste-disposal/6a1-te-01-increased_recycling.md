@@ -5,12 +5,12 @@ sector: waste
 sustainability: green
 progress: 25
 class: transition
-version: 2.0.0
+version: 2.1.0
 name: increased_recycling
 type: shift
-longName: 'Shift from disposal and incineration to recycling of solid waste.'
-shortName: 'Recycling waste'
-description: 'Shift tonne from solid waste disposal in landfills and open dumps, incineration and open burning of waste to recycling of solid waste in tonne to fulfill the need of waste handling'
+longName: Shift from disposal and incineration to recycling of solid waste.
+shortName: Recycling waste
+description: Shift tonne from solid waste disposal in landfills and open dumps, incineration and open burning of waste to recycling of solid waste in tonne to fulfill the need of waste handling
 unitOfMeasure: tonne
 cohort:
   expression: '1'
@@ -20,16 +20,14 @@ shiftFrom:
   chains:
   - chain: solid_waste_disposal_in_landfills_and_open_dumps_etc
   - chain: incineration_and_open_burning_of_waste
+  - chain: open_burning_of_waste
+  - chain: solid_waste_disposal_landfill_with_gas_recovery
 shiftTo:
   atoc:
     expression: '1'
   chains:
   - chain: recycling_of_solid_waste
-
 ---
-
-
-
 # Background
 
 IPCC WG3 definition: {{ ipcc_mitigation_link() }}.

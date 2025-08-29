@@ -5,7 +5,7 @@ sector: energy
 sustainability: green
 progress: 10
 class: transition
-version: 2.1.0
+version: 2.0.4
 name: district_heating_residual_heat
 type: supplyAlteration
 longName: Alter the amount of heat produced by residual heat.

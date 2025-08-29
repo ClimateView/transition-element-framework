@@ -5,10 +5,15 @@ sector: industry
 sustainability: red
 class: activity
 name: small_utility_machinery_lpg
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_small_utility_machinery_lpg
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_small_utility_machinery_lpg
 work:
 - name: combustion
   unitOfMeasure: kwh

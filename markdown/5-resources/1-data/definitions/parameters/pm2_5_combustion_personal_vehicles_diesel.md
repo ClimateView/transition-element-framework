@@ -3,7 +3,7 @@ id: pm2_5_combustion_personal_vehicles_diesel
 title: PM 2.5 Particles emitted from diesel combustion
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_vkm
+unit: g_vehicle_km
 tags:
   - economic_parameter
 values:

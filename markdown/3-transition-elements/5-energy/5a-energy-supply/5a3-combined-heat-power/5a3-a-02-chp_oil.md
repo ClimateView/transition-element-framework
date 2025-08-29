@@ -4,7 +4,7 @@ id: chp_oil
 sector: energy
 sustainability: red
 class: activity
-version: 2.0.1
+version: 2.1.0
 progress: 50
 name: chp_oil
 operation:
@@ -46,9 +46,7 @@ work:
       expression: '%[0]'
       variables:
       - energy_efficiency_chp_oil_to_electricity
-
 ---
-
 # Definition
 This emission source is defined by the IPCC in {{ ipcc_emission_link() }}.
 

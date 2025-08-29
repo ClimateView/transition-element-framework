@@ -5,10 +5,15 @@ name: coal_use_non_specified_sources
 sector: energy
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_coal_use_unspecified_sources
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_coal_use_unspecified_sources
 work:
 - name: combustion
   unitOfMeasure: kwh

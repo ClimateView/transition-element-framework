@@ -1,6 +1,6 @@
 ---
 id: population_growth_rate
-title: Population growth
+title: Annual population growth
 type: parameter
 parameter_type: SOCIOECONOMIC_PARAMETER
 unit: percent

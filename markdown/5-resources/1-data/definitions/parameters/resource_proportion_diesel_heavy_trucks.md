@@ -8,13 +8,12 @@ tags:
   - resource_proportion
   - PRIO_MEDIUM
 values:
-  - value: 95
+  - value: 100
     global: True
     scalingType: CONSTANT
     validFrom: 2019-01-01
     comment: |
-        ClimateView Model description - Biofuels
-    reference: https://climateview.slab.com/public/tsku2vip
+        Initialized to 100%.
   - value: 95
     country: CH
     scalingType: CONSTANT
@@ -47,7 +46,7 @@ Unit of measure: `{{unit}}`
 
 | Value | Region | Scaling | Period | Comment | Reference |
 |-------|--------|---------|--------|---------|-----------|
-| 95 | Global | CONSTANT | 2019-01-01 | ClimateView Model description - Biofuels | https://climateview.slab.com/public/tsku2vip |
+| 100 | Global | CONSTANT | 2019-01-01 | Initialized to 100%. |  |
 | 95 | CH | CONSTANT | 2019-01-01 | Schätzungen, basierend auf deutschen Daten. | https://climateview.slab.com/public/dkkdj0hw |
 | 95 | DE | CONSTANT | 2019-01-01 | Schätzungen auf Grundlage von bundesdeutscher Statistik. | https://climateview.slab.com/public/dkkdj0hw |
 | 72.3 | SE | CONSTANT | 2019-01-01 | ClimateView modellbeskrivning - biodrivmedel | https://climateview.slab.com/public/78b9qifq |

@@ -5,7 +5,7 @@ sector: energy
 sustainability: red
 progress: 10
 class: transition
-version: 2.1.0
+version: 2.0.0
 name: chp_oil
 type: supplyAlteration
 longName: Alter the amount of electricity and heat produced by oil.

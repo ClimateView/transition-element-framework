@@ -5,13 +5,13 @@ sector: transport
 sustainability: amber
 progress: 25
 class: transition
-version: 2.0.0
+version: 2.0.1
 ipccMitigationMethod: 1c-01-alternative-fuels-shipping
 name: shift_to_lng_fuel_for_sea_passenger_transportation
 type: shift
-longName: 'Shift from conventional fueled to LNG marine passenger transport.'
-shortName: 'LNG marine passenger transport'
-description: 'Shift person kilometer from ship passenger to LNG shipping passenger in person kilometer to fulfill the need of mobility'
+longName: Shift from conventional fueled to LNG marine passenger transport.
+shortName: LNG marine passenger transport
+description: Shift person kilometer from ship passenger to LNG shipping passenger in person kilometer to fulfill the need of mobility
 unitOfMeasure: person_km
 cohort:
   expression: '1'
@@ -20,6 +20,7 @@ shiftFrom:
     expression: '1'
   chains:
   - chain: ship_passenger
+  - chain: gas_oil_shipping_passenger
 shiftTo:
   atoc:
     expression: '1'
@@ -27,9 +28,7 @@ shiftTo:
   - chain: lng_shipping_passenger
 cobenefits:
 - air_quality
-
 ---
-
 
 # Background
 

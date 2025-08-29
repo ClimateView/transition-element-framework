@@ -4,6 +4,8 @@ title: Initial operations biofuel powered power plants
 type: parameter
 parameter_type: OPERATIONS
 unit: kwh
+tags:
+  - operations
 values:
   - value: 0
     global: True

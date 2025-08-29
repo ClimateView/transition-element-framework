@@ -4,7 +4,7 @@ id: diesel_light_trucks
 sector: transport
 sustainability: red
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: diesel_light_trucks
 operation:

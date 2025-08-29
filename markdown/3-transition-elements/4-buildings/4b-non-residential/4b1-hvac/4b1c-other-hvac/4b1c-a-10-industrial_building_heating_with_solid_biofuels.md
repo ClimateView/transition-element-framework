@@ -4,12 +4,17 @@ id: industrial_building_heating_with_solid_biofuels
 sector: buildings
 sustainability: green
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: industrial_building_heating_with_solid_biofuels
 operation:
-  growthType: false
+  growthType: true
   variable: stock_heating_industrial_solid_biofuel
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_heating_industrial_solid_biofuel
 work:
 - name: combustion
   unitOfMeasure: kwh

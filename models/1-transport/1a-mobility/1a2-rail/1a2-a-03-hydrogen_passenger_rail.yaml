@@ -3,13 +3,18 @@ id: hydrogen_passenger_rail
 sector: transport
 class: activity
 sustainability: green
-version: 2.1.0
+version: 2.2.0
 progress: 80
 ipccEmissionSource: 1a3c-railways
 name: hydrogen_passenger_rail
 operation:
-  growthType: false
+  growthType: true
   variable: stock_passenger_hydrogen_rail
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_passenger_hydrogen_rail
 work:
 - name: hydrogen_oxidation
   unitOfMeasure: kwh

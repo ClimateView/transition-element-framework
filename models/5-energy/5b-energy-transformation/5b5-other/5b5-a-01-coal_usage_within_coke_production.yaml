@@ -1,0 +1,33 @@
+title: T-5B5-A-1 - Coal usage within coke production
+id: coal_usage_within_coke_production
+sector: energy
+class: activity
+name: coal_usage_within_coke_production
+version: 2.0.0
+operation:
+  growthType: true
+  variable: start_year_activity_coal_usage_within_coke_production
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_coal_usage_within_coke_production
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: coal
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_coal_kwh_to_co2e

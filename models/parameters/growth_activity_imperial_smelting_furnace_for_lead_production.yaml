@@ -1,0 +1,15 @@
+id: growth_activity_imperial_smelting_furnace_for_lead_production
+title: Growth of imperial smelting furnace for lead production
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: m2_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

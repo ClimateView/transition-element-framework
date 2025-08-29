@@ -4,7 +4,7 @@ type: parameter
 parameter_type: GROWTH_FACTOR
 unit: tonne_percapita
 tags:
-- operations
+- operations_growth
 - PRIO_MEDIUM
 values:
 - value: 0

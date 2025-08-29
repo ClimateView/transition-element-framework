@@ -1,0 +1,15 @@
+id: growth_activity_calcination_of_dolomite_for_magnesium_production
+title: Growth of calcination of dolomite for magnesium production
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

@@ -3,7 +3,7 @@ id: transfer_from_heavy_truck_to_sea
 sector: transport
 sustainability: amber
 class: transition
-version: 2.0.1
+version: 2.0.2
 name: transfer_from_heavy_truck_to_sea
 type: shift
 longName: Shift from Internal Combustion Engine (ICE) heavy trucks to diesel marine

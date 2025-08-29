@@ -1,13 +1,18 @@
-title: T-4B2B-A-6 - Wastewater pumps
+title: T-4B2b-A-6 - Wastewater pumps
 id: institutional_electric_wastewater_pumps
 sector: buildings
 sustainability: green
 class: activity
 name: institutional_electric_wastewater_pumps
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: stock_institutional_electric_wastewater_pumps
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_institutional_electric_wastewater_pumps
 work:
 - name: electromagnetism
   unitOfMeasure: kwh

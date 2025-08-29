@@ -4,10 +4,15 @@ name: unspecified_consumption_based_emissions
 sector: industry
 sustainability: amber
 class: activity
-version: 2.1.0
+version: 2.2.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_unspecified_consumption_based_emissions
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_unspecified_consumption_based_emissions
 work:
 - name: unknown
   unitOfMeasure: tonne

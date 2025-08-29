@@ -1,0 +1,17 @@
+id: emission_factor_grassland_to_cropland_ha_to_co2e_gram
+title: Emission factor grassland converted to cropland
+type: parameter
+parameter_type: EMISSION_FACTOR
+unit: g_co2e_ha
+tags:
+- emission_factors
+- PRIO_GLOBAL
+- emission_factor
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2020-01-01
+  comment: 'Initialized to zero.
+
+    '

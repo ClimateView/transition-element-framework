@@ -1,0 +1,15 @@
+id: growth_activity_chlorination_of_rutile_for_titanium_dioxide_production
+title: Growth of chlorination of rutile for titanium dioxide production
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

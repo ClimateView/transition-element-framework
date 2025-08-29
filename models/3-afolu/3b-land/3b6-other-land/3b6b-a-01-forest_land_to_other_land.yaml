@@ -1,0 +1,29 @@
+title: T-3B6b-A-1 - Forest land converted to other land
+id: forest_land_to_other_land
+sector: afolu
+sustainability: red
+class: activity
+name: forest_land_to_other_land
+version: 2.0.0
+operation:
+  growthType: false
+  variable: start_year_forest_land_to_other_land
+work:
+- name: unknown
+  unitOfMeasure: ha
+  operationToWork:
+    unitOfMeasure: ha/ha
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_hectare
+  input:
+  - resource: forest_land
+    unitOfMeasure: ha
+    resourceToWork:
+      unitOfMeasure: ha/ha
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/ha
+      expression: '%[0]'
+      variables:
+      - emission_factor_forest_land_to_other_land_ha_to_co2e_gram

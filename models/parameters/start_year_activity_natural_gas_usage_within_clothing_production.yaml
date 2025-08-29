@@ -1,0 +1,15 @@
+id: start_year_activity_natural_gas_usage_within_clothing_production
+title: Natural gas usage within clothing production
+type: parameter
+parameter_type: OPERATIONS
+unit: kwh
+tags:
+- operations
+values:
+- value: 0
+  global: true
+  scalingType: PER_CAPITA
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

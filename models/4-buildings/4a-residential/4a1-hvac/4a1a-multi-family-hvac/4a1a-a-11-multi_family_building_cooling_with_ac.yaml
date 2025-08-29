@@ -3,12 +3,17 @@ id: multi_family_building_cooling_with_ac
 sector: buildings
 sustainability: amber
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 50
 name: multi_family_building_cooling_with_ac
 operation:
-  growthType: false
+  growthType: true
   variable: stock_cooling_residential_multi_family_ac
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_cooling_residential_multi_family_ac
 work:
 - name: unknown
   unitOfMeasure: kwh

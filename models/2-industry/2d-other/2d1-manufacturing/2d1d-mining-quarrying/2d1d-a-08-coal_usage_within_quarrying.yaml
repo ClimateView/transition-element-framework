@@ -1,0 +1,33 @@
+title: T-2D1d-A-8 - Coal usage within quarrying
+id: coal_usage_within_quarrying
+sector: industry
+class: activity
+name: coal_usage_within_quarrying
+version: 2.0.0
+operation:
+  growthType: true
+  variable: start_year_activity_coal_usage_within_quarrying
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_coal_usage_within_quarrying
+work:
+- name: combustion
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: coal
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_coal_kwh_to_co2e

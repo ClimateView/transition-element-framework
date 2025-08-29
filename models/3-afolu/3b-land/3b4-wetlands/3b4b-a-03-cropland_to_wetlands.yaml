@@ -1,0 +1,29 @@
+title: T-3B4b-A-3 - Cropland converted to wetlands
+id: cropland_to_wetlands
+sector: afolu
+sustainability: green
+class: activity
+name: cropland_to_wetlands
+version: 2.0.0
+operation:
+  growthType: false
+  variable: start_year_cropland_to_wetlands
+work:
+- name: unknown
+  unitOfMeasure: ha
+  operationToWork:
+    unitOfMeasure: ha/ha
+    expression: '%[0]'
+    variables:
+    - work_intensity_direct_operations_use_hectare
+  input:
+  - resource: cropland
+    unitOfMeasure: ha
+    resourceToWork:
+      unitOfMeasure: ha/ha
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/ha
+      expression: '%[0]'
+      variables:
+      - emission_factor_cropland_to_wetlands_ha_to_co2e_gram

@@ -2,7 +2,7 @@ id: pm10_wear_tear_bus_diesel
 title: PM 10 Particles emitted from wear and tear (diesel buses)
 type: parameter
 parameter_type: ECONOMIC_PARAMETER
-unit: g_vkm
+unit: g_vehicle_km
 tags:
 - economic_parameter
 values:

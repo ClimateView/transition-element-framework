@@ -3,12 +3,17 @@ id: agriculture_forestry_fishing_unregulated_electricity_use
 sector: afolu
 sustainability: green
 class: activity
-version: 2.2.0
+version: 2.3.0
 progress: 50
 name: agriculture_forestry_fishing_unregulated_electricity_use
 operation:
-  growthType: false
+  growthType: true
   variable: stock_agriculture_forestry_fishing_unregulated_electricity_use
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - stock_growth_agriculture_forestry_fishing_unregulated_electricity_use
 work:
 - name: electromagnetism
   unitOfMeasure: kwh
@@ -16,7 +21,7 @@ work:
     unitOfMeasure: kwh/kwh
     expression: '%[0]'
     variables:
-    - energy_intensity_direct_resource_use_kwh
+    - energy_intensity_agriculture_forestry_fishing_unregulated_electricity_use
   input:
   - resource: electricity
     unitOfMeasure: kwh

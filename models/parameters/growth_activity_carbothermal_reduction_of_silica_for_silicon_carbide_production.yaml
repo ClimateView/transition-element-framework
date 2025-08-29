@@ -1,0 +1,15 @@
+id: growth_activity_carbothermal_reduction_of_silica_for_silicon_carbide_production
+title: Growth of carbothermal reduction of silica for silicon carbide production
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: tonne_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

@@ -1,0 +1,15 @@
+id: stock_growth_coal_use_unspecified_sources
+title: Growth of coal use (unspecified sources)
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: kwh_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

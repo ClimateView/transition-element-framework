@@ -4,11 +4,16 @@ sector: waste
 sustainability: amber
 class: activity
 name: aerobic_treatment_nitrification_denitrification
-version: 2.0.0
+version: 2.1.0
 chains: null
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_aerobic_treatment_nitrification_denitrification
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_aerobic_treatment_nitrification_denitrification
 work:
 - name: nitrification_denitrification
   unitOfMeasure: kg_N

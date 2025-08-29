@@ -39,14 +39,15 @@ values:
 
     '
   reference: https://www.bafu.admin.ch/dam/bafu/de/dokumente/klima/fachinfo-daten/Umweltbilanz%20Strommix%20Schweiz%202014%20.pdf.download.pdf/589-Umweltbilanz-Strommix-Schweiz-2014-v3_0.pdf
-- value: 468
+- value: 505
   country: DE
   scalingType: CONSTANT
   validFrom: 2019-01-01
-  comment: 'Schätzungen auf Grundlage von bundesdeutscher Statistik.
+  comment: 'Wert für 2022, Bisko Methodenpapier. Für ältere Werte, siehe Bisko Methodenpapier,
+    für Schätzungen späterer Jahre, siehe UBA https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/13_2025_cc.pdf.
 
     '
-  reference: https://climateview.slab.com/public/ecbs06go
+  reference: https://www.klimaschutz.de/sites/default/files/mediathek/dokumente/Agentur_Methodenpapier_BISKO_Juli-24.pdf
 - value: 54
   country: FR
   scalingType: CONSTANT

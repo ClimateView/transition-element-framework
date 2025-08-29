@@ -1,0 +1,33 @@
+title: T-2D1j-A-6 - District heat usage within furniture production
+id: district_heat_usage_within_furniture_production
+sector: industry
+class: activity
+name: district_heat_usage_within_furniture_production
+version: 2.0.0
+operation:
+  growthType: true
+  variable: start_year_activity_district_heat_usage_within_furniture_production
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_district_heat_usage_within_furniture_production
+work:
+- name: unknown
+  unitOfMeasure: kwh
+  operationToWork:
+    unitOfMeasure: kwh/kwh
+    expression: '%[0]'
+    variables:
+    - energy_intensity_direct_resource_use_kwh
+  input:
+  - resource: district_heat
+    unitOfMeasure: kwh
+    resourceToWork:
+      unitOfMeasure: kwh/kwh
+      expression: '1'
+    emissionFactor:
+      unitOfMeasure: g_co2e/kwh
+      expression: '%[0]'
+      variables:
+      - emission_factor_district_heating_kwh_to_co2e

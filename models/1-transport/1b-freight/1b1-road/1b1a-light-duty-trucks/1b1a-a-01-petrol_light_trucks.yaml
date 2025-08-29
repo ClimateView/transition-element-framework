@@ -3,7 +3,7 @@ id: petrol_light_trucks
 sector: transport
 sustainability: red
 class: activity
-version: 2.2.0
+version: 2.3.0
 progress: 50
 name: petrol_light_trucks
 operation:

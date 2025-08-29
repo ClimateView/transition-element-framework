@@ -1,0 +1,15 @@
+id: growth_activity_natural_gas_usage_within_machinery_and_equipment_production
+title: Growth of natural gas usage within machinery and equipment production
+type: parameter
+parameter_type: GROWTH_FACTOR
+unit: kwh_percapita
+tags:
+- operations_growth
+values:
+- value: 0
+  global: true
+  scalingType: CONSTANT
+  validFrom: 2019-01-01
+  comment: 'Initialized to zero.
+
+    '

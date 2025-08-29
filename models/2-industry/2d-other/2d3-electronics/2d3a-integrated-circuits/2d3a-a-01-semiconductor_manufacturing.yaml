@@ -1,13 +1,18 @@
-title: T-2D3A-A-1 - Semiconductor manufacturing
+title: T-2D3a-A-1 - Semiconductor manufacturing
 id: semiconductor_manufacturing
 sector: industry
 sustainability: amber
 class: activity
 name: semiconductor_manufacturing
-version: 2.0.0
+version: 2.1.0
 operation:
-  growthType: false
+  growthType: true
   variable: start_year_activity_semiconductor_manufacturing
+  growthFactor:
+    unitOfMeasure: per_capita
+    expression: '%[0]'
+    variables:
+    - growth_activity_semiconductor_manufacturing
 work:
 - name: fugitive
   unitOfMeasure: m2

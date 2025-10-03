@@ -3,7 +3,7 @@ title: T-1A1c-A-4 - Gas buses
 id: gas_buses
 sector: transport
 class: activity
-version: 2.1.0
+version: 2.1.1
 progress: 80
 sustainability: amber
 ipccEmissionSource: 1a3b-road-transportation

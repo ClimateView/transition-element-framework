@@ -12,8 +12,15 @@ values:
     scalingType: CONSTANT
     validFrom: 2019-01-01
     comment: |
-        Our World in Data
-    reference: https://ourworldindata.org/grapher/ghg-per-kg-poore
+        German UBA: average vegetarian meal, assuming weight of 475g per meal.
+    reference: https://uba-event-free.co2-rechner.pro/de_DE/projects/activities/
+  - value: 2000
+    country: DE
+    scalingType: CONSTANT
+    validFrom: 2019-01-01
+    comment: |
+        UBA CO2-Rechner für Veranstaltungen: durchschnittliche Mahlzeit Vegetarisch, bei einem Gewicht von 475 g pro Mahlzeit.
+    reference: https://uba-event-free.co2-rechner.pro/de_DE/projects/activities/
 ---
 
 
@@ -25,6 +32,7 @@ Unit of measure: `{{unit}}`
 
 | Value | Region | Scaling | Period | Comment | Reference |
 |-------|--------|---------|--------|---------|-----------|
-| 2000 | Global | CONSTANT | 2019-01-01 | Our World in Data | https://ourworldindata.org/grapher/ghg-per-kg-poore |
+| 2000 | Global | CONSTANT | 2019-01-01 | German UBA: average vegetarian meal, assuming weight of 475g per meal. | https://uba-event-free.co2-rechner.pro/de_DE/projects/activities/ |
+| 2000 | DE | CONSTANT | 2019-01-01 | UBA CO2-Rechner für Veranstaltungen: durchschnittliche Mahlzeit Vegetarisch, bei einem Gewicht von 475 g pro Mahlzeit. | https://uba-event-free.co2-rechner.pro/de_DE/projects/activities/ |
 
 

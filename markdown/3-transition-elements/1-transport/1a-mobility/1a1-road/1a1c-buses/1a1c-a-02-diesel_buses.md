@@ -3,7 +3,7 @@ title: T-1A1c-A-2 - Diesel buses
 id: diesel_buses
 sector: transport
 class: activity
-version: 2.2.0
+version: 2.2.1
 progress: 80
 sustainability: red
 ipccEmissionSource: 1a3b-road-transportation

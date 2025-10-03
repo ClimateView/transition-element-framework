@@ -4,7 +4,7 @@ id: imported_grid_district_heat
 sector: energy
 sustainability: amber
 class: activity
-version: 2.1.0
+version: 2.0.0
 progress: 50
 name: imported_grid_district_heat
 operation:

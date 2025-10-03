@@ -3,7 +3,7 @@ title: T-1A1c-A-6 - LPG buses
 id: lpg_buses
 sector: transport
 class: activity
-version: 2.1.0
+version: 2.2.0
 progress: 80
 sustainability: red
 ipccEmissionSource: 1a3b-road-transportation

@@ -4,7 +4,7 @@ id: chp_biogas
 sector: energy
 sustainability: green
 class: activity
-version: 2.1.0
+version: 1.0.0
 progress: 50
 name: chp_biogas
 operation:

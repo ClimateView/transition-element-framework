@@ -4,7 +4,7 @@ id: petrol_buses
 sector: transport
 class: activity
 sustainability: red
-version: 2.2.0
+version: 2.3.0
 progress: 80
 ipccEmissionSource: 1a3b-road-transportation
 name: petrol_buses

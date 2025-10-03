@@ -4,7 +4,7 @@ id: chp_sludge
 sector: energy
 sustainability: amber
 class: activity
-version: 2.1.0
+version: 2.0.0
 progress: 50
 name: chp_sludge
 operation:

@@ -4,7 +4,7 @@ id: chp_waste_incineration
 sector: energy
 sustainability: amber
 class: activity
-version: 2.1.0
+version: 2.0.4
 progress: 50
 name: chp_waste_incineration
 operation:

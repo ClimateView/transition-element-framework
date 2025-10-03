@@ -4,7 +4,7 @@ id: sludge_fired_power_plants
 sector: energy
 sustainability: amber
 class: activity
-version: 2.1.0
+version: 1.0.0
 progress: 50
 name: sludge_fired_power_plants
 operation:

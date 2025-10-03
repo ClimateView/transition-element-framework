@@ -1,5 +1,5 @@
 ---
-title: Sheep_manure
+title: Sheep manure
 id: sheep_manure
 ---
 

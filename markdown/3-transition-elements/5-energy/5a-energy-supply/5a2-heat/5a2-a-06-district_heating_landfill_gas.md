@@ -4,7 +4,7 @@ id: district_heating_landfill_gas
 sector: energy
 sustainability: amber
 class: activity
-version: 2.1.0
+version: 1.0.0
 progress: 50
 name: district_heating_landfill_gas
 operation:

@@ -4,7 +4,7 @@ id: district_heating_geothermal_heat
 sector: energy
 sustainability: green
 class: activity
-version: 1.1.0
+version: 1.0.0
 progress: 50
 name: district_heating_geothermal_heat
 operation:

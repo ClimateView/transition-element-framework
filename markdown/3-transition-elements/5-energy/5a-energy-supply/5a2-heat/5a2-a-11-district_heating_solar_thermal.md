@@ -4,7 +4,7 @@ id: district_heating_solar_thermal
 sector: energy
 sustainability: green
 class: activity
-version: 2.1.0
+version: 1.0.0
 progress: 50
 name: district_heating_solar_thermal
 operation:

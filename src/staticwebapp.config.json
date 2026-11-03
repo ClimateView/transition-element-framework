@@ -1,8 +1,256 @@
 {
   "routes": [
     {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-01-multi_family_building_heating_with_coal*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-01-multi_family_building_heating_with_coal/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-02-multi_family_building_heating_with_direct_electric*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-02-multi_family_building_heating_with_direct_electric/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-03-multi_family_building_heating_with_district_heating*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-03-multi_family_building_heating_with_district_heating/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-04-multi_family_building_heating_with_gas*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-04-multi_family_building_heating_with_gas/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-05-multi_family_building_heating_with_heatpump*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-05-multi_family_building_heating_with_heatpump/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-06-multi_family_building_heating_with_hydrogen*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-06-multi_family_building_heating_with_hydrogen/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-07-multi_family_building_heating_with_lpg*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-07-multi_family_building_heating_with_lpg/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-08-multi_family_building_heating_with_oil*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-08-multi_family_building_heating_with_oil/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-09-multi_family_building_heating_with_solar_thermal*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-09-multi_family_building_heating_with_solar_thermal/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-10-multi_family_building_heating_with_solid_biofuels*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-10-multi_family_building_heating_with_solid_biofuels/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-11-multi_family_building_cooling_with_ac*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-11-multi_family_building_cooling_with_ac/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-12-multi_family_building_cooling_with_district_cooling*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-12-multi_family_building_cooling_with_district_cooling/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-13-heating_of_new_residential_multi_family_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-13-heating_of_new_residential_multi_family_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-a-14-multi_family_building_heating_with_propane*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-14-multi_family_building_heating_with_propane/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-01-single_family_building_heating_with_coal*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-15-single_family_building_heating_with_coal/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-02-single_family_building_heating_with_direct_electric_heaters*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-16-single_family_building_heating_with_direct_electric_heaters/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-03-single_family_building_heating_with_district_heating*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-17-single_family_building_heating_with_district_heating/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-04-single_family_building_heating_with_gas*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-18-single_family_building_heating_with_gas/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-05-single_family_building_heating_with_heatpump*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-19-single_family_building_heating_with_heatpump/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-06-single_family_building_heating_with_hydrogen*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-20-single_family_building_heating_with_hydrogen/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-07-single_family_building_heating_with_lpg*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-21-single_family_building_heating_with_lpg/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-08-single_family_building_heating_with_oil*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-22-single_family_building_heating_with_oil/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-09-single_family_building_heating_with_solar_thermal*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-23-single_family_building_heating_with_solar_thermal/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-10-single_family_building_heating_with_solid_biofuels*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-24-single_family_building_heating_with_solid_biofuels/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-11-single_family_building_cooling_with_ac*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-25-single_family_building_cooling_with_ac/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-12-single_family_building_cooling_with_district_cooling*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-26-single_family_building_cooling_with_district_cooling/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-13-heating_of_new_residential_single_family_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-27-heating_of_new_residential_single_family_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-a-14-single_family_building_heating_with_propane*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-a-28-single_family_building_heating_with_propane/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-01-heat_pumps_in_multi_family_residential_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-02-heat_pumps_in_multi_family_residential_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-02-shift_to_district_heating_in_multi_family_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-03-shift_to_district_heating_in_multi_family_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-03-shift_to_district_cooling_in_multi_family_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-04-shift_to_district_cooling_in_multi_family_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-04-shift_to_solar_thermal_in_multi_family_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-05-shift_to_solar_thermal_in_multi_family_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-05-heating_multi_family_residential_buildings_with_renewable_solid_biofuels*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-06-heating_multi_family_residential_buildings_with_renewable_solid_biofuels/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-06-energy_efficient_multi_family_residential_buildings_retrofitting*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-07-energy_efficient_multi_family_residential_buildings_retrofitting/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-07-efficient_use_multi_family_residential_buildings_cooling*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-08-efficient_use_multi_family_residential_buildings_cooling/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-08-energy_efficient_multi_family_residential_buildings_cooling*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-09-energy_efficient_multi_family_residential_buildings_cooling/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac/4a1a-te-09-energy_efficient_multi_family_residential_buildings_retrofitting_cooling*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-10-energy_efficient_multi_family_residential_buildings_retrofitting_cooling/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-01-heat_pumps_in_single_family_residential_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-11-heat_pumps_in_single_family_residential_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-02-shift_to_district_heating_in_single_family_houses*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-12-shift_to_district_heating_in_single_family_houses/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-03-shift_to_district_cooling_in_single_family_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-13-shift_to_district_cooling_in_single_family_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-04-shift_to_solar_thermal_in_single_family_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-14-shift_to_solar_thermal_in_single_family_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-05-heating_single_family_residential_buildings_with_renewable_solid_biofuels*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-15-heating_single_family_residential_buildings_with_renewable_solid_biofuels/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-06-energy_efficient_single_family_residential_buildings_retrofitting*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-16-energy_efficient_single_family_residential_buildings_retrofitting/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-07-efficient_use_single_family_residential_buildings_cooling*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-17-efficient_use_single_family_residential_buildings_cooling/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-08-energy_efficient_single_family_residential_buildings_cooling*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-18-energy_efficient_single_family_residential_buildings_cooling/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-09-energy_efficient_single_family_residential_buildings_retrofitting_cooling*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-19-energy_efficient_single_family_residential_buildings_retrofitting_cooling/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac/4a1b-te-10-shift_to_biogas_heating_of_single_family_residential_buildings*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1-te-20-shift_to_biogas_heating_of_single_family_residential_buildings/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1a-multi-family-hvac*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/",
+      "statusCode": 301
+    },
+    {
+      "route": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/4a1b-single-family-hvac*",
+      "redirect": "/3-transition-elements/4-buildings/4a-residential/4a1-hvac/",
+      "statusCode": 301
+    },
+    {
       "route": "/*",
-      "allowedRoles": ["anonymous", "user"]
+      "allowedRoles": [
+        "anonymous",
+        "user"
+      ]
     }
   ],
   "responseOverrides": {

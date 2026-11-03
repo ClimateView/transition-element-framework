@@ -1,13 +1,14 @@
 import pytest
 import pathlib
 
+from tree_sitter import Query, QueryCursor
 from setup import YAML_LANGUAGE, get_parsed
 
 
 class TestMitigationMethods:
 
     @pytest.mark.parametrize('src',
-                             pathlib.Path("../markdown/2-ipcc-mitigation-options").glob("**/*.md"), ids=str)
+                             sorted(pathlib.Path("../markdown/2-ipcc-mitigation-options").glob("**/*.md")), ids=str)
     def test_mitigation_nodes(self, src):
         (md_parse_tree, md_content, yaml_parse_tree, content) = get_parsed(src)
         if "ipcc-2019-emissions" not in src.parts:
@@ -23,17 +24,17 @@ class TestMitigationMethods:
     def get_frontmatter_item(self, parse_tree, key):
         first_child = parse_tree.root_node.children[1]
         # Test for simple key value pairs:
-        pair_query = YAML_LANGUAGE.query("""
+        pair_query = Query(YAML_LANGUAGE, """
             (block_mapping_pair key:(flow_node) @key value:(flow_node) @value)
         """)
-        matches = pair_query.matches(parse_tree.root_node)
+        matches = QueryCursor(pair_query).matches(parse_tree.root_node)
         for m in matches:
             k = m[1]["key"][0].text
             v = m[1]["value"][0].text
             if k and v and k.decode('utf-8')==key:
                 return v.decode('utf-8')
         # Then test for key value pairs where the value is a list:
-        pair_query = YAML_LANGUAGE.query("""
+        pair_query = Query(YAML_LANGUAGE, """
             (block_mapping_pair
                 key:(flow_node) @key
                 value:(block_node
@@ -43,7 +44,7 @@ class TestMitigationMethods:
                 ) 
             )
 """)
-        matches = pair_query.matches(parse_tree.root_node)
+        matches = QueryCursor(pair_query).matches(parse_tree.root_node)
         for m in matches:
             k = m[1]["key"][0].text
             v_nodes = m[1].get("value", [])

@@ -56,12 +56,12 @@ Contributions are welcome from the scientific and climate action communities. Co
 For developers wanting to work on the build system or run the site locally:
 
 ### Requirements
-- Python 3.10 or higher
+- Python 3.11 or higher
 - Recommended: [uv](https://docs.astral.sh/uv/) for fast Python package and project management
 
 ### Setup
 1. Install uv: `curl -LsSf https://astral.sh/uv/install.sh | sh`
-2. Create and activate your Python environment: `uv venv --python 3.10`
+2. Create and activate your Python environment: `uv venv --python 3.12`
 3. Install dependencies: `uv pip install -r src/requirements.txt`
 
 ### Development Server

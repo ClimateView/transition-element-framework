@@ -5,7 +5,10 @@ class: node
 progress: 10
 ---
 
+# Activities
+
+{{generate_activity_index("4A1")}}
+
+# Transition Elements
 
 {{generate_te_index("4A1")}}
-
-

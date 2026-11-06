@@ -60,7 +60,7 @@ Each transition element follows a structured format:
 
 ## Technology Stack
 
-- **Python 3.10+**: Required for development
+- **Python 3.11+**: Required for development
 - **uv**: Modern Python package manager and virtual environment manager
 - **MkDocs**: Static site generator
 - **MkDocs Material**: Theme and extensions

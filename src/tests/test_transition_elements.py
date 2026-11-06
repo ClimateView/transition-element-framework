@@ -1,12 +1,13 @@
 import pytest
 import pathlib
 
+from tree_sitter import Query, QueryCursor
 from setup import YAML_LANGUAGE, get_parsed
 
 
 class TestTransitionElements:
 
-    @pytest.mark.parametrize('src', pathlib.Path("../markdown").glob("**/*.md"), ids=str)
+    @pytest.mark.parametrize('src', sorted(pathlib.Path("../markdown").glob("**/*.md")), ids=str)
     def test_transition_nodes(self, src):
         (md_parse_tree, md_content, yaml_parse_tree, content) = get_parsed(src)
         if "3-transition-elements" in src.parts:
@@ -21,14 +22,14 @@ class TestTransitionElements:
 
     def get_frontmatter_item(self, parse_tree, key, require_top_level=False):
         if require_top_level:
-            pair_query = YAML_LANGUAGE.query("""
+            pair_query = Query(YAML_LANGUAGE, """
                (document (block_node (block_mapping (block_mapping_pair key:(_) @key value:(_) @value))))
             """)
         else:
-            pair_query = YAML_LANGUAGE.query("""
+            pair_query = Query(YAML_LANGUAGE, """
                (block_mapping_pair key:(_) @key value:(flow_node) @value)
     """)
-        matches = pair_query.matches(parse_tree.root_node)
+        matches = QueryCursor(pair_query).matches(parse_tree.root_node)
         for m in matches:
             k = m[1]["key"][0].text
             v = m[1]["value"][0].text
